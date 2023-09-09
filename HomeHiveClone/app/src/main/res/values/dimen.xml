@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gradient_rect_radius">11dp</dimen>
+</resources>

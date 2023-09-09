@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="gradient_rect_radius">11dp</dimen>
+    <dimen name="gradient_margin_horizontal">16dp</dimen>
+    <dimen name="gradient_margin_vertical">64dp</dimen>
+    <dimen name="gradient_padding_vertical">5.39dp</dimen>
+    <dimen name="gradient_padding_horizontal">5.51dp</dimen>
+
+    <dimen name="hello_text_start_margin">12dp</dimen>
 </resources>

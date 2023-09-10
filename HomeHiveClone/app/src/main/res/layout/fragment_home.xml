@@ -1,61 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".HomeFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/topCardView"
         android:layout_width="match_parent"
-        android:layout_height="173dp"
-        app:cardCornerRadius="@dimen/gradient_rect_radius"
-        android:backgroundTint="@color/home_bg_blue">
+        android:layout_height="125dp"
+        app:cardBackgroundColor="@color/home_bg_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="@dimen/gradient_margin_horizontal">
+            android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
+            android:orientation="vertical">
+
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/titleLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_marginTop="@dimen/gradient_margin_top"
-                app:layout_constraintStart_toStartOf="parent"
+                android:orientation="horizontal"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
+
                 <ImageView
                     android:layout_width="45dp"
                     android:layout_height="44dp"
-                    android:src="@drawable/tabler_smart_home"
                     android:background="@drawable/gradient_rectangle"
                     android:paddingVertical="@dimen/gradient_padding_vertical"
-                    android:layout_marginHorizontal="@dimen/gradient_padding_horizontal"/>
+                    android:src="@drawable/tabler_smart_home" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginStart="@dimen/graditent_title_margin"
+                    android:layout_weight="1"
                     android:fontFamily="@font/work_sans_semibold"
                     android:text="@string/hello_ashutosh"
                     android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"/>
+                    android:textSize="18sp" />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/clarity_language_line"
-                    android:layout_marginStart="92dp"
-                    android:layout_gravity="center"/>
+                    android:layout_gravity="center|end"
+                    android:src="@drawable/clarity_language_line" />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ph_bell"
+                    android:layout_gravity="center|end"
                     android:layout_marginStart="12dp"
-                    android:layout_gravity="center|end"/>
+                    android:src="@drawable/ph_bell" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -70,41 +76,94 @@
                 android:textColor="@color/white"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/titleLayout"/>
+                app:layout_constraintTop_toBottomOf="@id/titleLayout" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/searchCardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="@dimen/search_card_radius"
         android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
-        android:layout_marginTop="144dp">
+        app:cardCornerRadius="@dimen/search_card_radius"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/search_margin_top">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_margin="@dimen/search_card_margin">
+            android:layout_margin="@dimen/search_card_margin"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
                 android:text="Start your search here"
-                android:textColor="@color/search_text"
-                android:layout_weight="1"/>
+                android:textColor="@color/search_text" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/material_symbols_search_rounded"/>
+                android:src="@drawable/material_symbols_search_rounded" />
+
             <View
                 android:layout_width="2dp"
                 android:layout_height="match_parent"
-                android:background="@drawable/vertical_divider"
-                android:layout_marginHorizontal="8dp" />
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/vertical_divider" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_keyboard_voice"/>
+                android:src="@drawable/ic_baseline_keyboard_voice" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
+        android:layout_marginVertical="@dimen/premeium_margin_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchCardView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/work_sans_medium"
+            android:text="@string/get_pro_for_fast_search"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mingcute_diamond_2_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/work_sans"
+            android:gravity="end"
+            android:text="@string/know_more"
+            android:textColor="@color/know_more_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/material_symbols_arrow_right_alt_rounded" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

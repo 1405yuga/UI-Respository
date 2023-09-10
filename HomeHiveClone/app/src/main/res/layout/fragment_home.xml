@@ -127,6 +127,7 @@
     </androidx.cardview.widget.CardView>
 
     <LinearLayout
+        android:id="@+id/premeuimLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
@@ -166,4 +167,16 @@
             android:src="@drawable/material_symbols_arrow_right_alt_rounded" />
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
+        android:layout_marginVertical="22dp"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="@string/testimonials"
+        android:textColor="@color/testinomials_text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/premeuimLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -185,7 +185,10 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewTestinomials"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/card_testinomial_item"/>
 
         <LinearLayout
             android:layout_width="match_parent"

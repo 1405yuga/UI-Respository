@@ -15,5 +15,7 @@
     <dimen name="search_margin_top">96dp</dimen>
 
     <dimen name="premeium_margin_vertical">20dp</dimen>
+    <dimen name="guide_title_marin">12dp</dimen>
+    <dimen name="guide_corner_radius">8dp</dimen>
 
 </resources>

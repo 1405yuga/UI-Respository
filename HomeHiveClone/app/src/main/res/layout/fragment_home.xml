@@ -87,12 +87,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
+        android:layout_marginTop="@dimen/search_margin_top"
         app:cardCornerRadius="@dimen/search_card_radius"
         app:cardElevation="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="@dimen/search_margin_top">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -130,11 +130,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/searchCardView">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -182,21 +183,24 @@
             android:textSize="16sp" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+            android:id="@+id/recyclerViewTestinomials"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="18dp">
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/our_services"
                 android:fontFamily="@font/work_sans_semibold"
+                android:text="@string/our_services"
                 android:textColor="@color/testinomials_text"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
+
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -206,17 +210,65 @@
                 android:gravity="end"
                 android:text="@string/see_all"
                 android:textColor="@color/know_more_text"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/material_symbols_chevron_right_rounded"/>
+                android:src="@drawable/material_symbols_chevron_right_rounded" />
         </LinearLayout>
+
         <com.google.android.material.divider.MaterialDivider
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="11dp"/>
+            android:layout_marginVertical="12dp" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/guide_corner_radius">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/must_read_bg"
+                android:fontFamily="@font/work_sans_medium"
+                android:padding="4dp"
+                android:text="@string/must_read"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/guide_title_marin"
+                android:layout_marginEnd="81dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/guide_title_marin"
+                    android:fontFamily="@font/work_sans_semibold"
+                    android:text="@string/guide_to_find_a_perfect_tenant"
+                    android:textColor="@color/testinomials_text"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/guide_title_marin"
+                    android:text="When it comes to finding a tenant/flatmate, the most important....."
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

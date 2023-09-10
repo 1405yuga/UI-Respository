@@ -10,4 +10,7 @@
     <dimen name="graditent_subtitle_margin_top">8dp</dimen>
     <dimen name="graditent_subtitle_margin_bottom">41dp</dimen>
 
+    <dimen name="search_card_radius">8dp</dimen>
+    <dimen name="search_card_margin">12dp</dimen>
+
 </resources>

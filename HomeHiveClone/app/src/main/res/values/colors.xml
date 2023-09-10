@@ -16,6 +16,8 @@
     <color name="testinomial_card_bg">#F5F5F5</color>
     <color name="testinomial_numbering_bg">#E9A847</color>
 
+    <color name="service_card_bg">#F2F2F2</color>
+
     <color name="must_read_bg">#00B787</color>
 
 </resources>

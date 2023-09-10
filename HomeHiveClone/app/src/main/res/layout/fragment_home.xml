@@ -5,274 +5,531 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/topCardView"
-        android:layout_width="match_parent"
-        android:layout_height="125dp"
-        app:cardBackgroundColor="@color/home_bg_blue"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/topCardView"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            app:cardBackgroundColor="@color/home_bg_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/titleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/gradient_margin_top"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="44dp"
+                        android:background="@drawable/gradient_rectangle"
+                        android:paddingVertical="@dimen/gradient_padding_vertical"
+                        android:src="@drawable/tabler_smart_home" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/graditent_title_margin"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/work_sans_semibold"
+                        android:text="@string/hello_ashutosh"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:src="@drawable/clarity_language_line" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|end"
+                        android:layout_marginStart="12dp"
+                        android:src="@drawable/ph_bell" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:id="@+id/subTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/graditent_subtitle_margin_top"
+                    android:layout_marginBottom="@dimen/graditent_subtitle_margin_bottom"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/find_a_tenant_share_the_adventure"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titleLayout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/searchCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
-            android:orientation="vertical">
+            android:layout_marginTop="@dimen/search_margin_top"
+            app:cardCornerRadius="@dimen/search_card_radius"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:id="@+id/titleLayout"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/gradient_margin_top"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-
-                <ImageView
-                    android:layout_width="45dp"
-                    android:layout_height="44dp"
-                    android:background="@drawable/gradient_rectangle"
-                    android:paddingVertical="@dimen/gradient_padding_vertical"
-                    android:src="@drawable/tabler_smart_home" />
+                android:layout_margin="@dimen/search_card_margin"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="@dimen/graditent_title_margin"
+                    android:layout_gravity="center_vertical"
                     android:layout_weight="1"
-                    android:fontFamily="@font/work_sans_semibold"
-                    android:text="@string/hello_ashutosh"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
+                    android:text="Start your search here"
+                    android:textColor="@color/search_text" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center|end"
-                    android:src="@drawable/clarity_language_line" />
+                    android:src="@drawable/material_symbols_search_rounded" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@drawable/vertical_divider" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center|end"
-                    android:layout_marginStart="12dp"
-                    android:src="@drawable/ph_bell" />
-
-            </androidx.appcompat.widget.LinearLayoutCompat>
-
-            <TextView
-                android:id="@+id/subTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/graditent_subtitle_margin_top"
-                android:layout_marginBottom="@dimen/graditent_subtitle_margin_bottom"
-                android:fontFamily="@font/work_sans_medium"
-                android:text="@string/find_a_tenant_share_the_adventure"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/titleLayout" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/searchCardView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
-        android:layout_marginTop="@dimen/search_margin_top"
-        app:cardCornerRadius="@dimen/search_card_radius"
-        app:cardElevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+                    android:src="@drawable/ic_baseline_keyboard_voice" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/search_card_margin"
-            android:orientation="horizontal">
+            android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchCardView">
 
-            <TextView
-                android:layout_width="0dp"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:text="Start your search here"
-                android:textColor="@color/search_text" />
+                android:layout_marginVertical="@dimen/premeium_margin_vertical"
+                android:orientation="horizontal">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/material_symbols_search_rounded" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/get_pro_for_fast_search"
+                    android:textSize="16sp" />
 
-            <View
-                android:layout_width="2dp"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="8dp"
-                android:background="@drawable/vertical_divider" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/mingcute_diamond_2_line" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_keyboard_voice" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="end"
+                    android:text="@string/know_more"
+                    android:textColor="@color/know_more_text"
+                    android:textSize="16sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchCardView">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/material_symbols_arrow_right_alt_rounded" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/premeium_margin_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:fontFamily="@font/work_sans_medium"
-                android:text="@string/get_pro_for_fast_search"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/mingcute_diamond_2_line" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:fontFamily="@font/work_sans"
-                android:gravity="end"
-                android:text="@string/know_more"
-                android:textColor="@color/know_more_text"
-                android:textSize="16sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/material_symbols_arrow_right_alt_rounded" />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:fontFamily="@font/work_sans_semibold"
-            android:text="@string/testimonials"
-            android:textColor="@color/testinomials_text"
-            android:textSize="16sp" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewTestinomials"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:listitem="@layout/card_testinomial_item"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="18dp"
-            android:orientation="horizontal">
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:fontFamily="@font/work_sans_semibold"
-                android:text="@string/our_services"
+                android:text="@string/testimonials"
                 android:textColor="@color/testinomials_text"
                 android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1"
-                android:fontFamily="@font/work_sans"
-                android:gravity="end"
-                android:text="@string/see_all"
-                android:textColor="@color/know_more_text"
-                android:textSize="16sp" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/material_symbols_chevron_right_rounded" />
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-        <com.google.android.material.divider.MaterialDivider
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="12dp" />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        app:cardBackgroundColor="@color/testinomial_card_bg"
+                        app:cardCornerRadius="@dimen/testinomial_card_radius"
+                        app:cardElevation="0dp">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewServices"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:background="@color/testinomial_numbering_bg"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:padding="@dimen/testinomial_numbering_margin"
+                            android:text="1/5"
+                            android:textColor="@color/white" />
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardCornerRadius="@dimen/guide_corner_radius">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/guide_title_marin"
+                            android:layout_marginVertical="8dp"
+                            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:background="@drawable/must_read_bg"
-                android:fontFamily="@font/work_sans_medium"
-                android:padding="4dp"
-                android:text="@string/must_read"
-                android:textColor="@color/white"
-                android:textSize="12sp" />
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ellipse_6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginVertical="@dimen/guide_title_marin"
+                                android:fontFamily="@font/work_sans_semibold"
+                                android:text="Aksheel Adresha"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="@dimen/guide_title_marin"
+                                android:text="The premium plan helped me to get a flat with a tenant in less than a week"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        app:cardBackgroundColor="@color/testinomial_card_bg"
+                        app:cardCornerRadius="@dimen/testinomial_card_radius"
+                        app:cardElevation="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:background="@color/testinomial_numbering_bg"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:padding="@dimen/testinomial_numbering_margin"
+                            android:text="2/5"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/guide_title_marin"
+                            android:layout_marginVertical="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ellipse_6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginVertical="@dimen/guide_title_marin"
+                                android:fontFamily="@font/work_sans_semibold"
+                                android:text="Deepak Pandey"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="@dimen/guide_title_marin"
+                                android:text="HomeHive helps provides you with maximum details which helps"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        app:cardBackgroundColor="@color/testinomial_card_bg"
+                        app:cardCornerRadius="@dimen/testinomial_card_radius"
+                        app:cardElevation="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:background="@color/testinomial_numbering_bg"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:padding="@dimen/testinomial_numbering_margin"
+                            android:text="3/5"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/guide_title_marin"
+                            android:layout_marginVertical="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ellipse_6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginVertical="@dimen/guide_title_marin"
+                                android:fontFamily="@font/work_sans_semibold"
+                                android:text="Aksheel Adresha"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="@dimen/guide_title_marin"
+                                android:text="The premium plan helped me to get a flat with a tenant in less than a week"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        app:cardBackgroundColor="@color/testinomial_card_bg"
+                        app:cardCornerRadius="@dimen/testinomial_card_radius"
+                        app:cardElevation="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:background="@color/testinomial_numbering_bg"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:padding="@dimen/testinomial_numbering_margin"
+                            android:text="4/5"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/guide_title_marin"
+                            android:layout_marginVertical="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ellipse_6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginVertical="@dimen/guide_title_marin"
+                                android:fontFamily="@font/work_sans_semibold"
+                                android:text="Aksheel Adresha"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="@dimen/guide_title_marin"
+                                android:text="The premium plan helped me to get a flat with a tenant in less than a week"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        app:cardBackgroundColor="@color/testinomial_card_bg"
+                        app:cardCornerRadius="@dimen/testinomial_card_radius"
+                        app:cardElevation="0dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:background="@color/testinomial_numbering_bg"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:padding="@dimen/testinomial_numbering_margin"
+                            android:text="5/5"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/guide_title_marin"
+                            android:layout_marginVertical="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/ellipse_6" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginVertical="@dimen/guide_title_marin"
+                                android:fontFamily="@font/work_sans_semibold"
+                                android:text="Aksheel Adresha"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal|center"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="@dimen/guide_title_marin"
+                                android:text="The premium plan helped me to get a flat with a tenant in less than a week"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/guide_title_marin"
-                android:layout_marginEnd="81dp"
-                android:orientation="vertical">
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginVertical="@dimen/guide_title_marin"
                     android:fontFamily="@font/work_sans_semibold"
-                    android:text="@string/guide_to_find_a_perfect_tenant"
+                    android:text="@string/our_services"
                     android:textColor="@color/testinomials_text"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
 
                 <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="end"
+                    android:text="@string/see_all"
+                    android:textColor="@color/know_more_text"
+                    android:textSize="16sp" />
+
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/guide_title_marin"
-                    android:text="When it comes to finding a tenant/flatmate, the most important....."
-                    android:textSize="12sp" />
+                    android:src="@drawable/material_symbols_chevron_right_rounded" />
             </LinearLayout>
 
-        </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="12dp" />
 
-    </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewServices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/guide_corner_radius">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:background="@drawable/must_read_bg"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:padding="4dp"
+                    android:text="@string/must_read"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/guide_title_marin"
+                    android:layout_marginEnd="81dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/guide_title_marin"
+                        android:fontFamily="@font/work_sans_semibold"
+                        android:text="@string/guide_to_find_a_perfect_tenant"
+                        android:textColor="@color/testinomials_text"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/guide_title_marin"
+                        android:text="When it comes to finding a tenant/flatmate, the most important....."
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">HomeHiveClone</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_ashutosh">Hello Ashutosh</string>
     <string name="find_a_tenant_share_the_adventure">"Find a tenant, share the adventure."</string>
     <string name="get_pro_for_fast_search">Get pro for fast search</string>
@@ -11,5 +9,5 @@
     <string name="see_all">See all</string>
     <string name="guide_to_find_a_perfect_tenant">Guide to find a perfect tenant</string>
     <string name="must_read">Must read</string>
-    <string name="_1_5">1/5</string>
+    <string name="when_it_comes_to_finding_a_tenant_flatmate_the_most_important">When it comes to finding a tenant/flatmate, the most important.....</string>
 </resources>

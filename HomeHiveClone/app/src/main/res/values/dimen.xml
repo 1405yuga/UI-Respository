@@ -23,4 +23,6 @@
 
     <dimen name="service_name_text">14sp</dimen>
     <dimen name="service_name_margin_top">8dp</dimen>
+    <dimen name="service_card_margin_horizontal">12dp</dimen>
+
 </resources>

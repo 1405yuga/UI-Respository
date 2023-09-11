@@ -25,4 +25,11 @@
     <dimen name="service_name_margin_top">8dp</dimen>
     <dimen name="service_card_margin_horizontal">12dp</dimen>
 
+    <dimen name="bottom_nav_menu_text">12sp</dimen>
+    <dimen name="bottom_nav_menu_card_radius">8dp</dimen>
+    <dimen name="bottom_nav_menu_padding">8dp</dimen>
+    <dimen name="bottom_nav_menu_margin_horizontal">12dp</dimen>
+    <dimen name="bottom_nav_menu_width">0dp</dimen>
+
+
 </resources>

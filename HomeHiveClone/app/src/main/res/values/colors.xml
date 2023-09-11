@@ -19,5 +19,6 @@
     <color name="service_card_bg">#F2F2F2</color>
 
     <color name="must_read_bg">#00B787</color>
+    <color name="bottom_menu">#B8B8B8</color>
 
 </resources>

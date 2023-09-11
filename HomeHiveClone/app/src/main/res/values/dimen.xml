@@ -30,6 +30,7 @@
     <dimen name="bottom_nav_menu_padding">8dp</dimen>
     <dimen name="bottom_nav_menu_margin_horizontal">12dp</dimen>
     <dimen name="bottom_nav_menu_width">0dp</dimen>
+    <dimen name="bottom_nav_menu_selected_bar">4dp</dimen>
 
 
 </resources>

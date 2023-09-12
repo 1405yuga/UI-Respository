@@ -23,5 +23,6 @@
 
     <color name="fragment_top_bar_text">#181441</color>
     <color name="nav_menu_text">#8B89A0</color>
+    <color name="past_result_bg">#F8F9FE</color>
 
 </resources>

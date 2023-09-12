@@ -38,4 +38,8 @@
     <dimen name="fragment_top_bar_margin_vertical">12dp</dimen>
     <dimen name="nav_menu_bottom_margin">20dp</dimen>
 
+    <dimen name="property_list_item_horizontal_margin">8dp</dimen>
+    <dimen name="property_list_item_vertical_margin">4dp</dimen>
+
+
 </resources>

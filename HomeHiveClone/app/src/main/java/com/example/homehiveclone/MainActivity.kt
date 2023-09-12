@@ -12,8 +12,10 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.example.homehiveclone.constants.ProjectConstants
 import com.example.homehiveclone.databinding.ActivityMainBinding
+import com.example.homehiveclone.fragments.ActivityFragment
 import com.example.homehiveclone.fragments.CompareFragment
 import com.example.homehiveclone.fragments.HomeFragment
+import com.example.homehiveclone.fragments.ProfileFragment
 import com.example.homehiveclone.fragments.SavedFragment
 
 private const val TAG = "MainActivity tag"
@@ -41,6 +43,12 @@ class MainActivity : AppCompatActivity() {
             }
             binding.savedLayout.setOnClickListener {
                 setMenuSelected(ProjectConstants.SAVED_MENU)
+            }
+            binding.activityLayout.setOnClickListener {
+                setMenuSelected(ProjectConstants.ACTIVITY_MENU)
+            }
+            binding.profileLayout.setOnClickListener {
+                setMenuSelected(ProjectConstants.PROFILE_MENU)
             }
         }
     }
@@ -84,6 +92,24 @@ class MainActivity : AppCompatActivity() {
                 )
                 loadFragment(SavedFragment())
             }
+
+            ProjectConstants.ACTIVITY_MENU -> {
+                setColorForSelectedMenu(
+                    binding.activityBar,
+                    binding.activityIcon,
+                    binding.activityText
+                )
+                loadFragment(ActivityFragment())
+            }
+
+            ProjectConstants.PROFILE_MENU -> {
+                setColorForSelectedMenu(
+                    binding.profileBar,
+                    binding.profileIcon,
+                    binding.profileText
+                )
+                loadFragment(ProfileFragment())
+            }
         }
     }
 
@@ -106,6 +132,19 @@ class MainActivity : AppCompatActivity() {
                 binding.savedIcon,
                 binding.savedText
             )
+
+            ProjectConstants.ACTIVITY_MENU -> setColorForUnselectedMenu(
+                    binding.activityBar,
+                    binding.activityIcon,
+                    binding.activityText
+                )
+
+            ProjectConstants.PROFILE_MENU -> setColorForUnselectedMenu(
+                    binding.profileBar,
+                    binding.profileIcon,
+                    binding.profileText
+                )
+
         }
     }
 

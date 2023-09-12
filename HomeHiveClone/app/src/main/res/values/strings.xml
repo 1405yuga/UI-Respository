@@ -10,4 +10,6 @@
     <string name="guide_to_find_a_perfect_tenant">Guide to find a perfect tenant</string>
     <string name="must_read">Must read</string>
     <string name="when_it_comes_to_finding_a_tenant_flatmate_the_most_important">When it comes to finding a tenant/flatmate, the most important.....</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

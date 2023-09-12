@@ -7,12 +7,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
-import androidx.navigation.NavController
-import androidx.navigation.fragment.NavHostFragment
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.example.homehiveclone.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var navController: NavController
     lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,18 +19,28 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navHostFragment =
-            supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        navController = navHostFragment.navController
-
+        loadFragment(HomeFragment())
         binding.apply {
             homeLayout.setOnClickListener {
+                loadFragment(HomeFragment())
                 setColorForSelectedMenu(binding.homeBar, binding.homeIcon, binding.homeText)
             }
             compareLayout.setOnClickListener {
-                setColorForSelectedMenu(binding.compareBar, binding.compareIcon, binding.compareText)
+                loadFragment(CompareFragment())
+                setColorForSelectedMenu(
+                    binding.compareBar,
+                    binding.compareIcon,
+                    binding.compareText
+                )
             }
         }
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(binding.navHostFragment.id, fragment)
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+            .commit()
     }
 
     private fun setColorForSelectedMenu(bar: ImageView, icon: ImageView, text: TextView) {
@@ -41,7 +50,4 @@ class MainActivity : AppCompatActivity() {
         icon.setColorFilter(menuColor, PorterDuff.Mode.SRC_IN)
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp() || super.onSupportNavigateUp()
-    }
 }

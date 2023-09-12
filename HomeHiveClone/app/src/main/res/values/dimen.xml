@@ -32,5 +32,10 @@
     <dimen name="bottom_nav_menu_width">0dp</dimen>
     <dimen name="bottom_nav_menu_selected_bar">4dp</dimen>
 
+    <dimen name="fragment_top_bar_radius">20dp</dimen>
+    <dimen name="fragment_top_bar_title">18sp</dimen>
+    <dimen name="fragment_top_bar_margin_horizontal">16dp</dimen>
+    <dimen name="fragment_top_bar_margin_vertical">12dp</dimen>
+    <dimen name="nav_menu_bottom_margin">20dp</dimen>
 
 </resources>

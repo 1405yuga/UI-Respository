@@ -29,6 +29,7 @@
 
 
         <LinearLayout
+            android:id="@+id/homeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/gradient_margin_horizontal"
@@ -41,12 +42,16 @@
                 android:layout_weight="1"
                 android:gravity="center|center_horizontal"
                 android:orientation="vertical">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/bar_over_menu"/>
 
                 <ImageView
+                    android:id="@+id/homeBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bar_over_menu"
+                    android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/homeIcon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/material_symbols_home_outline_rounded"
@@ -55,11 +60,12 @@
                     android:paddingEnd="@dimen/bottom_nav_menu_padding"/>
 
                 <TextView
+                    android:id="@+id/homeText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/work_sans_medium"
                     android:text="Home"
-                    android:textColor="@color/home_bg_blue"
+                    android:textColor="@color/bottom_menu"
                     android:textSize="@dimen/bottom_nav_menu_text"
                     android:paddingStart="@dimen/bottom_nav_menu_padding"
                     android:paddingEnd="@dimen/bottom_nav_menu_padding"

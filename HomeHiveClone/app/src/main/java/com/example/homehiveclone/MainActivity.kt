@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
         navController = navHostFragment.navController
 
         binding.apply {
+            homeLayout.setOnClickListener {
+                setColorForSelectedMenu(binding.homeBar, binding.homeIcon, binding.homeText)
+            }
             compareLayout.setOnClickListener {
                 setColorForSelectedMenu(binding.compareBar, binding.compareIcon, binding.compareText)
             }

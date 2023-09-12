@@ -25,4 +25,8 @@
     <color name="nav_menu_text">#8B89A0</color>
     <color name="past_result_bg">#F8F9FE</color>
 
+    <color name="low_rent_bg">#8263DB</color>
+    <color name="demand_bg">#DBA463</color>
+    <color name="views_bg">#63FFFFFF</color>
+
 </resources>

@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.example.homehiveclone.R
 import com.example.homehiveclone.databinding.FragmentCompareBinding
 
@@ -19,27 +20,62 @@ class CompareFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentCompareBinding.inflate(inflater, container, false)
-        binding.propertyListText.setTextColor(ContextCompat.getColor(requireContext(), R.color.home_bg_blue))
+        binding.propertyListText.setTextColor(
+            ContextCompat.getColor(
+                requireContext(),
+                R.color.home_bg_blue
+            )
+        )
         binding.propertyListBar.visibility = View.VISIBLE
+        loadFragment(ComparePropertyListFragment())
 
         binding.apply {
             propertyListLayout.setOnClickListener {
-                binding.propertyListText.setTextColor(ContextCompat.getColor(requireContext(), R.color.home_bg_blue))
+                loadFragment(ComparePropertyListFragment())
+                binding.propertyListText.setTextColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.home_bg_blue
+                    )
+                )
                 binding.propertyListBar.visibility = View.VISIBLE
 
-                binding.pastResultsText.setTextColor(ContextCompat.getColor(requireContext(), R.color.nav_menu_text))
+                binding.pastResultsText.setTextColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.nav_menu_text
+                    )
+                )
                 binding.pastResultsBar.visibility = View.INVISIBLE
             }
 
             pastResultsLayout.setOnClickListener {
-                binding.pastResultsText.setTextColor(ContextCompat.getColor(requireContext(), R.color.home_bg_blue))
+                loadFragment(ComparePastResultsFragment())
+                binding.pastResultsText.setTextColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.home_bg_blue
+                    )
+                )
                 binding.pastResultsBar.visibility = View.VISIBLE
 
-                binding.propertyListText.setTextColor(ContextCompat.getColor(requireContext(), R.color.nav_menu_text))
+                binding.propertyListText.setTextColor(
+                    ContextCompat.getColor(
+                        requireContext(),
+                        R.color.nav_menu_text
+                    )
+                )
                 binding.propertyListBar.visibility = View.INVISIBLE
             }
         }
         return binding.root
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        childFragmentManager.beginTransaction()
+            .replace(binding.compareFragmentContainer.id, fragment).setTransition(
+            FragmentTransaction.TRANSIT_FRAGMENT_FADE
+        ).commit()
     }
 
 }

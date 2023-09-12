@@ -37,7 +37,6 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/helpButton"
                 app:layout_constraintStart_toEndOf="@id/backButton"
-
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
@@ -71,32 +70,38 @@
             android:orientation="horizontal">
 
             <LinearLayout
+                android:id="@+id/propertyListLayout"
                 android:layout_width="@dimen/bottom_nav_menu_width"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/propertyListText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/work_sans_medium"
                     android:text="Property list"
-                    android:textColor="@color/home_bg_blue" />
+                    android:textColor="@color/nav_menu_text" />
 
                 <ImageView
+                    android:id="@+id/propertyListBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/bar_over_menu" />
+                    android:src="@drawable/bar_over_menu"
+                    android:visibility="invisible"/>
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/pastResultsLayout"
                 android:layout_width="@dimen/bottom_nav_menu_width"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/pastResultsText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/work_sans_medium"
@@ -105,6 +110,7 @@
                     android:textColor="@color/nav_menu_text" />
 
                 <ImageView
+                    android:id="@+id/pastResultsBar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:src="@drawable/bar_over_menu"

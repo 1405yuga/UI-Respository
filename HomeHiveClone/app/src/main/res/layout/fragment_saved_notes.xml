@@ -1,15 +1,275 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.SavedNotesFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="saved notes"
-        android:gravity="center"/>
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hall1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:background="@drawable/demand_bg"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="6dp"
+                    android:paddingVertical="6dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:src="@drawable/group_1904" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/work_sans_semibold"
+                        android:text="High Demand"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:background="@drawable/views_bg"
+                    android:orientation="horizontal"
+                    android:paddingVertical="4dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:src="@drawable/vector__2_" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/work_sans"
+                        android:text="78 property views "
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/clickable_size"
+                    android:layout_height="@dimen/clickable_size"
+                    android:layout_gravity="center_vertical|start"
+                    android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/vector__1_" />
+
+                <ImageView
+                    android:layout_width="@dimen/clickable_size"
+                    android:layout_height="@dimen/clickable_size"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                    android:clickable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/vector" />
+            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/clickable_size"
+                    android:layout_height="@dimen/clickable_size"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:scaleType="center"
+                    android:src="@drawable/mdi_heart_outline" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
+                        android:layout_marginTop="@dimen/property_list_item_horizontal_margin"
+                        android:layout_marginBottom="@dimen/property_list_item_vertical_margin"
+                        android:fontFamily="@font/work_sans_semibold"
+                        android:text="Private room for Male in 2 BHK..."
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text="Juhu tara road, Andheri west, near juhu b..."
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
+                        android:layout_marginVertical="@dimen/property_list_item_vertical_margin"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ph_user" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
+                            android:fontFamily="@font/work_sans"
+                            android:text="Posted by Tenant "
+                            android:textColor="@color/fragment_top_bar_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
+                        android:layout_marginBottom="@dimen/property_list_item_vertical_margin"
+                        android:fontFamily="@font/work_sans"
+                        android:text="This is a two-bedroom apartment, and we are seeking to share the room. The flat is 780 sqft and has....."
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:dividerInsetEnd="@dimen/property_list_item_horizontal_margin"
+                app:dividerInsetStart="@dimen/property_list_item_horizontal_margin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/work_sans_semibold"
+                    android:text="₹ 16000/month"
+                    android:textColor="@color/fragment_top_bar_text"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/clickable_size"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="@dimen/bottom_nav_menu_width"
+                    app:strokeWidth="@dimen/bottom_nav_menu_width">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/connect_button"
+                        android:fontFamily="@font/work_sans_semibold"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="6dp"
+                        android:text="Connect"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/saved_note_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/clickable_size"
+                        android:layout_height="@dimen/clickable_size"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_round_delete_outline" />
+
+                    <ImageView
+                        android:layout_width="@dimen/clickable_size"
+                        android:layout_height="@dimen/clickable_size"
+                        android:scaleType="center"
+                        android:src="@drawable/material_symbols_edit_outline" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="@dimen/scrollView_margin_vertical"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text="Call the tenant around 5 pm"
+                        android:textColor="#F2000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/scrollView_margin_vertical"
+                        android:fontFamily="@font/work_sans"
+                        android:text="1.How’s the locality?\n2.What about the water timings?"
+                        android:textColor="#3E3E3E"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
 </FrameLayout>

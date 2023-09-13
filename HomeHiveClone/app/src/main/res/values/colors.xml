@@ -29,4 +29,6 @@
     <color name="demand_bg">#DBA463</color>
     <color name="views_bg">#63FFFFFF</color>
 
+    <color name="saved_note_bg">#F5F7FE</color>
+
 </resources>

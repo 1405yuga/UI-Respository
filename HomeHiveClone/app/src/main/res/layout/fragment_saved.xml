@@ -1,14 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.SavedFragment">
+    android:orientation="vertical"
+    tools:context=".fragments.CompareFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        app:strokeWidth="@dimen/bottom_nav_menu_width">
 
-</FrameLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+            android:layout_marginVertical="@dimen/fragment_top_bar_margin_vertical">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="@dimen/clickable_size"
+                android:layout_height="@dimen/clickable_size"
+                android:scaleType="center"
+                android:clickable="true"
+                android:src="@drawable/material_symbols_arrow_back_ios_new_rounded"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_semibold"
+                android:text="Saved"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="@dimen/fragment_top_bar_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/shareButton"
+                app:layout_constraintStart_toEndOf="@id/backButton"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/shareButton"
+                android:layout_width="@dimen/clickable_size"
+                android:layout_height="@dimen/clickable_size"
+                android:scaleType="center"
+                android:clickable="true"
+                android:src="@drawable/material_symbols_share_outline_sharp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/bottom_nav_menu_width"
+        app:strokeWidth="@dimen/bottom_nav_menu_width">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/savedPropertyLayout"
+                    android:layout_width="@dimen/bottom_nav_menu_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/savedPropertyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text="Saved Property"
+                        android:textColor="@color/nav_menu_text" />
+
+                    <ImageView
+                        android:id="@+id/savedPropertyBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bar_over_menu"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/savedNotesLayout"
+                    android:layout_width="@dimen/bottom_nav_menu_width"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/savedNotesText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:layout_gravity="center"
+                        android:text="Saved Notes"
+                        android:textColor="@color/nav_menu_text" />
+
+                    <ImageView
+                        android:id="@+id/savedNotesBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bar_over_menu"
+                        android:visibility="invisible"/>
+                </LinearLayout>
+            </LinearLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/compareFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

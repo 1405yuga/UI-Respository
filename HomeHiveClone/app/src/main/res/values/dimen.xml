@@ -42,5 +42,7 @@
     <dimen name="property_list_item_vertical_margin">4dp</dimen>
     <dimen name="clickable_size">48dp</dimen>
 
+    <dimen name="scrollView_margin_vertical">4dp</dimen>
+
 
 </resources>

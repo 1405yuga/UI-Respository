@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-    android:layout_marginVertical="4dp"
+    android:layout_marginVertical="@dimen/scrollView_margin_vertical"
     tools:context=".fragments.ComparePropertyListFragment">
 
     <LinearLayout

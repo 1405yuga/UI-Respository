@@ -77,7 +77,9 @@
                     android:layout_width="@dimen/bottom_nav_menu_width"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:paddingTop="28dp">
 
                     <TextView
                         android:id="@+id/savedPropertyText"
@@ -101,7 +103,9 @@
                     android:layout_width="@dimen/bottom_nav_menu_width"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:clickable="true"
+                    android:paddingTop="28dp">
 
                     <TextView
                         android:id="@+id/savedNotesText"

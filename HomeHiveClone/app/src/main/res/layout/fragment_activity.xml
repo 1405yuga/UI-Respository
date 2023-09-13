@@ -55,5 +55,119 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal">
+
+            <LinearLayout
+                android:id="@+id/recentSearchLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                android:clickable="true"
+                android:paddingTop="28dp">
+
+                <TextView
+                    android:id="@+id/recentSearchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="Recent Search"
+                    android:textColor="@color/nav_menu_text" />
+
+                <ImageView
+                    android:id="@+id/recentSearchBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bar_over_menu"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contactedLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:paddingTop="28dp">
+
+                <TextView
+                    android:id="@+id/contactedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:layout_gravity="center"
+                    android:text="Contacted"
+                    android:textColor="@color/nav_menu_text" />
+
+                <ImageView
+                    android:id="@+id/contactedBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bar_over_menu"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sharedLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                android:clickable="true"
+                android:paddingTop="28dp">
+
+                <TextView
+                    android:id="@+id/sharedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="Shared"
+                    android:textColor="@color/nav_menu_text" />
+
+                <ImageView
+                    android:id="@+id/sharedBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bar_over_menu"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/viewedLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:paddingTop="28dp"
+                android:layout_marginEnd="@dimen/fragment_top_bar_margin_horizontal">
+
+                <TextView
+                    android:id="@+id/viewedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:layout_gravity="center"
+                    android:text="Viewed"
+                    android:textColor="@color/nav_menu_text" />
+
+                <ImageView
+                    android:id="@+id/viewedBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bar_over_menu"
+                    android:visibility="invisible"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
 </LinearLayout>

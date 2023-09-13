@@ -8,4 +8,10 @@ object ProjectConstants {
     const val PROFILE_MENU = "profile"
     const val NONE = "none"
 
+    const val RECENT_SEARCH_MENU = "Recent Search"
+    const val CONTACTED_MENU = "Contacted"
+    const val SHARED_MENU = "Shared"
+    const val VIEWED_MENU = "Viewed"
+
+
 }

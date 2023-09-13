@@ -26,12 +26,11 @@ class SavedFragment : Fragment() {
             )
         )
         binding.savedPropertyBar.visibility = View.VISIBLE
-        loadFragment(ComparePropertyListFragment())
+        loadFragment(SavedPropertiesFragment())
 
         binding.apply {
             savedPropertyLayout.setOnClickListener {
-                // TODO: load correct fragment
-                loadFragment(ComparePropertyListFragment())
+                loadFragment(SavedPropertiesFragment())
                 binding.savedPropertyText.setTextColor(
                     ContextCompat.getColor(
                         requireContext(),
@@ -50,8 +49,7 @@ class SavedFragment : Fragment() {
             }
 
             savedNotesLayout.setOnClickListener {
-                // TODO: load correct fragment
-                loadFragment(ComparePastResultsFragment())
+                loadFragment(SavedNotesFragment())
                 binding.savedNotesText.setTextColor(
                     ContextCompat.getColor(
                         requireContext(),

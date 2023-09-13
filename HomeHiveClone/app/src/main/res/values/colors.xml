@@ -31,5 +31,6 @@
 
     <color name="saved_note_bg">#F5F7FE</color>
     <color name="profile_attributes">#CC181441</color>
+    <color name="profile_extra_attr_bg">#F8F9FE</color>
 
 </resources>

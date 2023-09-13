@@ -26,6 +26,8 @@ class ActivityFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentActivityBinding.inflate(inflater, container, false)
+        setColorForSelectedMenu(binding.recentSearchBar, binding.recentSearchText)
+        loadFragment(ActivityRecentSearchFragment())
 
         binding.apply {
             recentSearchLayout.setOnClickListener {

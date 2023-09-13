@@ -30,5 +30,6 @@
     <color name="views_bg">#63FFFFFF</color>
 
     <color name="saved_note_bg">#F5F7FE</color>
+    <color name="profile_attributes">#CC181441</color>
 
 </resources>

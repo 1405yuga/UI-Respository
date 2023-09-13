@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,5 +56,149 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginVertical="@dimen/scrollView_margin_vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ellipse_6"
+                android:layout_margin="@dimen/fragment_top_bar_margin_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginVertical="@dimen/guide_title_marin"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="Ashutosh Ajay Kapoor"
+                android:textSize="18sp"
+                android:textColor="@color/fragment_top_bar_text"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+            android:layout_marginVertical="@dimen/fragment_top_bar_margin_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/mdi_work_outline"
+                android:layout_marginEnd="@dimen/fragment_top_bar_margin_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/work_sans"
+                android:text="Working Professional"
+                android:textSize="16sp"
+                android:textColor="@color/profile_attributes"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/material_symbols_call_outline"
+                android:layout_marginEnd="@dimen/fragment_top_bar_margin_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/work_sans"
+                android:text="8452089897"
+                android:textSize="16sp"
+                android:textColor="@color/profile_attributes"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+            android:layout_marginVertical="@dimen/fragment_top_bar_margin_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/material_symbols_mail_outline_rounded"
+                android:layout_marginEnd="@dimen/fragment_top_bar_margin_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/work_sans"
+                android:text="ashutoshakapoor@gmail.com"
+                android:textSize="16sp"
+                android:textColor="@color/profile_attributes"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/bx_drink"
+                android:layout_marginEnd="@dimen/fragment_top_bar_margin_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/work_sans"
+                android:text="Does not drink"
+                android:textSize="16sp"
+                android:textColor="@color/profile_attributes"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+            android:layout_marginVertical="@dimen/fragment_top_bar_margin_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/lucide_cigarette"
+                android:layout_marginEnd="@dimen/fragment_top_bar_margin_vertical"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/work_sans"
+                android:text="Does not smoke"
+                android:textSize="16sp"
+                android:textColor="@color/profile_attributes"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

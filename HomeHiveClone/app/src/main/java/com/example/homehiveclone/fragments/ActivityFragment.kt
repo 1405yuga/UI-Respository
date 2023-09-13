@@ -1,6 +1,5 @@
 package com.example.homehiveclone.fragments
 
-import android.graphics.PorterDuff
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -10,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.example.homehiveclone.R
 import com.example.homehiveclone.constants.ProjectConstants
 import com.example.homehiveclone.databinding.FragmentActivityBinding
@@ -55,39 +55,56 @@ class ActivityFragment : Fragment() {
     }
 
     private fun currMenuSelected(currMenu: String) {
-        when(currMenu){
-            ProjectConstants.RECENT_SEARCH_MENU ->{
-                setColorForSelectedMenu(binding.recentSearchBar,binding.recentSearchText)
+        when (currMenu) {
+            ProjectConstants.RECENT_SEARCH_MENU -> {
+                setColorForSelectedMenu(binding.recentSearchBar, binding.recentSearchText)
+                loadFragment(ActivityRecentSearchFragment())
             }
-            ProjectConstants.CONTACTED_MENU->{
-                setColorForSelectedMenu(binding.contactedBar,binding.contactedText)
+
+            ProjectConstants.CONTACTED_MENU -> {
+                setColorForSelectedMenu(binding.contactedBar, binding.contactedText)
+                loadFragment(ActvityContactedFragment())
             }
-            ProjectConstants.SHARED_MENU->{
-                setColorForSelectedMenu(binding.sharedBar,binding.sharedText)
+
+            ProjectConstants.SHARED_MENU -> {
+                setColorForSelectedMenu(binding.sharedBar, binding.sharedText)
+                loadFragment(AcitivitySharedFragment())
             }
-            ProjectConstants.VIEWED_MENU->{
-                setColorForSelectedMenu(binding.viewedBar,binding.viewedText)
+
+            ProjectConstants.VIEWED_MENU -> {
+                setColorForSelectedMenu(binding.viewedBar, binding.viewedText)
+                loadFragment(ActivityViewedFragment())
             }
         }
 
     }
 
     private fun setPrevMenuUnselected(prevMenu: String) {
-        when(prevMenu){
-            ProjectConstants.RECENT_SEARCH_MENU ->{
-                setColorForUnselectedMenu(binding.recentSearchBar,binding.recentSearchText)
+        when (prevMenu) {
+            ProjectConstants.RECENT_SEARCH_MENU -> {
+                setColorForUnselectedMenu(binding.recentSearchBar, binding.recentSearchText)
             }
-            ProjectConstants.CONTACTED_MENU->{
-                setColorForUnselectedMenu(binding.contactedBar,binding.contactedText)
+
+            ProjectConstants.CONTACTED_MENU -> {
+                setColorForUnselectedMenu(binding.contactedBar, binding.contactedText)
             }
-            ProjectConstants.SHARED_MENU->{
-                setColorForUnselectedMenu(binding.sharedBar,binding.sharedText)
+
+            ProjectConstants.SHARED_MENU -> {
+                setColorForUnselectedMenu(binding.sharedBar, binding.sharedText)
             }
-            ProjectConstants.VIEWED_MENU->{
-                setColorForUnselectedMenu(binding.viewedBar,binding.viewedText)
+
+            ProjectConstants.VIEWED_MENU -> {
+                setColorForUnselectedMenu(binding.viewedBar, binding.viewedText)
             }
         }
 
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        childFragmentManager.beginTransaction()
+            .replace(binding.activityFragmentContainer.id, fragment)
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+            .commit()
     }
 
     private fun setColorForUnselectedMenu(bar: ImageView, text: TextView) {

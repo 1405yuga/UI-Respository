@@ -3,6 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".splash_fragments.SplashFirstFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".splash_fragments.SplashFirstFragment"
+    android:background="@color/splash_screen_bg">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:strokeWidth="@dimen/bottom_nav_menu_width"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"/>
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/testinomials_text"
+        android:textSize="24sp"
+        android:fontFamily="@font/work_sans_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon"
+        android:layout_margin="@dimen/property_list_item_horizontal_margin"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

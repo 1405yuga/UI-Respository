@@ -4,6 +4,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="app_icon_bg">#D5DAF8</color>
+    <color name="splash_screen_bg">#F1F5F7</color>
 
     <color name="home_bg_blue">#495DE2</color>
     <color name="gradient_start">#B5BFFF</color>

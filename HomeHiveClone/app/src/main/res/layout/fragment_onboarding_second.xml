@@ -24,7 +24,8 @@
         android:adjustViewBounds="true"
         android:scaleType="centerInside"
         android:src="@drawable/group_1897oboarding2"
-        android:layout_marginVertical="@dimen/onboarding_image_margin_vertical"/>
+        android:layout_marginTop="@dimen/onboarding_image_margin_top"
+        android:layout_marginBottom="@dimen/onboarding_image_margin_bottom"/>
 
     <TextView
         android:layout_width="wrap_content"

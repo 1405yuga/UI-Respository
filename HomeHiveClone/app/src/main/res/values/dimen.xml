@@ -43,6 +43,8 @@
     <dimen name="clickable_size">48dp</dimen>
 
     <dimen name="scrollView_margin_vertical">4dp</dimen>
-    <dimen name="onboarding_image_margin_vertical">60dp</dimen>
+
+    <dimen name="onboarding_image_margin_bottom">60dp</dimen>
+    <dimen name="onboarding_image_margin_top">100dp</dimen>
 
 </resources>

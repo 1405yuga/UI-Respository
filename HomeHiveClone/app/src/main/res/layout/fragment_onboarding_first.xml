@@ -23,7 +23,8 @@
         android:layout_height="wrap_content"
         android:scaleType="center"
         android:src="@drawable/group_1914onboarding1"
-        android:layout_marginVertical="@dimen/onboarding_image_margin_vertical"/>
+        android:layout_marginTop="@dimen/onboarding_image_margin_top"
+        android:layout_marginBottom="@dimen/onboarding_image_margin_bottom"/>
 
     <TextView
         android:layout_width="wrap_content"

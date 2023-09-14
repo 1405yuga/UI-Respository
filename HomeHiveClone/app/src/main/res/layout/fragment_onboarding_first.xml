@@ -8,6 +8,7 @@
     android:padding="@dimen/fragment_top_bar_margin_horizontal">
 
     <TextView
+        android:id="@+id/skipButton"
         android:layout_width="@dimen/clickable_size"
         android:layout_height="@dimen/clickable_size"
         android:layout_gravity="end"
@@ -43,6 +44,7 @@
         android:textColor="@color/testinomials_text"
         android:textSize="16sp" />
     <ImageView
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:src="@drawable/group_1680oboardarrow1"

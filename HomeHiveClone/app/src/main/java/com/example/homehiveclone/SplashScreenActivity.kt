@@ -18,7 +18,7 @@ class SplashScreenActivity : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({loadFrgament(OnboardingFirstFragment())},2000)
     }
 
-    private fun loadFrgament(fragment: Fragment) {
+    fun loadFrgament(fragment: Fragment) {
         supportFragmentManager.beginTransaction().replace(R.id.splashFragmentContainer,fragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
             .commit()

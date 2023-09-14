@@ -3,61 +3,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".mylisting_fragments.ProfileListingPage1Fragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".mylisting_fragments.ProfileListingPage1Fragment">
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/titleLayout"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:strokeWidth="@dimen/bottom_nav_menu_width"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="horizontal"
+        android:background="@color/profile_extra_attr_bg"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-            android:layout_marginVertical="@dimen/fragment_top_bar_margin_vertical">
+            android:background="@drawable/listing_selected_round"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
-            <ImageView
-                android:id="@+id/backButton"
-                android:layout_width="@dimen/clickable_size"
-                android:layout_height="@dimen/clickable_size"
-                android:scaleType="center"
-                android:clickable="true"
-                android:src="@drawable/material_symbols_arrow_back_ios_new_rounded"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/line_bg" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/work_sans_semibold"
-                android:text="My listings"
-                android:textColor="@color/fragment_top_bar_text"
-                android:textSize="@dimen/fragment_top_bar_title"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/helpButton"
-                app:layout_constraintStart_toEndOf="@id/backButton"
-                app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listing_unselected_round"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/unselected_number_text"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/line_bg" />
 
-            <ImageView
-                android:id="@+id/helpButton"
-                android:layout_width="@dimen/clickable_size"
-                android:layout_height="@dimen/clickable_size"
-                android:scaleType="center"
-                android:clickable="true"
-                android:src="@drawable/material_symbols_help"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listing_unselected_round"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/unselected_number_text"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/line_bg" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listing_unselected_round"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/unselected_number_text"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/line_bg" />
 
-    </com.google.android.material.card.MaterialCardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listing_unselected_round"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/unselected_number_text"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -39,4 +39,7 @@
     <color name="contaced_text">#BF181441</color>
     <color name="recent_search_attr_bg_stroke">#A3ADF0</color>
 
+    <color name="unselected_number_text">#29181441</color>
+    <color name="line_bg">#30181441</color>
+
 </resources>

@@ -82,6 +82,7 @@
             android:layout_gravity="center"
             android:layout_marginVertical="@dimen/property_list_item_horizontal_margin"/>
         <TextView
+            android:id="@+id/listNowButton"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/clickable_size"
             android:text="List now"

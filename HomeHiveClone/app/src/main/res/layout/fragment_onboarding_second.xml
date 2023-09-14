@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:scaleType="center"
+        android:scaleType="centerInside"
         android:src="@drawable/group_1897oboarding2"
         android:layout_marginVertical="@dimen/onboarding_image_margin_vertical"/>
 

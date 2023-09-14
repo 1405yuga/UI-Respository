@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".splash_fragments.OnboardingFirstFragment"
+    android:padding="@dimen/fragment_top_bar_margin_horizontal">
+
+    <TextView
+        android:layout_width="@dimen/clickable_size"
+        android:layout_height="@dimen/clickable_size"
+        android:layout_gravity="end"
+        android:clickable="true"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:text="@string/skip"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:src="@drawable/group_1914onboarding1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="Find a ideal Flatmate"
+        android:textColor="@color/testinomials_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/work_sans"
+        android:text="Get all the details in an organized way to make better decision."
+        android:textAlignment="center"
+        android:textColor="@color/testinomials_text"
+        android:textSize="16sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/group_1680oboardarrow1"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:clickable="true"/>
+
+</LinearLayout>

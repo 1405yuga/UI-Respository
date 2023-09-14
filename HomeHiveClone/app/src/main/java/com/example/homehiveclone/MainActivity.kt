@@ -1,11 +1,14 @@
 package com.example.homehiveclone
 
 import android.graphics.PorterDuff
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.WindowInsetsController
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -30,9 +33,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        loadFragment(HomeFragment())
+        loadFragment(HomeFragment(), R.color.splash_screen_bg)
         setColorForSelectedMenu(binding.homeBar, binding.homeIcon, binding.homeText)
-
 
         binding.apply {
             homeLayout.setOnClickListener {
@@ -72,7 +74,7 @@ class MainActivity : AppCompatActivity() {
                     binding.compareIcon,
                     binding.compareText
                 )
-                loadFragment(CompareFragment())
+                loadFragment(CompareFragment(),R.color.splash_screen_bg)
             }
 
             ProjectConstants.HOME_MENU -> {
@@ -81,7 +83,7 @@ class MainActivity : AppCompatActivity() {
                     binding.homeIcon,
                     binding.homeText
                 )
-                loadFragment(HomeFragment())
+                loadFragment(HomeFragment(), R.color.home_bg_blue)
             }
 
             ProjectConstants.SAVED_MENU -> {
@@ -90,7 +92,7 @@ class MainActivity : AppCompatActivity() {
                     binding.savedIcon,
                     binding.savedText
                 )
-                loadFragment(SavedFragment())
+                loadFragment(SavedFragment(), R.color.splash_screen_bg)
             }
 
             ProjectConstants.ACTIVITY_MENU -> {
@@ -99,7 +101,7 @@ class MainActivity : AppCompatActivity() {
                     binding.activityIcon,
                     binding.activityText
                 )
-                loadFragment(ActivityFragment())
+                loadFragment(ActivityFragment(), R.color.splash_screen_bg)
             }
 
             ProjectConstants.PROFILE_MENU -> {
@@ -108,7 +110,7 @@ class MainActivity : AppCompatActivity() {
                     binding.profileIcon,
                     binding.profileText
                 )
-                loadFragment(ProfileFragment())
+                loadFragment(ProfileFragment(), R.color.splash_screen_bg)
             }
         }
     }
@@ -134,26 +136,42 @@ class MainActivity : AppCompatActivity() {
             )
 
             ProjectConstants.ACTIVITY_MENU -> setColorForUnselectedMenu(
-                    binding.activityBar,
-                    binding.activityIcon,
-                    binding.activityText
-                )
+                binding.activityBar,
+                binding.activityIcon,
+                binding.activityText
+            )
 
             ProjectConstants.PROFILE_MENU -> setColorForUnselectedMenu(
-                    binding.profileBar,
-                    binding.profileIcon,
-                    binding.profileText
-                )
+                binding.profileBar,
+                binding.profileIcon,
+                binding.profileText
+            )
 
         }
     }
 
 
-    private fun loadFragment(fragment: Fragment) {
+    private fun loadFragment(fragment: Fragment, statusBg: Int) {
         supportFragmentManager.beginTransaction()
             .replace(binding.navHostFragment.id, fragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
             .commit()
+
+        // change status bar font color - android 11 >=
+        try{
+            @RequiresApi(Build.VERSION_CODES.R)
+            if(statusBg==R.color.home_bg_blue){
+                window.insetsController?.setSystemBarsAppearance(0,
+                    WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS)}
+            else{
+                window.insetsController?.setSystemBarsAppearance(WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS,
+                    WindowInsetsController.APPEARANCE_LIGHT_STATUS_BARS)
+            }
+            window.statusBarColor = ContextCompat.getColor(this, statusBg)
+        }catch (e:Exception){
+            window.statusBarColor = ContextCompat.getColor(this, R.color.splash_screen_bg)
+        }
+
     }
 
     private fun setColorForUnselectedMenu(bar: ImageView, icon: ImageView, text: TextView) {

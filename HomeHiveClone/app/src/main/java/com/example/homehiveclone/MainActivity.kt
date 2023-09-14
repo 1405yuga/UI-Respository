@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        loadFragment(HomeFragment(), R.color.splash_screen_bg)
+        loadFragment(HomeFragment(), R.color.home_bg_blue)
         setColorForSelectedMenu(binding.homeBar, binding.homeIcon, binding.homeText)
 
         binding.apply {

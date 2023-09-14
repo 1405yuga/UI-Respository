@@ -9,10 +9,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:background="@color/profile_extra_attr_bg"
-        android:paddingVertical="8dp"
-        android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal">
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+        android:paddingVertical="8dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,6 +40,7 @@
             android:text="2"
             android:textColor="@color/unselected_number_text"
             android:textSize="16sp" />
+
         <View
             android:layout_width="0dp"
             android:layout_height="1dp"
@@ -56,6 +57,7 @@
             android:text="3"
             android:textColor="@color/unselected_number_text"
             android:textSize="16sp" />
+
         <View
             android:layout_width="0dp"
             android:layout_height="1dp"
@@ -72,6 +74,7 @@
             android:text="4"
             android:textColor="@color/unselected_number_text"
             android:textSize="16sp" />
+
         <View
             android:layout_width="0dp"
             android:layout_height="1dp"
@@ -91,5 +94,14 @@
 
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/work_sans_semibold"
+        android:text="Enter flat details"
+        android:textSize="16sp"
+        android:background="@drawable/enter_flat_details_bg"
+        android:padding="10dp"/>
 
 </LinearLayout>

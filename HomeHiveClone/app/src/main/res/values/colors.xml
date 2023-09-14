@@ -41,5 +41,6 @@
 
     <color name="unselected_number_text">#29181441</color>
     <color name="line_bg">#30181441</color>
+    <color name="enter_flat_details_bg">#80E9A847</color>
 
 </resources>

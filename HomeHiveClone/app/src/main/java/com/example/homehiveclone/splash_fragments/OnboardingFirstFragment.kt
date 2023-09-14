@@ -27,6 +27,7 @@ class OnboardingFirstFragment : Fragment() {
     private fun loadFragment(fragment: Fragment) {
         requireActivity().supportFragmentManager.beginTransaction().replace(R.id.splashFragmentContainer,fragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
+            .addToBackStack(null)
             .commit()
     }
 

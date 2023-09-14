@@ -243,6 +243,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/myListingsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"

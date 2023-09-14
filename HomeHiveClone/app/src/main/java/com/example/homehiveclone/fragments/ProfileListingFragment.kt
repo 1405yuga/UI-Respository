@@ -9,7 +9,6 @@ import com.example.homehiveclone.R
 
 class ProfileListingFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

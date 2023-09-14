@@ -3,7 +3,8 @@
     <style name="Base.Theme.HomeHiveClone" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimaryDark">@color/home_bg_blue</item>
+        <item name="android:colorPrimaryDark">@color/splash_screen_bg</item>
+        <item name="android:windowLightStatusBar">true</item> <!-- for android 5.0 >= -->
     </style>
 
     <style name="Theme.HomeHiveClone" parent="Base.Theme.HomeHiveClone" />

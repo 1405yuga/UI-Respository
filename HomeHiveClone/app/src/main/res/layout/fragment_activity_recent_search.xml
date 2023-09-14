@@ -1,14 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.ActivityRecentSearchFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ActivityRecentSearchFragment"
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mon, 30 Dec 22"
+                android:textColor="@color/fragment_top_bar_text"
+                android:fontFamily="@font/work_sans_medium"
+                android:textSize="14sp"
+                android:background="@color/saved_note_bg"
+                android:paddingVertical="@dimen/property_list_item_horizontal_margin"
+                android:paddingHorizontal="@dimen/fragment_top_bar_margin_vertical"
+                android:gravity="center_vertical|end"/>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
+                android:layout_marginVertical="@dimen/property_list_item_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Room type : "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans_medium"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Single room"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price range : "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans_medium"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="₹ 12K to ₹ 18k"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
+                android:layout_marginVertical="@dimen/property_list_item_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address : "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans_medium"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Juhu Tara Rd, Chandrabai\nNagar, Juhu, Mumbai,\nMaharashtra 400049. "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans"/>
+            </LinearLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerInsetStart="@dimen/fragment_top_bar_margin_vertical"
+                app:dividerInsetEnd="@dimen/fragment_top_bar_margin_vertical"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
+                android:layout_marginVertical="@dimen/property_list_item_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tenant age : "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans_medium"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="20 to 26"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Preferred : "
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans_medium"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Working professional"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
+                android:layout_marginVertical="@dimen/property_list_item_horizontal_margin">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No smoking"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/work_sans"
+                    android:background="@drawable/recent_search_attr_bg"
+                    android:layout_marginEnd="@dimen/property_list_item_horizontal_margin"
+                    android:padding="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Drinking"
+                    android:textSize="14sp"
+                    android:background="@drawable/recent_search_attr_bg"
+                    android:fontFamily="@font/work_sans"
+                    android:padding="4dp"/>
+            </LinearLayout>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dividerInsetStart="@dimen/fragment_top_bar_margin_vertical"
+                app:dividerInsetEnd="@dimen/fragment_top_bar_margin_vertical"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/clickable_size"
+                android:orientation="horizontal"
+                android:layout_gravity="end"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
+                android:paddingVertical="@dimen/fragment_top_bar_margin_vertical"
+                android:clickable="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Continue search"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/home_bg_blue"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/material_symbols_arrow_back_ios_new_rounded__1_"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
 
-</FrameLayout>
+</LinearLayout>

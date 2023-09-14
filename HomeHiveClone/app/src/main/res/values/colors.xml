@@ -33,5 +33,6 @@
     <color name="profile_attributes">#CC181441</color>
     <color name="profile_extra_attr_bg">#F8F9FE</color>
     <color name="contaced_text">#BF181441</color>
+    <color name="recent_search_attr_bg_stroke">#A3ADF0</color>
 
 </resources>

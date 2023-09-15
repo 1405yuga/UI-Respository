@@ -96,6 +96,195 @@
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/enter_flat_details_bg"
+                android:fontFamily="@font/work_sans_semibold"
+                android:padding="10dp"
+                android:text="Price details"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="Deposit"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="₹"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/edit_text_padding"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#80000000"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Enter deposit amount"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/fragment_top_bar_text"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="Rent/Month"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="₹"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/edit_text_padding"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#80000000"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Enter amount for rent/month"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/fragment_top_bar_text"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="Maintenance"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Select Maintenance"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/fragment_top_bar_text"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="12dp"
+                    android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="Available form"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/material_symbols_calendar_today_outline"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/edit_text_padding"/>
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#80000000"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Enter the availability"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/fragment_top_bar_text"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

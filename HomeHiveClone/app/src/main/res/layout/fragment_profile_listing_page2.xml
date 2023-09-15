@@ -292,6 +292,7 @@
         android:layout_marginVertical="@dimen/property_list_item_horizontal_margin">
 
         <TextView
+            android:id="@+id/saveButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"

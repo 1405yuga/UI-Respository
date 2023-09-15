@@ -17,6 +17,12 @@ class ProfileListingPage4Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentProfileListingPage4Binding.inflate(inflater,container,false)
+        binding.saveButton.setOnClickListener {
+            requireActivity().supportFragmentManager.beginTransaction()
+                .replace(R.id.listingFragmentContainer,ProfileListingPage5Fragment())
+                .addToBackStack(null)
+                .commit()
+        }
         return binding.root
     }
 

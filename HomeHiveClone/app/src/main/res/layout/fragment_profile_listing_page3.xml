@@ -104,12 +104,12 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
                 android:layout_marginVertical="20dp"
                 android:background="@drawable/enter_flat_details_bg"
                 android:fontFamily="@font/work_sans_semibold"
@@ -121,6 +121,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
                 android:fontFamily="@font/work_sans_medium"
                 android:text="How many tenants are staying in?"
                 android:textColor="@color/fragment_top_bar_text"
@@ -129,6 +130,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
                 android:background="@drawable/listing_edit_text_bg"
@@ -155,34 +157,35 @@
                     android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
             </LinearLayout>
 
-            <LinearLayout
+            <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#F9F9F9"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/work_sans_medium"
-                    android:text=" Tenant name"
-                    android:textColor="@color/fragment_top_bar_text"
-                    android:textSize="16sp" />
+                android:backgroundTint="#F9F9F9"
+                app:cardCornerRadius="0dp"
+                app:strokeWidth="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
-                    android:background="@drawable/listing_edit_text_bg"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                    android:layout_marginVertical="@dimen/fragment_top_bar_margin_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text=" Tenant name"
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="16sp" />
 
                     <EditText
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                        android:background="@drawable/listing_edit_text_bg"
                         android:fontFamily="@font/work_sans"
                         android:hint="Enter your name "
                         android:padding="@dimen/edit_text_padding"
@@ -190,36 +193,22 @@
                         android:textColorHint="@color/edit_text_hint"
                         android:textSize="14sp" />
 
-                    <ImageView
+
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:padding="12dp"
-                        android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/work_sans_medium"
-                    android:text="Tenant age "
-                    android:textColor="@color/fragment_top_bar_text"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
-                    android:background="@drawable/listing_edit_text_bg"
-                    android:orientation="horizontal">
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text="Tenant age "
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="16sp" />
 
                     <EditText
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                        android:background="@drawable/listing_edit_text_bg"
                         android:fontFamily="@font/work_sans"
                         android:hint="Enter your age"
                         android:padding="@dimen/edit_text_padding"
@@ -227,110 +216,105 @@
                         android:textColorHint="@color/edit_text_hint"
                         android:textSize="14sp" />
 
-                    <ImageView
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:padding="12dp"
-                        android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
-                </LinearLayout>
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text="Tenant Profession"
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="16sp" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/work_sans_medium"
-                    android:text="Tenant Profession"
-                    android:textColor="@color/fragment_top_bar_text"
-                    android:textSize="16sp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                        android:background="@drawable/listing_edit_text_bg"
+                        android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
-                    android:background="@drawable/listing_edit_text_bg"
-                    android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:fontFamily="@font/work_sans"
+                            android:padding="@dimen/edit_text_padding"
+                            android:text="Select your profession and shift"
+                            android:textColor="@color/edit_text_hint"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="12dp"
+                            android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
+                    </LinearLayout>
 
                     <TextView
-                        android:layout_width="0dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_weight="1"
-                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text="Some thing about you"
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="84dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                        android:background="@drawable/listing_edit_text_bg"
                         android:fontFamily="@font/work_sans"
+                        android:gravity="top"
+                        android:hint="This will be helpful for you for fast results"
+                        android:inputType="textMultiLine"
                         android:padding="@dimen/edit_text_padding"
-                        android:text="Select your profession and shift"
                         android:textColor="@color/edit_text_hint"
                         android:textSize="14sp" />
 
-                    <ImageView
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:padding="12dp"
-                        android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:text="Do you have a pet?"
+                            android:textColor="@color/fragment_top_bar_text"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/fragment_top_bar_margin_horizontal"
+                            android:background="@drawable/unselected_pet_button"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:paddingHorizontal="24dp"
+                            android:paddingVertical="4dp"
+                            android:text="Yes"
+                            android:textColor="@color/fragment_top_bar_text"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/unselected_pet_button"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:paddingHorizontal="24dp"
+                            android:paddingVertical="4dp"
+                            android:text="No"
+                            android:textColor="@color/fragment_top_bar_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
                 </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/work_sans_medium"
-                    android:text="Some thing about you"
-                    android:textColor="@color/fragment_top_bar_text"
-                    android:textSize="16sp" />
-
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="84dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
-                    android:background="@drawable/listing_edit_text_bg"
-                    android:fontFamily="@font/work_sans"
-                    android:hint="This will be helpful for you for fast results"
-                    android:inputType="textMultiLine"
-                    android:gravity="top"
-                    android:padding="@dimen/edit_text_padding"
-                    android:textColor="@color/edit_text_hint"
-                    android:textSize="14sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="@dimen/fragment_top_bar_margin_horizontal">
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/work_sans_medium"
-                    android:text="Do you have a pet?"
-                    android:textColor="@color/fragment_top_bar_text"
-                    android:textSize="16sp" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/work_sans_medium"
-                        android:text="Yes"
-                        android:textColor="@color/fragment_top_bar_text"
-                        android:textSize="14sp"
-                        android:paddingHorizontal="24dp"
-                        android:paddingVertical="4dp"
-                        android:background="@drawable/unselected_pet_button"
-                        android:layout_marginEnd="@dimen/fragment_top_bar_margin_horizontal"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/work_sans_medium"
-                        android:text="No"
-                        android:textColor="@color/fragment_top_bar_text"
-                        android:textSize="14sp"
-                        android:paddingHorizontal="24dp"
-                        android:paddingVertical="4dp"
-                        android:background="@drawable/unselected_pet_button"/>
-                </LinearLayout>
-
-            </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
 
     </ScrollView>

@@ -1,14 +1,251 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".mylisting_fragments.ProfileListingPage4Fragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:background="@color/profile_extra_attr_bg"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+        android:paddingVertical="8dp">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listing_done_round"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/line_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listing_done_round"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/line_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listing_done_round"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/line_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listing_selected_round"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/line_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listing_unselected_round"
+            android:fontFamily="@font/work_sans_semibold"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/unselected_number_text"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/enter_flat_details_bg"
+                android:fontFamily="@font/work_sans_semibold"
+                android:padding="10dp"
+                android:text="Tenant details"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#F9F9F9"
+                app:cardCornerRadius="0dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginVertical="@dimen/fragment_top_bar_margin_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text="Owner details"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:layout_gravity="end"
+                        android:background="@color/owners_details_bg"
+                        android:padding="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text="Owner name"
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                        android:background="@drawable/listing_edit_text_bg"
+                        android:fontFamily="@font/work_sans"
+                        android:hint="Enter owner’s name "
+                        android:padding="@dimen/edit_text_padding"
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textColorHint="@color/edit_text_hint"
+                        android:textSize="14sp"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text="Owner contact number"
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                        android:background="@drawable/listing_edit_text_bg"
+                        android:fontFamily="@font/work_sans"
+                        android:hint="Enter owner’s contact number"
+                        android:padding="@dimen/edit_text_padding"
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textColorHint="@color/edit_text_hint"
+                        android:textSize="14sp"
+                        android:inputType="phone"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"/>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/work_sans_medium"
+                        android:text="Tenant’s review on the owner"
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="16sp"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal" />
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                        android:background="@drawable/listing_edit_text_bg"
+                        android:fontFamily="@font/work_sans"
+                        android:gravity="top"
+                        android:hint="Please enter your review for the owner"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/edit_text_padding"
+                        android:textColor="@color/edit_text_hint"
+                        android:textSize="14sp"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+        android:layout_marginVertical="@dimen/property_list_item_horizontal_margin">
+
+        <TextView
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/list_now_button"
+            android:clickable="true"
+            android:fontFamily="@font/work_sans_medium"
+            android:gravity="center"
+            android:padding="@dimen/fragment_top_bar_margin_horizontal"
+            android:text="Save and proceed"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

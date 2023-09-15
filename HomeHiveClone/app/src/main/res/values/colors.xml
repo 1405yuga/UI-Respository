@@ -44,5 +44,6 @@
     <color name="enter_flat_details_bg">#80E9A847</color>
 
     <color name="edit_text_hint">#80181441</color>
+    <color name="owners_details_bg">#8797FF</color>
 
 </resources>

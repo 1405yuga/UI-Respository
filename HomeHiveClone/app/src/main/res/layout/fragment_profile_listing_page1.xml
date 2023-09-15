@@ -128,28 +128,172 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
                 android:background="@drawable/listing_edit_text_bg"
                 android:orientation="horizontal">
 
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/work_sans"
-                    android:textSize="14sp"
+                    android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Start typing you city name"
+                    android:padding="12dp"
                     android:textColor="@color/fragment_top_bar_text"
                     android:textColorHint="@color/edit_text_hint"
-                    android:background="@android:color/transparent"
-                    android:hint="Start typing you city name"
-                    android:layout_gravity="center"
-                    android:padding="12dp"/>
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/material_symbols_chevron_right_rounded__1_"
                     android:layout_gravity="center"
-                    android:padding="12dp"/>
+                    android:padding="12dp"
+                    android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="Enter your locality"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Start typing you locality name"
+                    android:padding="12dp"
+                    android:textColor="@color/fragment_top_bar_text"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="12dp"
+                    android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="BHK type"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Enter the bhk"
+                    android:padding="12dp"
+                    android:textColor="@color/fragment_top_bar_text"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="12dp"
+                    android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="Room Type"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:padding="12dp"
+                    android:text="Select the room type to be shared"
+                    android:textColor="@color/edit_text_hint"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="12dp"
+                    android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="Level of furnishing "
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:padding="12dp"
+                    android:text="Enter the level of furnishing"
+                    android:textColor="@color/edit_text_hint"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="12dp"
+                    android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
             </LinearLayout>
         </LinearLayout>
 

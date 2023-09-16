@@ -50,4 +50,6 @@
     <dimen name="edit_text_padding">16dp</dimen>
     <dimen name="listing_page5_margin_vertical">20dp</dimen>
 
+    <dimen name="house_rules_text_width">60dp</dimen>
+
 </resources>

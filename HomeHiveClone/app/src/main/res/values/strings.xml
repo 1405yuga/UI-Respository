@@ -14,4 +14,6 @@
     <string name="comparison_for_property_1">Comparison for property 1....</string>
     <string name="skip"><u>Skip</u></string>
     <string name="start_recording"><u>Start recording</u></string>
+    <string name="allowed">Allowed</string>
+    <string name="not_allowed">Not allowed</string>
 </resources>

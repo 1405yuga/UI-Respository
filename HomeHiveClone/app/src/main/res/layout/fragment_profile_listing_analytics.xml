@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mylisting_fragments.ProfileListingAnalyticsFragment"
+    android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
     android:orientation="vertical"
-    android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal">
+    tools:context=".mylisting_fragments.ProfileListingAnalyticsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,34 +43,166 @@
             android:src="@drawable/material_symbols_arrow_right_alt_rounded" />
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/dash_bg"
-        android:padding="@dimen/property_list_item_horizontal_margin"
-        android:gravity="center">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ri_eye_line"
-            android:background="@drawable/group_1851"
-            android:padding="4dp"/>
 
-        <TextView
-            android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/work_sans_bold"
-            android:text="28"
-            android:textColor="#942CB1"
-            android:textSize="22sp"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dash_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/property_list_item_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_1851"
+                android:padding="4dp"
+                android:src="@drawable/ri_eye_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_bold"
+                android:text="28"
+                android:textColor="#942CB1"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_bold"
+                android:text="Property views"
+                android:textColor="@color/testinomials_text"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/work_sans_bold"
-            android:text="Property views"
-            android:textColor="@color/testinomials_text"
-            android:textSize="10sp"/>
+            android:layout_weight="1"
+            android:background="@drawable/dash_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/property_list_item_horizontal_margin"
+            android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_1851"
+                android:padding="4dp"
+                android:src="@drawable/ri_eye_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_bold"
+                android:text="04"
+                android:textColor="#942CB1"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_bold"
+                android:text="Contacted "
+                android:textColor="@color/testinomials_text"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dash_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/property_list_item_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_1851"
+                android:padding="4dp"
+                android:src="@drawable/ri_eye_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_bold"
+                android:text="12"
+                android:textColor="#942CB1"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_bold"
+                android:text="Shared"
+                android:textColor="@color/testinomials_text"
+                android:textSize="10sp" />
+        </LinearLayout>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/premeium_margin_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/dash_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/property_list_item_horizontal_margin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/group_1851"
+                android:padding="4dp"
+                android:src="@drawable/ri_eye_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_bold"
+                android:text="02"
+                android:textColor="#942CB1"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_bold"
+                android:text="Issue reported"
+                android:textColor="@color/testinomials_text"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
+            android:visibility="invisible">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible">
+        </LinearLayout>
+    </LinearLayout>
+
 
 </LinearLayout>

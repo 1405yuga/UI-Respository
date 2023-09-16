@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.ProfileListingFragment">
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/titleLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:strokeWidth="@dimen/bottom_nav_menu_width"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeWidth="@dimen/bottom_nav_menu_width">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -25,8 +25,8 @@
                 android:id="@+id/backButton"
                 android:layout_width="@dimen/clickable_size"
                 android:layout_height="@dimen/clickable_size"
-                android:scaleType="center"
                 android:clickable="true"
+                android:scaleType="center"
                 android:src="@drawable/material_symbols_arrow_back_ios_new_rounded"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -48,8 +48,8 @@
                 android:id="@+id/helpButton"
                 android:layout_width="@dimen/clickable_size"
                 android:layout_height="@dimen/clickable_size"
-                android:scaleType="center"
                 android:clickable="true"
+                android:scaleType="center"
                 android:src="@drawable/material_symbols_help"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -58,42 +58,140 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>
+
     <LinearLayout
         android:id="@+id/noListing"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/titleLayout"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLayout">
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:src="@drawable/listing_blank"
-            android:scaleType="centerInside"/>
+            android:scaleType="centerInside"
+            android:src="@drawable/listing_blank" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="You have no listing yet.."
-            android:textSize="16sp"
-            android:fontFamily="@font/work_sans"
             android:layout_gravity="center"
-            android:layout_marginVertical="@dimen/property_list_item_horizontal_margin"/>
+            android:layout_marginVertical="@dimen/property_list_item_horizontal_margin"
+            android:fontFamily="@font/work_sans"
+            android:text="You have no listing yet.."
+            android:textSize="16sp" />
+
         <TextView
             android:id="@+id/listNowButton"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/clickable_size"
-            android:text="List now"
-            android:textSize="16sp"
-            android:fontFamily="@font/work_sans_medium"
             android:layout_gravity="center"
             android:background="@drawable/list_now_button"
-            android:textColor="@color/white"
-            android:paddingVertical="@dimen/fragment_top_bar_margin_vertical"
+            android:clickable="true"
+            android:fontFamily="@font/work_sans_medium"
             android:paddingHorizontal="@dimen/clickable_size"
-            android:clickable="true"/>
+            android:paddingVertical="@dimen/fragment_top_bar_margin_vertical"
+            android:text="List now"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listingAdded"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleLayout">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/bottom_nav_menu_width"
+            app:strokeWidth="@dimen/bottom_nav_menu_width">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/yourListingLayout"
+                        android:layout_width="@dimen/bottom_nav_menu_width"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="28dp">
+
+                        <TextView
+                            android:id="@+id/yourListingText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:text="Your listing"
+                            android:textColor="@color/nav_menu_text" />
+
+                        <ImageView
+                            android:id="@+id/yourListingBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bar_over_menu"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/analyticsLayout"
+                        android:layout_width="@dimen/bottom_nav_menu_width"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:orientation="vertical"
+                        android:paddingTop="28dp">
+
+                        <TextView
+                            android:id="@+id/analyticsText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:text="Analytics"
+                            android:textColor="@color/nav_menu_text" />
+
+                        <ImageView
+                            android:id="@+id/analyticsBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bar_over_menu"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/compareFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

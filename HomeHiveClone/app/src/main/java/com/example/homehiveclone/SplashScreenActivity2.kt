@@ -16,8 +16,6 @@ class SplashScreenActivity2 : AppCompatActivity() {
         setContentView(binding.root)
 
         //splash screen
-        Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this,MainActivity::class.java))
-                                                    finish()},2000)
+        Handler(Looper.getMainLooper()).postDelayed({ finish()},2000)
     }
 }

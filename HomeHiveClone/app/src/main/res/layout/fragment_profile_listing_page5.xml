@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".mylisting_fragments.ProfileListingPage5Fragment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".mylisting_fragments.ProfileListingPage5Fragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -95,6 +95,7 @@
 
 
     </LinearLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -133,23 +134,24 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
                         android:fontFamily="@font/work_sans_medium"
                         android:text="Add property video"
                         android:textColor="@color/fragment_top_bar_text"
-                        android:textSize="16sp"
-                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"/>
+                        android:textSize="16sp" />
+
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_weight="1"
-                        android:gravity="end"
                         android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                        android:layout_weight="1"
+                        android:clickable="true"
                         android:fontFamily="@font/work_sans"
+                        android:gravity="end"
+                        android:paddingVertical="16dp"
                         android:text="@string/start_recording"
                         android:textColor="@color/fragment_top_bar_text"
-                        android:textSize="16sp"
-                        android:clickable="true"
-                        android:paddingVertical="16dp"
-                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"/>
+                        android:textSize="16sp" />
 
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
@@ -157,60 +159,87 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="@dimen/fragment_top_bar_margin_horizontal"
                 android:backgroundTint="@color/listing_page5_card_bg"
                 app:cardCornerRadius="4dp"
-                app:strokeWidth="0dp"
-                android:layout_margin="@dimen/fragment_top_bar_margin_horizontal">
+                app:strokeWidth="0dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:adjustViewBounds="true"
-                        android:src="@drawable/group_1300"
-                        android:scaleType="centerInside"
                         android:layout_gravity="center"
-                        android:layout_marginVertical="@dimen/listing_page5_margin_vertical"/>
+                        android:layout_marginVertical="@dimen/listing_page5_margin_vertical"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/group_1300" />
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:layout_marginHorizontal="44dp"
-                        android:layout_marginBottom="@dimen/listing_page5_margin_vertical">
+                        android:layout_marginBottom="@dimen/listing_page5_margin_vertical"
+                        android:orientation="horizontal">
+
                         <TextView
                             android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/fragment_top_bar_margin_vertical"
+                            android:layout_weight="1"
+                            android:background="@drawable/unselected_pet_button"
+                            android:clickable="true"
+                            android:fontFamily="@font/work_sans"
+                            android:padding="@dimen/fragment_top_bar_margin_horizontal"
                             android:text="Upload photos"
-                            android:background="@drawable/unselected_pet_button"
-                            android:padding="@dimen/fragment_top_bar_margin_horizontal"
-                            android:clickable="true"
-                            android:fontFamily="@font/work_sans"
-                            android:textSize="14sp"
                             android:textAlignment="center"
-                            android:layout_marginEnd="@dimen/fragment_top_bar_margin_vertical"/>
+                            android:textSize="14sp" />
+
                         <TextView
                             android:layout_width="0dp"
-                            android:layout_weight="1"
                             android:layout_height="wrap_content"
-                            android:text="Take photos"
+                            android:layout_weight="1"
                             android:background="@drawable/unselected_pet_button"
-                            android:padding="@dimen/fragment_top_bar_margin_horizontal"
                             android:clickable="true"
                             android:fontFamily="@font/work_sans"
-                            android:textSize="14sp"
-                            android:textAlignment="center"/>
+                            android:padding="@dimen/fragment_top_bar_margin_horizontal"
+                            android:text="Take photos"
+                            android:textAlignment="center"
+                            android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>
 
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/property_list_item_horizontal_margin"
+                android:fontFamily="@font/work_sans_semibold"
+                android:text="Instructions:"
+                android:textColor="@color/testinomials_text"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans"
+                android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_horizontal"
+                android:text="1.Photos should be taken in appropriate light.\n2.Do not take half images.\n3.Upload images in jpeg format."
+                android:textColor="@color/testinomials_text"
+                android:textSize="14sp" />
+
+
         </LinearLayout>
 
     </ScrollView>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

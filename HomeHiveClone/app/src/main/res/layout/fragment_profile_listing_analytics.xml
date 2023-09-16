@@ -95,16 +95,16 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/group_1851"
+                android:background="@drawable/group_1851__1_"
                 android:padding="4dp"
-                android:src="@drawable/ri_eye_line" />
+                android:src="@drawable/material_symbols_phone_in_talk_outline_rounded" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/work_sans_bold"
                 android:text="04"
-                android:textColor="#942CB1"
+                android:textColor="#FD5308"
                 android:textSize="22sp" />
 
             <TextView
@@ -128,16 +128,16 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/group_1851"
+                android:background="@drawable/group_1851__2_"
                 android:padding="4dp"
-                android:src="@drawable/ri_eye_line" />
+                android:src="@drawable/material_symbols_share_outline" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/work_sans_bold"
                 android:text="12"
-                android:textColor="#942CB1"
+                android:textColor="#2C51B1"
                 android:textSize="22sp" />
 
             <TextView
@@ -167,16 +167,16 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/group_1851"
+                android:background="@drawable/group_1852"
                 android:padding="4dp"
-                android:src="@drawable/ri_eye_line" />
+                android:src="@drawable/ic_round_report_gmailerrorred" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/work_sans_bold"
                 android:text="02"
-                android:textColor="#942CB1"
+                android:textColor="#FF0404"
                 android:textSize="22sp" />
 
             <TextView

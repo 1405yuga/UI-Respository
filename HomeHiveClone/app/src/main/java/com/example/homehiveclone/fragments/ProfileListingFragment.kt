@@ -9,9 +9,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.example.homehiveclone.ProfileListingActivity
 import com.example.homehiveclone.R
 import com.example.homehiveclone.databinding.FragmentProfileListingBinding
+import com.example.homehiveclone.mylisting_fragments.ProfileListingAnalyticsFragment
+import com.example.homehiveclone.mylisting_fragments.ProfileListingYourListingFragment
 
 class ProfileListingFragment : Fragment() {
 
@@ -37,8 +40,10 @@ class ProfileListingFragment : Fragment() {
             )
         )
         binding.yourListingBar.visibility = View.VISIBLE
+        loadFragment(ProfileListingYourListingFragment())
         binding.apply {
             yourListingLayout.setOnClickListener {
+                loadFragment(ProfileListingYourListingFragment())
                 binding.yourListingText.setTextColor(
                     ContextCompat.getColor(
                         requireContext(),
@@ -57,6 +62,7 @@ class ProfileListingFragment : Fragment() {
             }
 
             analyticsLayout.setOnClickListener {
+                loadFragment(ProfileListingAnalyticsFragment())
                 binding.analyticsText.setTextColor(
                     ContextCompat.getColor(
                         requireContext(),
@@ -76,6 +82,13 @@ class ProfileListingFragment : Fragment() {
         }
 
         return binding.root
+    }
+
+    private fun loadFragment(fragment: Fragment) {
+        childFragmentManager.beginTransaction()
+            .replace(binding.fragmentContainer.id, fragment).setTransition(
+                FragmentTransaction.TRANSIT_FRAGMENT_FADE
+            ).commit()
     }
 
 }

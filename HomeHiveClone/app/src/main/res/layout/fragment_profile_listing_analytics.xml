@@ -43,5 +43,34 @@
             android:src="@drawable/material_symbols_arrow_right_alt_rounded" />
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dash_bg"
+        android:padding="@dimen/property_list_item_horizontal_margin"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ri_eye_line"
+            android:background="@drawable/group_1851"
+            android:padding="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans_bold"
+            android:text="28"
+            android:textColor="#942CB1"
+            android:textSize="22sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans_bold"
+            android:text="Property views"
+            android:textColor="@color/testinomials_text"
+            android:textSize="10sp"/>
+    </LinearLayout>
 
 </LinearLayout>

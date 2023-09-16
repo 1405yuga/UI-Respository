@@ -178,38 +178,45 @@
                         android:scaleType="centerInside"
                         android:src="@drawable/group_1300" />
 
-                    <LinearLayout
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="44dp"
                         android:layout_marginBottom="@dimen/listing_page5_margin_vertical"
-                        android:orientation="horizontal">
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal">
 
                         <TextView
+                            android:id="@+id/uploadPhotosBtn"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/fragment_top_bar_margin_vertical"
-                            android:layout_weight="1"
                             android:background="@drawable/unselected_pet_button"
                             android:clickable="true"
                             android:fontFamily="@font/work_sans"
                             android:padding="@dimen/fragment_top_bar_margin_horizontal"
                             android:text="Upload photos"
                             android:textAlignment="center"
-                            android:textSize="14sp" />
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/takePhotosBtn"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:layout_marginEnd="8dp"/>
 
                         <TextView
+                            android:id="@+id/takePhotosBtn"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:background="@drawable/unselected_pet_button"
                             android:clickable="true"
                             android:fontFamily="@font/work_sans"
                             android:padding="@dimen/fragment_top_bar_margin_horizontal"
                             android:text="Take photos"
                             android:textAlignment="center"
-                            android:textSize="14sp" />
-                    </LinearLayout>
+                            android:textSize="14sp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/uploadPhotosBtn"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
                 </LinearLayout>
 
             </com.google.android.material.card.MaterialCardView>

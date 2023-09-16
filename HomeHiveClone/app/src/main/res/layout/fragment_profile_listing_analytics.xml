@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mylisting_fragments.ProfileListingAnalyticsFragment">
+    tools:context=".mylisting_fragments.ProfileListingAnalyticsFragment"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="ANALYTICS"
-        android:gravity="center"/>
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/premeium_margin_vertical"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/work_sans_medium"
+            android:text="Upgrade to pro"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mingcute_diamond_2_line" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@font/work_sans"
+            android:gravity="end"
+            android:text="@string/know_more"
+            android:textColor="@color/know_more_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/material_symbols_arrow_right_alt_rounded" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -46,4 +46,6 @@
     <color name="edit_text_hint">#80181441</color>
     <color name="owners_details_bg">#8797FF</color>
 
+    <color name="listing_page5_card_bg">#F9F9F9</color>
+
 </resources>

@@ -48,5 +48,6 @@
     <dimen name="onboarding_image_margin_top">100dp</dimen>
 
     <dimen name="edit_text_padding">16dp</dimen>
+    <dimen name="listing_page5_margin_vertical">20dp</dimen>
 
 </resources>

@@ -11,12 +11,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/premeium_margin_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:fontFamily="@font/work_sans_medium"
             android:text="Upgrade to pro"
             android:textSize="16sp" />
@@ -26,21 +26,28 @@
             android:layout_height="wrap_content"
             android:src="@drawable/mingcute_diamond_2_line" />
 
-        <TextView
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:fontFamily="@font/work_sans"
+            android:clickable="true"
             android:gravity="end"
-            android:text="@string/know_more"
-            android:textColor="@color/know_more_text"
-            android:textSize="16sp" />
+            android:orientation="horizontal"
+            android:paddingVertical="@dimen/fragment_top_bar_margin_vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/material_symbols_arrow_right_alt_rounded" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans"
+                android:text="@string/know_more"
+                android:textColor="@color/know_more_text"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/material_symbols_arrow_right_alt_rounded" />
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -85,12 +92,12 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
             android:layout_weight="1"
             android:background="@drawable/dash_bg"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="@dimen/property_list_item_horizontal_margin"
-            android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin">
+            android:padding="@dimen/property_list_item_horizontal_margin">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -149,11 +156,12 @@
                 android:textSize="10sp" />
         </LinearLayout>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginVertical="@dimen/premeium_margin_vertical">
+        android:layout_marginVertical="@dimen/premeium_margin_vertical"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -191,17 +199,15 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
-            android:visibility="invisible">
-        </LinearLayout>
+            android:layout_weight="1"
+            android:visibility="invisible"></LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:visibility="invisible">
-        </LinearLayout>
+            android:visibility="invisible"></LinearLayout>
     </LinearLayout>
 
 

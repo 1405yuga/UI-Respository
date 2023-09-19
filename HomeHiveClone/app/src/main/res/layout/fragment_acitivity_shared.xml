@@ -130,14 +130,14 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="@dimen/property_list_item_vertical_margin"
                             android:fontFamily="@font/work_sans_semibold"
-                            android:text="Private room for Male in 2 BHK..."
+                            android:text="@string/private_room_for_male_in_2_bhk"
                             android:textColor="@color/fragment_top_bar_text"
                             android:textSize="16sp"/>
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/work_sans_medium"
-                            android:text="Juhu tara road, Andheri west, near juhu b..."
+                            android:text="@string/juhu_tara_road_andheri_west_near_juhu_b"
                             android:textColor="@color/fragment_top_bar_text"
                             android:textSize="14sp"
                             app:layout_constraintStart_toStartOf="parent"

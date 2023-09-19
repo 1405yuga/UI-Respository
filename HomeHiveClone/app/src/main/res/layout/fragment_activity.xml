@@ -12,11 +12,13 @@
         android:layout_height="wrap_content"
         app:strokeWidth="@dimen/bottom_nav_menu_width">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
             android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-            android:layout_marginVertical="@dimen/fragment_top_bar_margin_vertical">
+            android:layout_marginVertical="@dimen/fragment_top_bar_margin_vertical"
+            android:gravity="center_vertical">
 
             <ImageView
                 android:id="@+id/backButton"
@@ -24,22 +26,17 @@
                 android:layout_height="@dimen/clickable_size"
                 android:scaleType="center"
                 android:clickable="true"
-                android:src="@drawable/material_symbols_arrow_back_ios_new_rounded"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:src="@drawable/material_symbols_arrow_back_ios_new_rounded" />
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/work_sans_semibold"
                 android:text="Activity"
                 android:textColor="@color/fragment_top_bar_text"
                 android:textSize="@dimen/fragment_top_bar_title"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/shareButton"
-                app:layout_constraintStart_toEndOf="@id/backButton"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:gravity="center_horizontal"/>
 
             <ImageView
                 android:id="@+id/shareButton"
@@ -47,12 +44,9 @@
                 android:layout_height="@dimen/clickable_size"
                 android:scaleType="center"
                 android:clickable="true"
-                android:src="@drawable/material_symbols_share_outline_sharp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:src="@drawable/material_symbols_share_outline_sharp"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
     </com.google.android.material.card.MaterialCardView>
     <HorizontalScrollView

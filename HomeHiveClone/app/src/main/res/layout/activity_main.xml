@@ -19,6 +19,7 @@
         android:id="@+id/bottom_navigation_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:strokeWidth="0dp"
         app:cardCornerRadius="@dimen/bottom_nav_menu_card_radius"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

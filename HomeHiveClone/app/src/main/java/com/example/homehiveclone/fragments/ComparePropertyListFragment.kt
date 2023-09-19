@@ -27,7 +27,7 @@ class ComparePropertyListFragment : Fragment() {
                 checkbtnIsChecked.add(0, !checkbtnIsChecked.get(0))
                 updateCheckBox(checkbtn1, checkbtnIsChecked.get(0))
             }
-
+/* Todo : attach ids
             checkbtn2.setOnClickListener {
                 checkbtnIsChecked.add(1, !checkbtnIsChecked.get(1))
                 updateCheckBox(checkbtn2, checkbtnIsChecked.get(1))
@@ -36,6 +36,8 @@ class ComparePropertyListFragment : Fragment() {
                 checkbtnIsChecked.add(2, !checkbtnIsChecked.get(2))
                 updateCheckBox(checkbtn3, checkbtnIsChecked.get(2))
             }
+
+ */
 
         }
         return binding.root

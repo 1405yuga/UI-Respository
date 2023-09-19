@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/bottom_navigation_card"/>
 
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/bottom_navigation_card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
                 android:layout_width="@dimen/bottom_nav_menu_width"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="center|center_horizontal"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
@@ -75,7 +75,7 @@
                 android:layout_width="@dimen/bottom_nav_menu_width"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="center|center_horizontal"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
@@ -112,7 +112,7 @@
                 android:layout_width="@dimen/bottom_nav_menu_width"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="center|center_horizontal"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
@@ -149,7 +149,7 @@
                 android:layout_width="@dimen/bottom_nav_menu_width"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="center|center_horizontal"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
@@ -186,7 +186,7 @@
                 android:layout_width="@dimen/bottom_nav_menu_width"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="center|center_horizontal"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
@@ -221,6 +221,6 @@
         </LinearLayout>
 
 
-    </androidx.cardview.widget.CardView>
+    </com.google.android.material.card.MaterialCardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

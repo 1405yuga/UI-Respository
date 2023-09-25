@@ -223,6 +223,426 @@
                 </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="@dimen/fragment_top_bar_margin_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hall" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:background="@drawable/demand_bg"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="6dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/group_1904" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/work_sans_semibold"
+                            android:text="High Demand"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:background="@drawable/views_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="4dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/vector__2_" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/work_sans"
+                            android:text="78 property views "
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/clickable_size"
+                        android:layout_height="@dimen/clickable_size"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                        android:clickable="true"
+                        android:scaleType="center"
+                        android:src="@drawable/vector__1_" />
+
+                    <ImageView
+                        android:layout_width="@dimen/clickable_size"
+                        android:layout_height="@dimen/clickable_size"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                        android:clickable="true"
+                        android:scaleType="center"
+                        android:src="@drawable/vector" />
+                </FrameLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/likeButton1"
+                        android:layout_width="@dimen/clickable_size"
+                        android:layout_height="@dimen/clickable_size"
+                        android:clickable="true"
+                        android:scaleType="center"
+                        android:src="@drawable/mdi_heart_outline"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout
+                        android:id="@+id/layout1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/likeButton1">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/property_list_item_vertical_margin"
+                            android:fontFamily="@font/work_sans_semibold"
+                            android:text="@string/private_room_for_male_in_2_bhk"
+                            android:textColor="@color/fragment_top_bar_text"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:text="@string/juhu_tara_road_andheri_west_near_juhu_b"
+                            android:textColor="@color/fragment_top_bar_text"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/title"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/property_list_item_vertical_margin"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ph_user" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
+                                android:fontFamily="@font/work_sans"
+                                android:text="Posted by Tenant "
+                                android:textColor="@color/fragment_top_bar_text"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/property_list_item_horizontal_margin"
+                        android:fontFamily="@font/work_sans"
+                        android:text="This is a two-bedroom apartment, and we are seeking to share the room. The flat is 780 sqft and has....."
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/layout1"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:dividerInsetEnd="@dimen/property_list_item_horizontal_margin"
+                    app:dividerInsetStart="@dimen/property_list_item_horizontal_margin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/work_sans_semibold"
+                        android:text="₹ 16000/month"
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/clickable_size"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:strokeWidth="@dimen/bottom_nav_menu_width"
+                        app:cardCornerRadius="@dimen/bottom_nav_menu_width">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Connect"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/work_sans_semibold"
+                            android:textColor="@color/white"
+                            android:paddingVertical="6dp"
+                            android:paddingHorizontal="12dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/connect_button"/>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:layout_marginBottom="@dimen/fragment_top_bar_margin_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hall1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:background="@drawable/demand_bg"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="6dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/group_1904" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/work_sans_semibold"
+                            android:text="High Demand"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:background="@drawable/views_bg"
+                        android:orientation="horizontal"
+                        android:paddingVertical="4dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/vector__2_" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/work_sans"
+                            android:text="78 property views "
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/clickable_size"
+                        android:layout_height="@dimen/clickable_size"
+                        android:layout_gravity="center_vertical|start"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                        android:clickable="true"
+                        android:scaleType="center"
+                        android:src="@drawable/vector__1_" />
+
+                    <ImageView
+                        android:layout_width="@dimen/clickable_size"
+                        android:layout_height="@dimen/clickable_size"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+                        android:clickable="true"
+                        android:scaleType="center"
+                        android:src="@drawable/vector" />
+                </FrameLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="8dp">
+
+                    <ImageView
+                        android:id="@+id/likeButton2"
+                        android:layout_width="@dimen/clickable_size"
+                        android:layout_height="@dimen/clickable_size"
+                        android:clickable="true"
+                        android:scaleType="center"
+                        android:src="@drawable/mdi_heart_outline"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <LinearLayout
+                        android:id="@+id/layout2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/likeButton2">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/property_list_item_vertical_margin"
+                            android:fontFamily="@font/work_sans_semibold"
+                            android:text="@string/private_room_for_male_in_2_bhk"
+                            android:textColor="@color/fragment_top_bar_text"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/work_sans_medium"
+                            android:text="@string/juhu_tara_road_andheri_west_near_juhu_b"
+                            android:textColor="@color/fragment_top_bar_text"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/title"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginVertical="@dimen/property_list_item_vertical_margin"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ph_user" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginHorizontal="@dimen/property_list_item_horizontal_margin"
+                                android:fontFamily="@font/work_sans"
+                                android:text="Posted by Tenant "
+                                android:textColor="@color/fragment_top_bar_text"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="@dimen/property_list_item_horizontal_margin"
+                        android:fontFamily="@font/work_sans"
+                        android:text="This is a two-bedroom apartment, and we are seeking to share the room. The flat is 780 sqft and has....."
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/layout2"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:dividerInsetEnd="@dimen/property_list_item_horizontal_margin"
+                    app:dividerInsetStart="@dimen/property_list_item_horizontal_margin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/work_sans_semibold"
+                        android:text="₹ 16000/month"
+                        android:textColor="@color/fragment_top_bar_text"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/clickable_size"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:strokeWidth="@dimen/bottom_nav_menu_width"
+                        app:cardCornerRadius="@dimen/bottom_nav_menu_width">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Connect"
+                            android:textSize="16sp"
+                            android:fontFamily="@font/work_sans_semibold"
+                            android:textColor="@color/white"
+                            android:paddingVertical="6dp"
+                            android:paddingHorizontal="12dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/connect_button"/>
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 
 </ScrollView>

@@ -19,6 +19,7 @@
         android:textSize="16sp" />
 
     <ImageView
+        android:id="@+id/onBoarding_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="center"
@@ -27,6 +28,7 @@
         android:layout_marginBottom="@dimen/onboarding_image_margin_bottom"/>
 
     <TextView
+        android:id="@+id/onBoarding_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -36,6 +38,7 @@
         android:textSize="20sp" />
 
     <TextView
+        android:id="@+id/onBoarding_subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -47,10 +50,10 @@
     <ImageView
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:src="@drawable/group_1680oboardarrow1"
         android:layout_gravity="center"
-        android:layout_weight="1"
-        android:clickable="true"/>
+        android:clickable="true"
+        android:layout_marginTop="24dp"/>
 
 </LinearLayout>

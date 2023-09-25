@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import coil.load
 import com.example.homehiveclone.MainActivity
 import com.example.homehiveclone.R
 import com.example.homehiveclone.databinding.FragmentOnboardingFirstBinding
@@ -34,7 +35,7 @@ class OnboardingFirstFragment : Fragment() {
 
     private fun setContent(image: Int, title: String, subTitle: String){
         binding.apply {
-            // TODO: set image 
+            onBoardingImage.load(image)
             onBoardingTitle.text = title
             onBoardingSubtitle.text = subTitle
         }

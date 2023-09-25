@@ -1,7 +1,6 @@
 package com.example.homehiveclone.splash_fragments
 
 import android.content.Intent
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,19 +24,20 @@ class OnboardingFirstFragment : Fragment() {
         binding.nextButton.setOnClickListener {
             clickCount+=1
             when(clickCount){
-                1 -> setContent(R.drawable.group_1897oboarding2,"Save your time","Compare different properties and get insightful details.")
-                2 -> setContent(R.drawable.group_1913onboarding3,"Get end to end help","Compare different properties and get insightful details.")
+                1 -> setContent(R.drawable.group_1897oboarding2,"Save your time","Compare different properties and get insightful details.",R.drawable.group_1680onboardarrow2)
+                2 -> setContent(R.drawable.group_1913onboarding3,"Get end to end help","Compare different properties and get insightful details.",R.drawable.group_1680onboardarrow3)
                 else -> loadActvity()
             }
         }
         return binding.root
     }
 
-    private fun setContent(image: Int, title: String, subTitle: String){
+    private fun setContent(image: Int, title: String, subTitle: String, button: Int){
         binding.apply {
             onBoardingImage.load(image)
             onBoardingTitle.text = title
             onBoardingSubtitle.text = subTitle
+            nextButton.load(button)
         }
     }
 

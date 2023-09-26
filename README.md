@@ -152,6 +152,9 @@ My listings eature within the user's profile allows them to add new properties f
 <br>
 
 <li>To add owner and house rules</li>
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/ebac3539-791e-42ee-a81e-098cad9ce069" width="300" height="700">
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/b6831ec7-e7c5-4d4c-9d0d-c288fd870ed6" width="300" height="700">
+
 <br>
 <br>
 
@@ -168,3 +171,5 @@ My listings eature within the user's profile allows them to add new properties f
 <br>
 <br>
 <br>
+
+> After adding new listing two sub-screens are displayed : ` Your listing ` and ` Analytics ` .

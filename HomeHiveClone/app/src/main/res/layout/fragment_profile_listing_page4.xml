@@ -113,7 +113,7 @@
                 android:background="@drawable/enter_flat_details_bg"
                 android:fontFamily="@font/work_sans_semibold"
                 android:padding="10dp"
-                android:text="Tenant details"
+                android:text="Owner and House rules"
                 android:textColor="@color/fragment_top_bar_text"
                 android:textSize="16sp" />
 

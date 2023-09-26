@@ -123,3 +123,48 @@ In addition to the core profile details, the screen offers several extra feature
 <li>Logout: Option to log out of the app for account security.</li></ul>
 
 <img src="https://github.com/1405yuga/UI-Respository/assets/82303711/bba0ad6e-298b-4a92-8ee9-51f3c8c74602" width="300" height="700">
+
+#### My Listings :
+My listings eature within the user's profile allows them to add new properties for rent or sale. Once properties are added, users can manage and view them in the ` Your Listings ` screen. Additionally, there's an ` Analytics ` screen where users can access property analytics and insights, providing valuable data on the performance and engagement of their listed properties.
+
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/36724115-03c7-4373-bdf4-f4e885792036" width="300" height="700">
+
+<br>
+<br>
+
+> For adding new property on rent user have to add information in 5 stages.
+<ol>
+<li>To enter details of flat</li>
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/c9572f2a-e44f-4e79-9601-0cf9e10fb0ef" width="300" height="700">
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/d5cd8684-dc58-4b39-ade6-c380613c8f8f" width="300" height="700">
+<br>
+<br>
+ 
+<li>To enter details of price</li>
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/1482ffe5-0273-4c35-a360-87bd42354c1c" width="300" height="700">
+<br>
+<br>
+
+<li>To enter tenant details</li>
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/7b1ab1f3-6bfb-4454-a4bd-31d821b69e50" width="300" height="700">
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/486a94ca-553e-4e40-8860-8d9d3167f75b" width="300" height="700">
+<br>
+<br>
+
+<li>To add owner and house rules</li>
+<br>
+<br>
+
+<li>To add property images or videos</li>
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/0388be48-95a9-4de0-8f58-ea2467a8e3f2" width="300" height="700">
+<br>
+<br>
+<br>
+</ol>
+
+>Splash Screen is displayed after adding all the information.
+ 
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/c4c4a5b4-6aae-4bf1-8d82-68b878d0e59d" width="300" height="700">
+<br>
+<br>
+<br>

@@ -173,3 +173,9 @@ My listings eature within the user's profile allows them to add new properties f
 <br>
 
 > After adding new listing two sub-screens are displayed : ` Your listing ` and ` Analytics ` .
+
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/0819b838-cd8d-4eb4-8768-8aef18a9ebb6" width="300" height="700">
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/ef8109ed-96c9-4bab-8e52-1d2cfc451c00" width="300" height="700">
+<br>
+<br>
+<br>

@@ -51,5 +51,6 @@
     <dimen name="listing_page5_margin_vertical">20dp</dimen>
 
     <dimen name="house_rules_text_width">60dp</dimen>
+    <dimen name="sign_up_bottom_margin_widgets">24dp</dimen>
 
 </resources>

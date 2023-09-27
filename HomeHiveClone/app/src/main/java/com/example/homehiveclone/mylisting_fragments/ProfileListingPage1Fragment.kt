@@ -19,7 +19,7 @@ class ProfileListingPage1Fragment : Fragment() {
     private lateinit var binding: FragmentProfileListingPage1Binding
     private val cityNames = arrayOf("Mumbai City","Mumbai Suburban","Delhi","Kolkata","Punjab")
     private val localityNames = arrayOf("Andheri","Bandra","Borivali","Goregaon")
-    private val bhkTypes = arrayOf("1 BHK","2 BHK","3 BHK","1 RK")
+    private val bhkTypes = arrayOf("1 BHK","2 BHK","3 BHK",)
     private val roomTypes = arrayOf("Private room","Sharing room")
     private val furnishingLevel = arrayOf("Fully furnished","Semi furnished","Unfurnished")
 
@@ -36,11 +36,11 @@ class ProfileListingPage1Fragment : Fragment() {
         }
 
         binding.apply {
-            setEditTextAdapters(cityNameEditText,cityNames,cityNameDropDown)
-            setEditTextAdapters(localityEditText,localityNames,localityDropDown)
-            setEditTextAdapters(bhkEditText,bhkTypes,bhkDropDown)
-            setEditTextAdapters(roomTypeEditText,roomTypes,roomTypeDropDown)
-            setEditTextAdapters(furnishingEditText,furnishingLevel,furnishingDropDown)
+            setEditTextAdapters(cityNameEditText,cityNames,cityNameDropDown,false)
+            setEditTextAdapters(localityEditText, localityNames, localityDropDown, false)
+            setEditTextAdapters(bhkEditText, bhkTypes, bhkDropDown, true)
+            setEditTextAdapters(roomTypeEditText, roomTypes, roomTypeDropDown, true)
+            setEditTextAdapters(furnishingEditText, furnishingLevel, furnishingDropDown, true)
         }
         return binding.root
     }
@@ -48,7 +48,8 @@ class ProfileListingPage1Fragment : Fragment() {
     private fun setEditTextAdapters(
         editText: AutoCompleteTextView,
         dropDownArray: Array<String>,
-        dropDownButton: ImageView
+        dropDownButton: ImageView,
+        showEntireList: Boolean
     ) {
         editText.setAdapter(ArrayAdapter(requireContext(), androidx.transition.R.layout.support_simple_spinner_dropdown_item,dropDownArray))
         editText.threshold = 1
@@ -57,6 +58,13 @@ class ProfileListingPage1Fragment : Fragment() {
             Log.d(TAG , "Selected text : $temp")
             dropDownButton.visibility = View.GONE
         }
+        if(showEntireList){
+            editText.setOnTouchListener { view, motionEvent ->
+                editText.showDropDown()
+                false
+            }
+        }
+
     }
 
 }

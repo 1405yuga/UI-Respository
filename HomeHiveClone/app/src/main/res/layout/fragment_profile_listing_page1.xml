@@ -418,6 +418,46 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/work_sans_medium"
+                android:text="Enter your city"
+                android:textColor="@color/fragment_top_bar_text"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal">
+
+                <AutoCompleteTextView
+                    android:id="@+id/parkingEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:hint="Select the parking"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/fragment_top_bar_text"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="14sp"
+                    android:inputType="text"
+                    android:maxLength="20"/>
+
+                <ImageView
+                    android:id="@+id/parkingDropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="12dp"
+                    android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
+            </LinearLayout>
         </LinearLayout>
 
     </ScrollView>

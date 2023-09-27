@@ -207,20 +207,18 @@
                 android:textColor="@color/fragment_top_bar_text"
                 android:textSize="16sp" />
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
-                android:background="@drawable/listing_edit_text_bg"
-                android:orientation="horizontal">
+                android:background="@drawable/listing_edit_text_bg">
 
                 <AutoCompleteTextView
                     android:id="@+id/bhkEditText"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/work_sans"
                     android:hint="Enter the bhk"
@@ -234,10 +232,10 @@
                     android:id="@+id/bhkDropDown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="12dp"
+                    android:layout_gravity="center|end"
+                    android:paddingHorizontal="12dp"
                     android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
-            </LinearLayout>
+            </FrameLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -247,20 +245,18 @@
                 android:textColor="@color/fragment_top_bar_text"
                 android:textSize="16sp" />
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
-                android:background="@drawable/listing_edit_text_bg"
-                android:orientation="horizontal">
+                android:background="@drawable/listing_edit_text_bg">
 
                 <AutoCompleteTextView
                     android:id="@+id/roomTypeEditText"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/work_sans"
                     android:padding="@dimen/edit_text_padding"
@@ -273,10 +269,10 @@
                     android:id="@+id/roomTypeDropDown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="center|end"
                     android:padding="12dp"
                     android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
-            </LinearLayout>
+            </FrameLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -286,20 +282,18 @@
                 android:textColor="@color/fragment_top_bar_text"
                 android:textSize="16sp" />
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
-                android:background="@drawable/listing_edit_text_bg"
-                android:orientation="horizontal">
+                android:background="@drawable/listing_edit_text_bg">
 
                 <AutoCompleteTextView
                     android:id="@+id/furnishingEditText"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/work_sans"
                     android:padding="@dimen/edit_text_padding"
@@ -312,10 +306,10 @@
                     android:id="@+id/furnishingDropDown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="12dp"
+                    android:layout_gravity="center|end"
+                    android:paddingHorizontal="12dp"
                     android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
-            </LinearLayout>
+            </FrameLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -426,24 +420,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/work_sans_medium"
-                android:text="Enter your city"
+                android:text="Parking"
                 android:textColor="@color/fragment_top_bar_text"
                 android:textSize="16sp" />
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
-                android:background="@drawable/listing_edit_text_bg"
-                android:orientation="horizontal">
+                android:background="@drawable/listing_edit_text_bg">
 
                 <AutoCompleteTextView
                     android:id="@+id/parkingEditText"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/work_sans"
                     android:hint="Select the parking"
@@ -458,10 +450,10 @@
                     android:id="@+id/parkingDropDown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="12dp"
+                    android:layout_gravity="center|end"
+                    android:paddingHorizontal="12dp"
                     android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
-            </LinearLayout>
+            </FrameLayout>
         </LinearLayout>
 
     </ScrollView>

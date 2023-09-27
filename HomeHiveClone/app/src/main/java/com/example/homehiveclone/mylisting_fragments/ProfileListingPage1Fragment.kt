@@ -64,7 +64,7 @@ class ProfileListingPage1Fragment : Fragment() {
         editText.setOnItemClickListener { adapterView, view, i, l ->
             val temp = adapterView.getItemAtPosition(i).toString()
             Log.d(TAG , "Selected text : $temp")
-            dropDownButton.visibility = View.GONE
+            if(!showEntireList) dropDownButton.visibility = View.GONE
         }
         if(showEntireList){
             editText.setOnTouchListener { view, motionEvent ->

@@ -163,6 +163,8 @@
                         android:textColor="@color/fragment_top_bar_text"
                         android:textColorHint="@color/edit_text_hint"
                         android:textSize="14sp"
+                        android:inputType="text"
+                        android:maxLength="30"
                         android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"/>
 
 
@@ -188,7 +190,8 @@
                         android:textColor="@color/fragment_top_bar_text"
                         android:textColorHint="@color/edit_text_hint"
                         android:textSize="14sp"
-                        android:inputType="phone"
+                        android:inputType="number"
+                        android:maxLength="10"
                         android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"/>
 
 
@@ -257,6 +260,7 @@
                             android:layout_height="wrap_content"
                             android:text="Smoking"/>
                         <TextView
+                            android:id="@+id/smokingAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -268,8 +272,10 @@
                             android:textSize="14sp"
                             android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                         <TextView
+                            android:id="@+id/smokingNotAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -280,7 +286,8 @@
                             android:fontFamily="@font/work_sans"
                             android:textSize="14sp"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"

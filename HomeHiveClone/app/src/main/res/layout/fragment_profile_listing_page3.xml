@@ -147,7 +147,8 @@
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/fragment_top_bar_text"
                     android:textColorHint="@color/edit_text_hint"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:inputType="number"/>
 
                 <ImageView
                     android:layout_width="wrap_content"

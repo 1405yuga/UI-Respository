@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreenActivity2"
-    android:orientation="vertical"
+    android:layout_margin="@dimen/fragment_top_bar_margin_horizontal"
     android:gravity="center"
-    android:layout_margin="@dimen/fragment_top_bar_margin_horizontal">
+    android:orientation="vertical"
+    tools:context=".SplashScreenActivity2">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/healthicons_yes"/>
+        android:src="@drawable/healthicons_yes" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Listing Successful"
+        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
         android:fontFamily="@font/work_sans_medium"
-        android:textSize="18sp"
-        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"/>
+        android:text="Listing Successful"
+        android:textSize="18sp" />
 
 </LinearLayout>

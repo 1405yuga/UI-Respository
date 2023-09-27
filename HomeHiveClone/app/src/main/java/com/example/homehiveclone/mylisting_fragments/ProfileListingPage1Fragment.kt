@@ -22,6 +22,7 @@ class ProfileListingPage1Fragment : Fragment() {
     private val bhkTypes = arrayOf("1 BHK","2 BHK","3 BHK",)
     private val roomTypes = arrayOf("Private room","Sharing room")
     private val furnishingLevel = arrayOf("Fully furnished","Semi furnished","Unfurnished")
+    private val parkingTypes = arrayOf("Car & Bike available","Bike available","Car available","No parking")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,6 +42,8 @@ class ProfileListingPage1Fragment : Fragment() {
             setEditTextAdapters(bhkEditText, bhkTypes, bhkDropDown, true)
             setEditTextAdapters(roomTypeEditText, roomTypes, roomTypeDropDown, true)
             setEditTextAdapters(furnishingEditText, furnishingLevel, furnishingDropDown, true)
+            // TODO: floor 
+            setEditTextAdapters(parkingEditText,parkingTypes,parkingDropDown,true)
         }
         return binding.root
     }

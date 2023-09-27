@@ -134,7 +134,8 @@
                 android:background="@drawable/listing_edit_text_bg"
                 android:orientation="horizontal">
 
-                <EditText
+                <AutoCompleteTextView
+                    android:id="@+id/cityNameEditText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -146,9 +147,11 @@
                     android:textColor="@color/fragment_top_bar_text"
                     android:textColorHint="@color/edit_text_hint"
                     android:textSize="14sp"
-                    android:inputType="text"/>
+                    android:inputType="text"
+                    android:maxLength="20"/>
 
                 <ImageView
+                    android:id="@+id/cityNameDropDown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -172,7 +175,8 @@
                 android:background="@drawable/listing_edit_text_bg"
                 android:orientation="horizontal">
 
-                <EditText
+                <AutoCompleteTextView
+                    android:id="@+id/localityEditText"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -187,6 +191,7 @@
                     android:inputType="text"/>
 
                 <ImageView
+                    android:id="@+id/localityDropDown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

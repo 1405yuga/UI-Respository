@@ -19,6 +19,9 @@ class ProfileListingPage1Fragment : Fragment() {
     private lateinit var binding: FragmentProfileListingPage1Binding
     private val cityNames = arrayOf("Mumbai City","Mumbai Suburban","Delhi","Kolkata","Punjab")
     private val localityNames = arrayOf("Andheri","Bandra","Borivali","Goregaon")
+    private val bhkTypes = arrayOf("1 BHK","2 BHK","3 BHK","1 RK")
+    private val roomTypes = arrayOf("Private room","Sharing room")
+    private val furnishingLevel = arrayOf("Fully furnished","Semi furnished","Unfurnished")
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,6 +38,9 @@ class ProfileListingPage1Fragment : Fragment() {
         binding.apply {
             setEditTextAdapters(cityNameEditText,cityNames,cityNameDropDown)
             setEditTextAdapters(localityEditText,localityNames,localityDropDown)
+            setEditTextAdapters(bhkEditText,bhkTypes,bhkDropDown)
+            setEditTextAdapters(roomTypeEditText,roomTypes,roomTypeDropDown)
+            setEditTextAdapters(furnishingEditText,furnishingLevel,furnishingDropDown)
         }
         return binding.root
     }

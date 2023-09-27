@@ -354,6 +354,7 @@
                         android:orientation="horizontal">
 
                         <EditText
+                            android:id="@+id/onFloorEditText"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -367,6 +368,7 @@
                             android:textSize="14sp" />
 
                         <ImageView
+                            android:id="@+id/onFloorDropDown"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -397,6 +399,7 @@
                         android:orientation="horizontal">
 
                         <EditText
+                            android:id="@+id/outOffEditText"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -410,6 +413,7 @@
                             android:textSize="14sp" />
 
                         <ImageView
+                            android:id="@+id/outOffDropDown"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"

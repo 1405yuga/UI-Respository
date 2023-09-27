@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.ImageView
+import android.widget.Toast
+import androidx.core.content.ContextCompat
 import com.example.homehiveclone.R
 import com.example.homehiveclone.databinding.FragmentProfileListingPage1Binding
 
@@ -42,8 +44,11 @@ class ProfileListingPage1Fragment : Fragment() {
             setEditTextAdapters(bhkEditText, bhkTypes, bhkDropDown, true)
             setEditTextAdapters(roomTypeEditText, roomTypes, roomTypeDropDown, true)
             setEditTextAdapters(furnishingEditText, furnishingLevel, furnishingDropDown, true)
-            // TODO: floor 
             setEditTextAdapters(parkingEditText,parkingTypes,parkingDropDown,true)
+
+            if(onFloorEditText.text.toString()>outOffEditText.text.toString()){
+                Toast.makeText(requireContext(),"Enter correct Floor details",Toast.LENGTH_SHORT).show()
+            }
         }
         return binding.root
     }

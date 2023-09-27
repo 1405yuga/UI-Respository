@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".splash_fragments.SignUpFragment"
     android:orientation="vertical"
     android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
@@ -38,11 +39,29 @@
         android:textColor="@color/sign_up_subtext"/>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="By providing the number I herby agree that I accept the Terms &amp; conditions and Privacy policy "
         android:fontFamily="@font/work_sans"
         android:textSize="14sp"
         android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"
         android:textColor="@color/sign_up_subtext"/>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/getOTPButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:strokeWidth="0dp"
+        android:clickable="true"
+        android:backgroundTint="@color/de_activated_blue">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get OTP"
+            android:fontFamily="@font/work_sans_semibold"
+            android:textAlignment="center"
+            android:padding="16dp"
+            android:textColor="@color/white"/>
+    </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>

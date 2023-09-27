@@ -50,4 +50,7 @@
     <color name="listing_page5_card_bg">#F9F9F9</color>
     <color name="sign_up_subtext">#BF181441</color>
 
+    <color name="activated_blue">#495DE2</color>
+    <color name="de_activated_blue">#A4AEF0</color>
+
 </resources>

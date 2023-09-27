@@ -53,4 +53,6 @@
     <color name="activated_blue">#495DE2</color>
     <color name="de_activated_blue">#A4AEF0</color>
 
+    <color name="verify_card_border">#C5C4CF</color>
+
 </resources>

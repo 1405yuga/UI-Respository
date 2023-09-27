@@ -63,8 +63,7 @@ class VerifyNumberFragment : Fragment() {
 
             verifyOTPButton.setOnClickListener {
                 if (otpDigit1EditText.length() == 1 && otpDigit2EditText.length() == 1 && otpDigit3EditText.length() == 1 && otpDigit4EditText.length() == 1) {
-                    // TODO: load splash fragment
-                    Log.d(TAG, "Load next screen")
+                    loadFragment(OnBoardingDoneFragment())
                 }
             }
         }

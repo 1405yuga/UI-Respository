@@ -11,13 +11,12 @@
 
     <TextView
         android:id="@+id/skipButton"
-        android:layout_width="@dimen/clickable_size"
+        android:layout_width="match_parent"
         android:layout_height="@dimen/clickable_size"
         android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"
         android:clickable="true"
         android:fontFamily="@font/inter_medium"
         android:gravity="end|center_vertical"
-        android:layout_gravity="end"
         android:text="@string/skip"
         android:textColor="@color/edit_text_hint"
         android:textSize="16sp" />
@@ -27,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/property_list_item_vertical_margin"
         android:fontFamily="@font/work_sans_semibold"
-        android:text="Verify your number"
+        android:text="Sign up to HomeHive"
         android:textColor="@color/testinomials_text"
         android:textSize="20sp" />
 
@@ -36,14 +35,78 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"
         android:fontFamily="@font/work_sans"
-        android:text="Please enter the verification code which you have received"
+        android:text="You will receive a 4 digit number to verify your phone number"
         android:textColor="@color/sign_up_subtext"
         android:textSize="16sp" />
 
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"
+        app:cardCornerRadius="8dp"
+        app:strokeWidth="2dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:paddingVertical="16dp"
+                android:src="@drawable/twemoji_flag_india" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/work_sans"
+                android:paddingVertical="16dp"
+                android:text="+91"
+                android:textColor="@color/edit_text_hint"
+                android:textSize="18sp" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="12dp"
+                android:backgroundTint="@color/edit_text_hint" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="Enter your number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingVertical="16dp"
+                android:textColorHint="@color/edit_text_hint"
+                android:background="@android:color/transparent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="16dp"
+                android:src="@drawable/ic_round_call_end" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"
+        android:fontFamily="@font/work_sans"
+        android:text="By providing the number I herby agree that I accept the Terms &amp; conditions and Privacy policy "
+        android:textColor="@color/sign_up_subtext"
+        android:textSize="14sp" />
 
     <com.google.android.material.card.MaterialCardView
-        android:id="@+id/verifyOTPButton"
+        android:id="@+id/getOTPButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/de_activated_blue"
@@ -57,7 +120,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/work_sans_semibold"
             android:padding="16dp"
-            android:text="Verify OTP"
+            android:text="Get OTP"
             android:textAlignment="center"
             android:textColor="@color/white" />
     </com.google.android.material.card.MaterialCardView>

@@ -26,20 +26,23 @@
         android:text="Sign up to HomeHive"
         android:fontFamily="@font/work_sans_semibold"
         android:textSize="20sp"
-        android:layout_marginBottom="@dimen/property_list_item_vertical_margin"/>
+        android:layout_marginBottom="@dimen/property_list_item_vertical_margin"
+        android:textColor="@color/testinomials_text"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="You will receive a 4 digit number to verify your phone number"
         android:fontFamily="@font/work_sans"
         android:textSize="16sp"
-        android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"/>
+        android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"
+        android:textColor="@color/sign_up_subtext"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="By providing the number I herby agree that I accept the Terms &amp; conditions and Privacy policy "
         android:fontFamily="@font/work_sans"
         android:textSize="14sp"
-        android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"/>
+        android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"
+        android:textColor="@color/sign_up_subtext"/>
 
 </LinearLayout>

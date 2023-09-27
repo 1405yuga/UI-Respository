@@ -48,5 +48,6 @@
     <color name="owners_details_bg">#8797FF</color>
 
     <color name="listing_page5_card_bg">#F9F9F9</color>
+    <color name="sign_up_subtext">#BF181441</color>
 
 </resources>

@@ -1,140 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".splash_fragments.VerifyNumberFragment"
+    android:layout_marginVertical="@dimen/fragment_top_bar_margin_vertical"
     android:orientation="vertical"
-    android:layout_marginVertical="@dimen/fragment_top_bar_margin_vertical">
+    tools:context=".splash_fragments.VerifyNumberFragment">
 
     <ImageView
         android:id="@+id/questionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/mdi_question_mark_circle"
         android:layout_gravity="end"
         android:clickable="true"
+        android:paddingHorizontal="16dp"
         android:paddingVertical="12dp"
-        android:paddingHorizontal="16dp"/>
+        android:src="@drawable/mdi_question_mark_circle" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
         android:layout_marginBottom="@dimen/property_list_item_vertical_margin"
         android:fontFamily="@font/work_sans_semibold"
         android:text="Verify your number"
         android:textColor="@color/testinomials_text"
-        android:textSize="20sp"
-        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"/>
+        android:textSize="20sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
         android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"
         android:fontFamily="@font/work_sans"
         android:text="Please enter the verification code which you have received"
         android:textColor="@color/sign_up_subtext"
-        android:textSize="16sp"
-        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal" />
+        android:textSize="16sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets"
-        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal">
+        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+        android:orientation="horizontal">
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
             app:cardCornerRadius="12dp"
-            app:strokeWidth="1dp"
             app:strokeColor="@color/verify_card_border"
-            android:layout_marginEnd="8dp">
+            app:strokeWidth="1dp">
+
             <EditText
                 android:id="@+id/otpDigit1EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
                 android:inputType="number"
                 android:maxLength="1"
-                android:gravity="center"
-                android:background="@android:color/transparent"
-                android:paddingVertical="16dp"
-                android:paddingHorizontal="12dp"/>
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
 
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
             app:cardCornerRadius="12dp"
-            app:strokeWidth="1dp"
             app:strokeColor="@color/verify_card_border"
-            android:layout_marginEnd="8dp">
+            app:strokeWidth="1dp">
+
             <EditText
                 android:id="@+id/otpDigit2EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
                 android:inputType="number"
                 android:maxLength="1"
-                android:gravity="center"
-                android:background="@android:color/transparent"
-                android:paddingVertical="16dp"
-                android:paddingHorizontal="12dp"/>
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
 
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
             app:cardCornerRadius="12dp"
-            app:strokeWidth="1dp"
             app:strokeColor="@color/verify_card_border"
-            android:layout_marginEnd="8dp">
+            app:strokeWidth="1dp">
+
             <EditText
                 android:id="@+id/otpDigit3EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
                 android:inputType="number"
                 android:maxLength="1"
-                android:gravity="center"
-                android:background="@android:color/transparent"
-                android:paddingVertical="16dp"
-                android:paddingHorizontal="12dp"/>
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
 
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             app:cardCornerRadius="12dp"
-            app:strokeWidth="1dp"
-            app:strokeColor="@color/verify_card_border">
+            app:strokeColor="@color/verify_card_border"
+            app:strokeWidth="1dp">
+
             <EditText
                 android:id="@+id/otpDigit4EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center"
                 android:inputType="number"
                 android:maxLength="1"
-                android:gravity="center"
-                android:background="@android:color/transparent"
-                android:paddingVertical="16dp"
-                android:paddingHorizontal="12dp"/>
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="16dp" />
 
         </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+        android:layout_marginBottom="@dimen/sign_up_bottom_margin_widgets">
+
+        <TextView
+            android:id="@+id/editNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/work_sans"
+            android:paddingVertical="16dp"
+            android:text="Edit number"
+            android:textColor="#BF000000"
+            android:textSize="14sp"
+            android:layout_gravity="start"/>
+
+        <TextView
+            android:id="@+id/resendOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:fontFamily="@font/work_sans"
+            android:paddingVertical="16dp"
+            android:text="Resend OTP"
+            android:textColor="#BF000000"
+            android:textSize="14sp"
+            android:layout_gravity="end"/>
+
+    </FrameLayout>
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/verifyOTPButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="@color/de_activated_blue"
-        android:clickable="true"
-        app:cardCornerRadius="8dp"
-        app:strokeWidth="0dp"
         android:layout_gravity="bottom"
-        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal">
+        android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_horizontal"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/de_activated_blue"
+        app:cardCornerRadius="8dp"
+        app:strokeWidth="0dp">
 
         <TextView
             android:layout_width="match_parent"

@@ -43,14 +43,14 @@ class SignUpFragment : Fragment() {
         }
         binding.getOTPButton.setOnClickListener {
             if(binding.phoneEditText.text.length==10){
-                loadFrgament(VerifyNumberFragment())
+                loadFragment(VerifyNumberFragment())
                 Log.d(TAG,"Go on verification frag")
             }
         }
         return binding.root
     }
 
-    private fun loadFrgament(fragment: Fragment) {
+    private fun loadFragment(fragment: Fragment) {
         requireActivity().supportFragmentManager.beginTransaction().replace(R.id.splashFragmentContainer,fragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
             .commit()

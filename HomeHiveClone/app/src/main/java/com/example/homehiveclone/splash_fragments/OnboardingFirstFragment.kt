@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import coil.load
 import com.example.homehiveclone.MainActivity
 import com.example.homehiveclone.R
@@ -26,10 +27,16 @@ class OnboardingFirstFragment : Fragment() {
             when(clickCount){
                 1 -> setContent(R.drawable.group_1897oboarding2,"Save your time","Compare different properties and get insightful details.",R.drawable.group_1680onboardarrow2)
                 2 -> setContent(R.drawable.group_1913onboarding3,"Get end to end help","Compare different properties and get insightful details.",R.drawable.group_1680onboardarrow3)
-                else -> loadActvity()
+                else -> loadFrgament(SignUpFragment())
             }
         }
         return binding.root
+    }
+
+    private fun loadFrgament(fragment: Fragment) {
+        requireActivity().supportFragmentManager.beginTransaction().replace(R.id.splashFragmentContainer,fragment)
+            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_CLOSE)
+            .commit()
     }
 
     private fun setContent(image: Int, title: String, subTitle: String, button: Int){

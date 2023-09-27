@@ -291,6 +291,7 @@
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/petYes"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="@dimen/fragment_top_bar_margin_horizontal"
@@ -303,6 +304,7 @@
                             android:textSize="14sp" />
 
                         <TextView
+                            android:id="@+id/petNo"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:background="@drawable/unselected_pet_button"

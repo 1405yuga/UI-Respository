@@ -22,6 +22,10 @@ class OnboardingFirstFragment : Fragment() {
     ): View? {
         binding = FragmentOnboardingFirstBinding.inflate(inflater, container, false)
 
+        binding.skipButton.setOnClickListener {
+            loadFrgament(SignUpFragment())
+        }
+
         binding.nextButton.setOnClickListener {
             clickCount+=1
             when(clickCount){
@@ -41,10 +45,14 @@ class OnboardingFirstFragment : Fragment() {
 
     private fun setContent(image: Int, title: String, subTitle: String, button: Int){
         binding.apply {
-            onBoardingImage.load(image)
+            onBoardingImage.load(image){
+                placeholder(image)
+            }
             onBoardingTitle.text = title
             onBoardingSubtitle.text = subTitle
-            nextButton.load(button)
+            nextButton.load(button){
+                placeholder(button)
+            }
         }
     }
 

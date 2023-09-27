@@ -216,7 +216,7 @@
                 android:textColor="@color/fragment_top_bar_text"
                 android:textSize="16sp" />
 
-            <LinearLayout
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -226,13 +226,12 @@
 
                 <AutoCompleteTextView
                     android:id="@+id/maintenanceEditText"
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/work_sans"
-                    android:text="Select Maintenance"
+                    android:hint="Select Maintenance"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/fragment_top_bar_text"
                     android:textColorHint="@color/edit_text_hint"
@@ -242,10 +241,10 @@
                     android:id="@+id/maintenanceDropDown"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:padding="12dp"
+                    android:layout_gravity="center|end"
+                    android:paddingHorizontal="12dp"
                     android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
-            </LinearLayout>
+            </FrameLayout>
 
             <TextView
                 android:layout_width="wrap_content"

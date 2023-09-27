@@ -82,11 +82,12 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:hint="Enter your number"
-                android:inputType="phone"
+                android:inputType="number"
                 android:maxLength="10"
                 android:paddingVertical="16dp"
                 android:textColorHint="@color/edit_text_hint"
-                android:background="@android:color/transparent"/>
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="8dp"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -109,7 +110,7 @@
         android:id="@+id/getOTPButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/de_activated_blue"
+        app:cardBackgroundColor="@color/de_activated_blue"
         android:clickable="true"
         app:cardCornerRadius="8dp"
         app:strokeWidth="0dp"

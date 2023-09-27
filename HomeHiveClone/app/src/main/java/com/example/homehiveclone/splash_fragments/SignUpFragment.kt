@@ -42,6 +42,12 @@ class SignUpFragment : Fragment() {
                 )
             }
         }
+        binding.getOTPButton.setOnClickListener {
+            if(binding.phoneEditText.text.length==10){
+                // TODO: go on vertification fragment
+                Log.d(TAG,"Go on verification frag")
+            }
+        }
         return binding.root
     }
 

@@ -301,6 +301,7 @@
                             android:layout_height="wrap_content"
                             android:text="Drinking"/>
                         <TextView
+                            android:id="@+id/drinkingAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -312,8 +313,10 @@
                             android:textSize="14sp"
                             android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                         <TextView
+                            android:id="@+id/drinkingNotAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -324,7 +327,8 @@
                             android:fontFamily="@font/work_sans"
                             android:textSize="14sp"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -339,6 +343,7 @@
                             android:layout_height="wrap_content"
                             android:text="Non-veg"/>
                         <TextView
+                            android:id="@+id/nonvegAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -350,8 +355,10 @@
                             android:textSize="14sp"
                             android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                         <TextView
+                            android:id="@+id/nonvegNotAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -362,7 +369,8 @@
                             android:fontFamily="@font/work_sans"
                             android:textSize="14sp"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -376,6 +384,7 @@
                             android:layout_height="wrap_content"
                             android:text="Visitors"/>
                         <TextView
+                            android:id="@+id/visitorsAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -387,8 +396,10 @@
                             android:textSize="14sp"
                             android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                         <TextView
+                            android:id="@+id/visitorsNotAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -399,7 +410,8 @@
                             android:fontFamily="@font/work_sans"
                             android:textSize="14sp"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -414,6 +426,7 @@
                             android:layout_height="wrap_content"
                             android:text="Partying"/>
                         <TextView
+                            android:id="@+id/partyingAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -425,8 +438,10 @@
                             android:textSize="14sp"
                             android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                         <TextView
+                            android:id="@+id/partyingNotAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -437,7 +452,8 @@
                             android:fontFamily="@font/work_sans"
                             android:textSize="14sp"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -451,6 +467,7 @@
                             android:layout_height="wrap_content"
                             android:text="Animals"/>
                         <TextView
+                            android:id="@+id/animalsAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -462,8 +479,10 @@
                             android:textSize="14sp"
                             android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                         <TextView
+                            android:id="@+id/animalsNotAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -474,7 +493,8 @@
                             android:fontFamily="@font/work_sans"
                             android:textSize="14sp"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -489,6 +509,7 @@
                             android:layout_height="wrap_content"
                             android:text="Family"/>
                         <TextView
+                            android:id="@+id/familyAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -500,8 +521,10 @@
                             android:textSize="14sp"
                             android:layout_marginHorizontal="@dimen/fragment_top_bar_margin_vertical"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                         <TextView
+                            android:id="@+id/familyNotAllowed"
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:textAlignment="center"
@@ -512,7 +535,8 @@
                             android:fontFamily="@font/work_sans"
                             android:textSize="14sp"
                             android:paddingHorizontal="@dimen/fragment_top_bar_margin_horizontal"
-                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"/>
+                            android:paddingVertical="@dimen/fragment_top_bar_margin_horizontal"
+                            android:textColor="@color/fragment_top_bar_text"/>
                     </LinearLayout>
 
                 </LinearLayout>

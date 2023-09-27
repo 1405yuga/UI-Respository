@@ -34,6 +34,57 @@ class ProfileListingPage4Fragment : Fragment() {
                 changeToSelected(smokingNotAllowed)
                 changeToUnSelected(smokingAllowed)
             }
+
+            drinkingAllowed.setOnClickListener {
+                changeToSelected(drinkingAllowed)
+                changeToUnSelected(drinkingNotAllowed)
+            }
+            drinkingNotAllowed.setOnClickListener {
+                changeToSelected(drinkingNotAllowed)
+                changeToUnSelected(drinkingAllowed)
+            }
+
+            nonvegAllowed.setOnClickListener {
+                changeToSelected(nonvegAllowed)
+                changeToUnSelected(nonvegNotAllowed)
+            }
+            nonvegNotAllowed.setOnClickListener {
+                changeToSelected(nonvegNotAllowed)
+                changeToUnSelected(nonvegAllowed)
+            }
+
+            partyingAllowed.setOnClickListener {
+                changeToSelected(partyingAllowed)
+                changeToUnSelected(partyingNotAllowed)
+            }
+            partyingNotAllowed.setOnClickListener {
+                changeToSelected(partyingNotAllowed)
+                changeToUnSelected(partyingAllowed)
+            }
+            animalsAllowed.setOnClickListener {
+                changeToSelected(animalsAllowed)
+                changeToUnSelected(animalsNotAllowed)
+            }
+            animalsNotAllowed.setOnClickListener {
+                changeToSelected(animalsNotAllowed)
+                changeToUnSelected(animalsAllowed)
+            }
+            visitorsAllowed.setOnClickListener {
+                changeToSelected(visitorsAllowed)
+                changeToUnSelected(visitorsNotAllowed)
+            }
+            visitorsNotAllowed.setOnClickListener {
+                changeToSelected(visitorsNotAllowed)
+                changeToUnSelected(visitorsAllowed)
+            }
+            familyAllowed.setOnClickListener {
+                changeToSelected(familyAllowed)
+                changeToUnSelected(familyNotAllowed)
+            }
+            familyNotAllowed.setOnClickListener {
+                changeToSelected(familyNotAllowed)
+                changeToUnSelected(familyAllowed)
+            }
         }
         return binding.root
     }

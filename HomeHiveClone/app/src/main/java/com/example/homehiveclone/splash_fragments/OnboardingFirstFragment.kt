@@ -48,9 +48,4 @@ class OnboardingFirstFragment : Fragment() {
         }
     }
 
-    private fun loadActvity(){
-        startActivity(Intent(requireActivity(), MainActivity::class.java))
-        requireActivity().finish()
-    }
-
 }

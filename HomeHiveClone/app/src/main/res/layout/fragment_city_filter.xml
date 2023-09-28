@@ -22,8 +22,8 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
         android:background="@drawable/listing_edit_text_bg"
-        android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <AutoCompleteTextView
             android:id="@+id/cityNameEditText"
@@ -45,21 +45,41 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            android:src="@drawable/material_symbols_search_rounded_filter"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:src="@drawable/material_symbols_search_rounded_filter" />
 
         <com.google.android.material.divider.MaterialDivider
             android:layout_width="2dp"
             android:layout_height="match_parent"
-            android:background="@drawable/vertical_divider"
-            android:layout_marginVertical="8dp" />
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/vertical_divider" />
 
         <ImageView
             android:id="@+id/voice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_keyboard_voice_filter"
-            android:padding="12dp"/>
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_keyboard_voice_filter" />
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/material_symbols_my_location"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Auto detect my location"
+            android:fontFamily="@font/work_sans_medium"
+            android:textSize="14sp"
+            android:textColor="@color/sign_up_subtext"/>
+
+    </LinearLayout>
 </LinearLayout>

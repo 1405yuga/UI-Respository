@@ -55,4 +55,7 @@
 
     <color name="verify_card_border">#C5C4CF</color>
 
+    <color name="property_filter_unselected">#F4F4F4</color>
+    <color name="property_filter_selected">#BF495DE2</color>
+
 </resources>

@@ -39,6 +39,11 @@ class FlatFilterFragment : Fragment() {
             bhk2.setOnClickListener { clickedProperty(bhk2) }
             bhk3.setOnClickListener { clickedProperty(bhk3) }
             bhk3More.setOnClickListener { clickedProperty(bhk3More) }
+
+            // furnished
+            unfurnished.setOnClickListener { clickedProperty(unfurnished) }
+            semifurnished.setOnClickListener { clickedProperty(semifurnished) }
+            fullyFurnished.setOnClickListener { clickedProperty(fullyFurnished) }
         }
 
         return binding.root

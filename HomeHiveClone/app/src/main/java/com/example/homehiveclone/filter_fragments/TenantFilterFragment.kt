@@ -28,6 +28,12 @@ class TenantFilterFragment : Fragment() {
             student.setOnClickListener { clickedProperty(student) }
             workingProfessional.setOnClickListener { clickedProperty(workingProfessional) }
             anyProfession.setOnClickListener { clickedProperty(anyProfession) }
+
+            //age
+            below18.setOnClickListener { clickedProperty(below18) }
+            age18to24.setOnClickListener { clickedProperty(age18to24) }
+            age25to30.setOnClickListener { clickedProperty(age25to30) }
+            age30more.setOnClickListener { clickedProperty(age30more) }
         }
         return binding.root
     }

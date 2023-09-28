@@ -166,7 +166,7 @@
                     android:tag="false"/>
 
                 <TextView
-                    android:id="@+id/singleSharing"
+                    android:id="@+id/doubleSharing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/unselected_filter"
@@ -174,7 +174,7 @@
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
-                    android:text="Single Sharing"
+                    android:text="Double Sharing"
                     android:textColor="@color/contaced_text"
                     android:textSize="14sp"
                     android:layout_marginEnd="8dp"

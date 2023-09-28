@@ -28,6 +28,10 @@ class FlatFilterFragment : Fragment() {
             villa.setOnClickListener { clickedProperty(villa) }
 
             // room sharing
+            privateRoom.setOnClickListener { clickedProperty(privateRoom) }
+            doubleSharing.setOnClickListener { clickedProperty(doubleSharing) }
+            tripleSharing.setOnClickListener { clickedProperty(tripleSharing) }
+            moreSharing.setOnClickListener { clickedProperty(moreSharing) }
         }
 
         return binding.root

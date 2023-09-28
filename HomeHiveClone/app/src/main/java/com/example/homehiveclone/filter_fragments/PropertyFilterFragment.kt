@@ -30,7 +30,8 @@ class PropertyFilterFragment : Fragment() {
             tenantFilterButton.setOnClickListener {
                 changeToSelected(tenantFilterButton)
                 changeToUnSelected(flatFilterButton)
-                loadFragment(TenantFilterFragment()) }
+                loadFragment(TenantFilterFragment())
+            }
         }
         return binding.root
     }
@@ -42,14 +43,16 @@ class PropertyFilterFragment : Fragment() {
             .commit()
     }
 
-    private fun changeToUnSelected(textView: TextView) {
-        textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.contaced_text))
-        textView.backgroundTintList = ContextCompat.getColorStateList(requireContext(),R.color.property_filter_unselected)
-    }
-
     private fun changeToSelected(textView: TextView) {
         textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
-        textView.backgroundTintList = ContextCompat.getColorStateList(requireContext(),R.color.property_filter_selected)
+        textView.backgroundTintList =
+            ContextCompat.getColorStateList(requireContext(), R.color.property_filter_selected)
+    }
+
+    private fun changeToUnSelected(textView: TextView) {
+        textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.contaced_text))
+        textView.backgroundTintList =
+            ContextCompat.getColorStateList(requireContext(), R.color.property_filter_unselected)
     }
 
 }

@@ -32,6 +32,13 @@ class FlatFilterFragment : Fragment() {
             doubleSharing.setOnClickListener { clickedProperty(doubleSharing) }
             tripleSharing.setOnClickListener { clickedProperty(tripleSharing) }
             moreSharing.setOnClickListener { clickedProperty(moreSharing) }
+
+            // bhk type
+            rk1.setOnClickListener { clickedProperty(rk1) }
+            bhk1.setOnClickListener { clickedProperty(bhk1) }
+            bhk2.setOnClickListener { clickedProperty(bhk2) }
+            bhk3.setOnClickListener { clickedProperty(bhk3) }
+            bhk3More.setOnClickListener { clickedProperty(bhk3More) }
         }
 
         return binding.root

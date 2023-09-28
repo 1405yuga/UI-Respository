@@ -1,21 +1,49 @@
 package com.example.homehiveclone.filter_fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import com.example.homehiveclone.R
+import com.example.homehiveclone.databinding.FragmentFlatFilterBinding
 
 
 class FlatFilterFragment : Fragment() {
 
+    private lateinit var binding: FragmentFlatFilterBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_flat_filter, container, false)
+        binding = FragmentFlatFilterBinding.inflate(inflater, container, false)
+
+        binding.apply {
+            // property type
+            independentHouse.setOnClickListener { clickedProperty(independentHouse) }
+            apartment.setOnClickListener { clickedProperty(apartment) }
+            independentFloor.setOnClickListener { clickedProperty(independentFloor) }
+            villa.setOnClickListener { clickedProperty(villa) }
+
+            // room sharing
+        }
+
+        return binding.root
+    }
+
+    private fun clickedProperty(textView: TextView) {
+        textView.tag = !textView.tag.toString().toBoolean()
+        if (textView.tag as Boolean) {
+            textView.background =
+                ContextCompat.getDrawable(requireContext(), R.drawable.selected_filter)
+            textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
+        } else {
+            textView.background =
+                ContextCompat.getDrawable(requireContext(), R.drawable.unselected_filter)
+            textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.contaced_text))
+        }
     }
 
 }

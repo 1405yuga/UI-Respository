@@ -143,6 +143,7 @@
                     android:textSize="14sp" />
             </LinearLayout>
         </HorizontalScrollView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -206,6 +207,7 @@
                     android:text="25 to 30"
                     android:textColor="@color/contaced_text"
                     android:textSize="14sp" />
+
                 <TextView
                     android:id="@+id/age30more"
                     android:layout_width="wrap_content"
@@ -286,6 +288,7 @@
                     android:text="Smoking"
                     android:textColor="@color/contaced_text"
                     android:textSize="14sp" />
+
                 <TextView
                     android:id="@+id/nightShift"
                     android:layout_width="wrap_content"
@@ -300,6 +303,7 @@
                     android:text="Night shift"
                     android:textColor="@color/contaced_text"
                     android:textSize="14sp" />
+
                 <TextView
                     android:id="@+id/dayShift"
                     android:layout_width="wrap_content"
@@ -316,6 +320,7 @@
                     android:textSize="14sp" />
             </LinearLayout>
         </HorizontalScrollView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -364,6 +369,7 @@
                     android:text="Below 2"
                     android:textColor="@color/contaced_text"
                     android:textSize="14sp" />
+
                 <TextView
                     android:id="@+id/below3"
                     android:layout_width="wrap_content"
@@ -378,20 +384,21 @@
                     android:text="Below 3"
                     android:textColor="@color/contaced_text"
                     android:textSize="14sp" />
+
                 <TextView
-                android:id="@+id/above4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="8dp"
-                android:background="@drawable/unselected_filter"
-                android:clickable="true"
-                android:fontFamily="@font/work_sans"
-                android:gravity="center"
-                android:padding="16dp"
-                android:tag="false"
-                android:text="Above 4"
-                android:textColor="@color/contaced_text"
-                android:textSize="14sp" />
+                    android:id="@+id/above4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/unselected_filter"
+                    android:clickable="true"
+                    android:fontFamily="@font/work_sans"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:tag="false"
+                    android:text="Above 4"
+                    android:textColor="@color/contaced_text"
+                    android:textSize="14sp" />
 
             </LinearLayout>
         </HorizontalScrollView>

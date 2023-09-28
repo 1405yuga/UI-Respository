@@ -392,11 +392,11 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
                 android:background="@drawable/listing_edit_text_bg"
-                android:orientation="horizontal"
-                android:layout_marginEnd="8dp">
+                android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/onFloorEditText"
@@ -406,12 +406,12 @@
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/work_sans"
+                    android:hint="Minimum"
                     android:inputType="number"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/fragment_top_bar_text"
                     android:textColorHint="@color/edit_text_hint"
-                    android:textSize="14sp"
-                    android:hint="Minimum"/>
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:id="@+id/onFloorDropDown"
@@ -425,8 +425,8 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="@drawable/listing_edit_text_bg"
                 android:orientation="horizontal">
 
@@ -438,12 +438,12 @@
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/work_sans"
+                    android:hint="Maximum"
                     android:inputType="number"
                     android:padding="@dimen/edit_text_padding"
                     android:textColor="@color/fragment_top_bar_text"
                     android:textColorHint="@color/edit_text_hint"
-                    android:textSize="14sp"
-                    android:hint="Maximum"/>
+                    android:textSize="14sp" />
 
                 <ImageView
                     android:id="@+id/outOffDropDown"

@@ -4,8 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.example.homehiveclone.R
 import com.example.homehiveclone.databinding.FragmentPropertyFilterBinding
 
 class PropertyFilterFragment : Fragment() {
@@ -20,9 +23,14 @@ class PropertyFilterFragment : Fragment() {
 
         binding.apply {
             flatFilterButton.setOnClickListener {
+                changeToSelected(flatFilterButton)
+                changeToUnSelected(tenantFilterButton)
                 loadFragment(FlatFilterFragment())
             }
-            tenantFilterButton.setOnClickListener { loadFragment(TenantFilterFragment()) }
+            tenantFilterButton.setOnClickListener {
+                changeToSelected(tenantFilterButton)
+                changeToUnSelected(flatFilterButton)
+                loadFragment(TenantFilterFragment()) }
         }
         return binding.root
     }
@@ -32,6 +40,16 @@ class PropertyFilterFragment : Fragment() {
             .replace(binding.propertyFilterFragmentContainer.id, fragment)
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
             .commit()
+    }
+
+    private fun changeToUnSelected(textView: TextView) {
+        textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.contaced_text))
+        textView.backgroundTintList = ContextCompat.getColorStateList(requireContext(),R.color.property_filter_unselected)
+    }
+
+    private fun changeToSelected(textView: TextView) {
+        textView.setTextColor(ContextCompat.getColor(requireContext(), R.color.white))
+        textView.backgroundTintList = ContextCompat.getColorStateList(requireContext(),R.color.property_filter_selected)
     }
 
 }

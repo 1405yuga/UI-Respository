@@ -1,12 +1,12 @@
 package com.example.homehiveclone.filter_fragments
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
 import com.example.homehiveclone.R
 import com.example.homehiveclone.databinding.FragmentTenantFilterBinding
 
@@ -17,7 +17,7 @@ class TenantFilterFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentTenantFilterBinding.inflate(inflater,container,false)
+        binding = FragmentTenantFilterBinding.inflate(inflater, container, false)
         binding.apply {
             //gender
             onlyBoys.setOnClickListener { clickedProperty(onlyBoys) }

@@ -34,6 +34,13 @@ class TenantFilterFragment : Fragment() {
             age18to24.setOnClickListener { clickedProperty(age18to24) }
             age25to30.setOnClickListener { clickedProperty(age25to30) }
             age30more.setOnClickListener { clickedProperty(age30more) }
+
+            //no pref
+            drinking.setOnClickListener { clickedProperty(drinking) }
+            nonVegetarian.setOnClickListener { clickedProperty(nonVegetarian) }
+            smoking.setOnClickListener { clickedProperty(smoking) }
+            nightShift.setOnClickListener { clickedProperty(nightShift) }
+            dayShift.setOnClickListener { clickedProperty(dayShift) }
         }
         return binding.root
     }

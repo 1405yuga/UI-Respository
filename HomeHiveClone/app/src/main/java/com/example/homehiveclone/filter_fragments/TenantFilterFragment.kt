@@ -23,6 +23,11 @@ class TenantFilterFragment : Fragment() {
             onlyBoys.setOnClickListener { clickedProperty(onlyBoys) }
             onlyGirls.setOnClickListener { clickedProperty(onlyGirls) }
             anyGender.setOnClickListener { clickedProperty(anyGender) }
+
+            //profession
+            student.setOnClickListener { clickedProperty(student) }
+            workingProfessional.setOnClickListener { clickedProperty(workingProfessional) }
+            anyProfession.setOnClickListener { clickedProperty(anyProfession) }
         }
         return binding.root
     }

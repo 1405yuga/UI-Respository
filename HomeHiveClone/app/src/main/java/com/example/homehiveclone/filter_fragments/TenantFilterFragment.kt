@@ -41,6 +41,12 @@ class TenantFilterFragment : Fragment() {
             smoking.setOnClickListener { clickedProperty(smoking) }
             nightShift.setOnClickListener { clickedProperty(nightShift) }
             dayShift.setOnClickListener { clickedProperty(dayShift) }
+
+            //age
+            only1.setOnClickListener { clickedProperty(only1) }
+            below2.setOnClickListener { clickedProperty(below2) }
+            below3.setOnClickListener { clickedProperty(below3) }
+            above4.setOnClickListener { clickedProperty(above4) }
         }
         return binding.root
     }

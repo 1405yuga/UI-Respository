@@ -75,46 +75,47 @@
                     android:id="@+id/independentHouse"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="Independent house"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/apartment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="Apartment"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/independentFloor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="Independent floor"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
+
                 <TextView
                     android:id="@+id/villa"
                     android:layout_width="wrap_content"
@@ -124,10 +125,10 @@
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="Villa"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -154,46 +155,47 @@
                     android:id="@+id/privateRoom"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="Private Room"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/doubleSharing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="Double Sharing"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/tripleSharing"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="Triple Sharing"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
+
                 <TextView
                     android:id="@+id/moreSharing"
                     android:layout_width="wrap_content"
@@ -203,12 +205,13 @@
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="3+ Sharing"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
             </LinearLayout>
         </HorizontalScrollView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -232,76 +235,79 @@
                     android:id="@+id/rk1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="1 RK"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/bhk1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="1 BHK"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/bhk2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="2 BHK"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
+
                 <TextView
                     android:id="@+id/bhk3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="3 BHK"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
+
                 <TextView
                     android:id="@+id/bhk3More"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="3 BHK +"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
             </LinearLayout>
         </HorizontalScrollView>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -325,48 +331,129 @@
                     android:id="@+id/unfurnished"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="Unfurnished"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/semifurnished"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="Semifurnished"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/fullyFurnished"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
                     android:background="@drawable/unselected_filter"
                     android:clickable="true"
                     android:fontFamily="@font/work_sans"
                     android:gravity="center"
                     android:padding="16dp"
+                    android:tag="false"
                     android:text="Fully furnished"
                     android:textColor="@color/contaced_text"
-                    android:textSize="14sp"
-                    android:layout_marginEnd="8dp"
-                    android:tag="false"/>
+                    android:textSize="14sp" />
             </LinearLayout>
         </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/work_sans_medium"
+            android:text="Budget Range"
+            android:textColor="@color/fragment_top_bar_text"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/fragment_top_bar_margin_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal"
+                android:layout_marginEnd="8dp">
+
+                <EditText
+                    android:id="@+id/onFloorEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:inputType="number"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/fragment_top_bar_text"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="14sp"
+                    android:hint="Minimum"/>
+
+                <ImageView
+                    android:id="@+id/onFloorDropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="12dp"
+                    android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/listing_edit_text_bg"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/outOffEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/work_sans"
+                    android:inputType="number"
+                    android:padding="@dimen/edit_text_padding"
+                    android:textColor="@color/fragment_top_bar_text"
+                    android:textColorHint="@color/edit_text_hint"
+                    android:textSize="14sp"
+                    android:hint="Maximum"/>
+
+                <ImageView
+                    android:id="@+id/outOffDropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingHorizontal="12dp"
+                    android:src="@drawable/material_symbols_chevron_right_rounded__1_" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </ScrollView>

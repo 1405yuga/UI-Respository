@@ -18,14 +18,31 @@ When you open the app, you will see a splash screen featuring the app's icon.
 <br>
 <br>
 
-### OnBoarding Screens :
-The Onboarding Screens provide users with a simple and informative way to understand the app's purpose and functionality in just three screens.
+### OnBoarding screens :
+The Onboarding screens provide users with a simple and informative way to understand the app's purpose and functionality in just three screens.
 
 <img src="https://github.com/1405yuga/UI-Respository/assets/82303711/26d73b80-7d17-40c0-a0fa-9c993a166ebb" width=273>
 
 <img src="https://github.com/1405yuga/UI-Respository/assets/82303711/5a68a295-f257-47bd-a5b7-9808be0cf2bc" width=273>
 
 <img src="https://github.com/1405yuga/UI-Respository/assets/82303711/77a1ada0-fa42-454f-98a1-2d2c1128afce" width=273>
+<br>
+<br>
+<br>
+
+### SignUp screen :
+SignUp screen is where users are prompted to register by providing their mobile number and then verifying it with a one-time password (OTP) for security and authentication purposes. This step ensures that the user's contact information is valid and that they have access to the provided mobile number
+<br>
+<br>
+>Enter Mobile number
+
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/31691cfa-e20f-4330-8a0d-3ecc3cd96551" width=273>
+<br>
+<br>
+
+>Verify Mobile number
+
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/a6d828ae-efa6-4779-883c-587d738d2eb3" width=273>
 <br>
 <br>
 <br>

@@ -57,6 +57,32 @@ Home is the screen where user name is displayed and different services and funct
 <br>
 <br>
 
+#### Filter :
+Filter screen allows users to refine their property search by applying filters such as: ` Property Location ` , ` Flat Filtering ` and ` Tenant Filtering ` .
+<br>
+
+` Property Location ` where users can specify the location or area they are interested in.
+
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/3ecbeb9c-bdd2-4822-ae57-a180bc5c857f" width=273>
+
+<br>
+<br>
+
+` Flat Filtering ` where users can apply filters related to the type of flat or property they are looking for, which may include options like apartment, room type, bhk type, etc.
+
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/43f19401-b06f-4cd1-b9d9-eac1b3e36598" width=273>
+
+<br>
+<br>
+
+` Tenant Filtering ` where users can set filters related to tenant preferences, such as the number of gender, profession and other property-specific criteria.
+
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/f3e7c18c-8a84-4b99-ba94-6dcc4b3e780a" width=273>
+
+<br>
+<br>
+<br>
+
 ### Compare :
 Compare is the screen where different properties are compared according to rent price, views and demand. It consits of two sub-screens i.e ` Property List ` and ` Past results `.
 <br>

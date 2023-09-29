@@ -99,17 +99,20 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="@dimen/search_card_margin"
                 android:orientation="horizontal"
                 android:layout_gravity="center">
 
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Start your search here"
-                    android:textColor="@color/search_text" />
+                    android:textColor="@color/search_text"
+                    android:fontFamily="@font/work_sans"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"/>
 
                 <ImageView
                     android:layout_width="wrap_content"

@@ -36,12 +36,15 @@ SignUp screen is where users are prompted to register by providing their mobile 
 <br>
 >Enter Mobile number
 
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/a23fb45d-03ba-4873-b923-c56aaed9152f" width=273>
 <img src="https://github.com/1405yuga/UI-Respository/assets/82303711/31691cfa-e20f-4330-8a0d-3ecc3cd96551" width=273>
 <br>
 <br>
 
 >Verify Mobile number
 
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/53ec3550-a0d7-480e-8762-a1a13899cb55" width=273>
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/05733c5e-8472-4859-a7f9-42f37c095051" width=273>
 <img src="https://github.com/1405yuga/UI-Respository/assets/82303711/a6d828ae-efa6-4779-883c-587d738d2eb3" width=273>
 <br>
 <br>

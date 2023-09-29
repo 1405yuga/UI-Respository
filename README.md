@@ -74,6 +74,8 @@ Filter screen allows users to refine their property search by applying filters s
 ` Flat Filtering ` where users can apply filters related to the type of flat or property they are looking for, which may include options like apartment, room type, bhk type, etc.
 
 <img src="https://github.com/1405yuga/UI-Respository/assets/82303711/43f19401-b06f-4cd1-b9d9-eac1b3e36598" width=273>
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/49394b5d-a9bd-462e-a955-73816beb4291" width=273>
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/c1b7ec56-6407-4f84-8b81-09c828207b1a" width=273>
 
 <br>
 <br>
@@ -81,6 +83,7 @@ Filter screen allows users to refine their property search by applying filters s
 ` Tenant Filtering ` where users can set filters related to tenant preferences, such as the number of gender, profession and other property-specific criteria.
 
 <img src="https://github.com/1405yuga/UI-Respository/assets/82303711/f3e7c18c-8a84-4b99-ba94-6dcc4b3e780a" width=273>
+<img src="https://github.com/1405yuga/UI-Respository/assets/82303711/2c037fcf-5fd7-4955-9bd3-a13ea13ccf7e" width=273>
 
 <br>
 <br>

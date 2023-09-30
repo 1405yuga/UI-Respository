@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import coil.load
 import com.example.onlinelearning.R
 import com.example.onlinelearning.databinding.FragmentOnBoardingBinding
@@ -30,11 +31,20 @@ class OnBoardingFragment : Fragment() {
                     binding.SignUpOptions.visibility = View.VISIBLE
                     setNewOnBoarding(R.drawable.illustration_03,"Create your own \nstudy plan","Study according to the \nstudy plan, make study \nmore motivated",R.drawable.pavigation3)
                 }
-                // TODO: load fragment
+                else -> loadFragment(R.id.signUpFragment)
             }
         }
 
+        binding.signUpButton.setOnClickListener {
+            loadFragment(R.id.signUpFragment)
+        }
+
         return binding.root
+    }
+
+    private fun loadFragment(fragmentId: Int) {
+        findNavController().navigate(fragmentId)
+        findNavController().popBackStack(R.id.onBoardingFragmentFragment,true)
     }
 
     private fun setNewOnBoarding(image: Int, title: String, subtitle: String, nextButton: Int) {

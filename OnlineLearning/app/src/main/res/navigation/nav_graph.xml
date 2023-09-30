@@ -9,5 +9,10 @@
         android:id="@+id/onBoardingFragmentFragment"
         android:name="com.example.onlinelearning.entryFragments.OnBoardingFragment"
         android:label="OnBoardingFragmentFragment"
-        tools:layout="@layout/fragment_on_boarding"/>
+        tools:layout="@layout/fragment_on_boarding" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.onlinelearning.entryFragments.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up"/>
 </navigation>

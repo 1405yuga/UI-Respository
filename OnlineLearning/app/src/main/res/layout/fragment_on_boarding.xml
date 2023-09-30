@@ -56,11 +56,14 @@
         android:textSize="16sp" />
 
     <ImageView
+        android:id="@+id/nextBar"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
-        android:src="@drawable/pavigation1" />
+        android:src="@drawable/pavigation1"
+        android:clickable="true"
+        android:paddingVertical="24dp"
+        android:contentDescription="nextButton"/>
 
 </LinearLayout>

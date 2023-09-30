@@ -32,7 +32,28 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:background="@drawable/entry_fragment_half_card">
+        android:background="@drawable/entry_fragment_half_card"
+        android:paddingHorizontal="@dimen/on_boarding_horizontal_margin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="Your  Email"
+            android:textSize="14sp"
+            android:textColor="#858597"
+            android:layout_marginTop="32dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="14sp"
+            android:background="@drawable/edit_text_card"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="13dp"
+            android:inputType="textWebEmailAddress"
+            android:maxLength="30"
+            android:textColor="@color/title_on_boarding"/>
 
     </LinearLayout>
 

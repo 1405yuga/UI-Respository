@@ -16,4 +16,7 @@
     <color name="entry_half_card_bg">#FFFFFF</color>
     <color name="entry_options_bg">#F0F0F2</color>
 
+    <color name="edit_text_bg">#FFFFFF</color>
+    <color name="edit_text_stroke">#B8B8D2</color>
+
 </resources>

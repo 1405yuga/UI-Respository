@@ -43,9 +43,7 @@ class OnBoardingFragment : Fragment() {
             }
             onBoardingTitle.text = title
             onBoardingSubtitle.text = subtitle
-            nextBar.load(nextButton){
-                placeholder(nextButton)
-            }
+            nextBar.load(nextButton)
         }
 
     }

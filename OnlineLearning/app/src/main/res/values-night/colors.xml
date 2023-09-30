@@ -9,5 +9,8 @@
     <color name="sub_title_on_boarding">#FFFFFF</color>
     <color name="skip_on_boarding">#B8B8D2</color>
     <color name="image_bg_on_boarding">#1F1F39</color>
+    <color name="sign_up_button_text">#F4F3FD</color>
+    <color name="login_button_text">#F4F3FD</color>
+    <color name="login_button_bg">#858597</color>
 
 </resources>

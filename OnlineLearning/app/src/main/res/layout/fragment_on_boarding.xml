@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/on_boarding_horizontal_margin"
-    android:layout_marginVertical="@dimen/on_boarding_vertical_margin"
     android:orientation="vertical"
     android:layout_gravity="center">
 
@@ -62,9 +61,53 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
-        android:src="@drawable/pavigation1"
+        android:src="@drawable/pavigation3"
         android:clickable="true"
         android:paddingVertical="24dp"
         android:contentDescription="nextButton"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/signUpButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/sign_up_button_bg"
+            android:layout_marginEnd="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Sign up"
+                android:textSize="16sp"
+                android:textColor="@color/sign_up_button_text"
+                android:padding="12dp"/>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:cardCornerRadius="12dp"
+            app:cardBackgroundColor="@color/login_button_bg">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Log in"
+                android:textSize="16sp"
+                android:textColor="@color/login_button_text"
+                android:padding="12dp"/>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
 
 </LinearLayout>

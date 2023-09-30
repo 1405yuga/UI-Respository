@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="@dimen/on_boarding_horizontal_margin"
+    android:layout_marginVertical="@dimen/on_boarding_vertical_margin">
+
+    <TextView
+        android:id="@+id/skipButton"
+        android:layout_width="@dimen/clickable_size_min"
+        android:layout_height="@dimen/clickable_size_min"
+        android:layout_gravity="end"
+        android:clickable="true"
+        android:gravity="end|center_vertical"
+        android:text="@string/skip"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/onBoarding_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/illustration_01"/>
+
+    <TextView
+        android:id="@+id/onBoarding_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Numerous free\ntrial courses"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/onBoarding_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/poppins_light"
+        android:text="Free courses for you to\n find your way to learning"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pavigation1"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>

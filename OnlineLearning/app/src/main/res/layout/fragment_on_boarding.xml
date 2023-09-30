@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:layout_marginHorizontal="@dimen/on_boarding_horizontal_margin"
     android:layout_marginVertical="@dimen/on_boarding_vertical_margin"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layout_gravity="center">
 
     <TextView
         android:id="@+id/skipButton"

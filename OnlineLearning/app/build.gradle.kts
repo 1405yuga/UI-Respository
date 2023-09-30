@@ -52,4 +52,7 @@ dependencies {
     val nav_version = "2.5.2"
     implementation ("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation ("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    // Coil - to load images
+    implementation ("io.coil-kt:coil:1.1.1")
 }

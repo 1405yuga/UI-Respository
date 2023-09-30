@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".entryFragments.SignUpFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".entryFragments.SignUpFragment"
+    android:orientation="vertical"
+    android:background="@color/entry_options_bg">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/sign_up"
+        android:textSize="32sp"
+        android:textColor="@color/title_on_boarding"
+        android:layout_marginHorizontal="@dimen/on_boarding_horizontal_margin"
+        android:layout_marginTop="84dp"/>
 
-</FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_light"
+        android:text="Enter your details below &amp; free sign up"
+        android:textSize="12sp"
+        android:textColor="#B8B8D2"
+        android:layout_marginHorizontal="@dimen/on_boarding_horizontal_margin"
+        android:layout_marginBottom="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/entry_fragment_half_card">
+
+    </LinearLayout>
+
+</LinearLayout>

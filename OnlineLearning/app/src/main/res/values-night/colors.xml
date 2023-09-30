@@ -12,5 +12,7 @@
     <color name="sign_up_button_text">#F4F3FD</color>
     <color name="login_button_text">#F4F3FD</color>
     <color name="login_button_bg">#858597</color>
+    <color name="entry_half_card_bg">#2F2F42</color>
+    <color name="entry_options_bg">#1F1F39</color>
 
 </resources>

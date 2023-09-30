@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Sign up"
+                android:text="@string/sign_up"
                 android:textSize="16sp"
                 android:textColor="@color/sign_up_button_text"
                 android:padding="12dp"/>
@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Log in"
+                android:text="@string/log_in"
                 android:textSize="16sp"
                 android:textColor="@color/login_button_text"
                 android:padding="12dp"/>

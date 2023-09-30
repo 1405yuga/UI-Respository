@@ -5,4 +5,7 @@
 
     <color name="title_on_boarding">#1F1F39</color>
     <color name="sub_title_on_boarding">#858597</color>
+    <color name="skip_on_boarding">#858597</color>
+    <color name="image_bg_on_boarding">#CDECFE</color>
+
 </resources>

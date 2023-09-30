@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_marginHorizontal="@dimen/on_boarding_horizontal_margin"
-    android:layout_marginVertical="@dimen/on_boarding_vertical_margin">
+    android:layout_marginVertical="@dimen/on_boarding_vertical_margin"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/skipButton"
@@ -15,23 +15,35 @@
         android:clickable="true"
         android:gravity="end|center_vertical"
         android:text="@string/skip"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:layout_marginBottom="20dp"/>
 
-    <ImageView
-        android:id="@+id/onBoarding_image"
-        android:layout_width="match_parent"
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:scaleType="center"
-        android:src="@drawable/illustration_01"/>
+        app:cardCornerRadius="48dp"
+        android:layout_gravity="center"
+        app:cardBackgroundColor="@color/image_bg_on_boarding"
+        app:strokeWidth="0dp"
+        android:layout_marginBottom="40dp">
+
+        <ImageView
+            android:id="@+id/onBoarding_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/illustration_01" />
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/onBoarding_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
         android:fontFamily="@font/poppins_bold"
         android:text="Numerous free\ntrial courses"
-        android:textSize="22sp" />
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:layout_marginBottom="8dp"/>
 
     <TextView
         android:id="@+id/onBoarding_subtitle"
@@ -42,11 +54,13 @@
         android:text="Free courses for you to\n find your way to learning"
         android:textAlignment="center"
         android:textSize="16sp" />
+
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/pavigation1"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_gravity="center"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:src="@drawable/pavigation1" />
 
 </LinearLayout>

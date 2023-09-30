@@ -27,6 +27,7 @@ class OnBoardingFragment : Fragment() {
                 1 -> setNewOnBoarding(R.drawable.illustration_02,"Quick and easy \n learning","Easy and fast learning at \nany time to help you \n improve various skills",R.drawable.pavigation2)
                 2 -> {
                     binding.skipButton.visibility = View.INVISIBLE
+                    binding.SignUpOptions.visibility = View.VISIBLE
                     setNewOnBoarding(R.drawable.illustration_03,"Create your own \nstudy plan","Study according to the \nstudy plan, make study \nmore motivated",R.drawable.pavigation3)
                 }
                 // TODO: load fragment

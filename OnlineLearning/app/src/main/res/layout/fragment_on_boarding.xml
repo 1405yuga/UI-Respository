@@ -61,14 +61,16 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
-        android:src="@drawable/pavigation3"
+        android:src="@drawable/pavigation1"
         android:clickable="true"
         android:paddingVertical="24dp"
         android:contentDescription="nextButton"/>
     <LinearLayout
+        android:id="@+id/SignUpOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="invisible">
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/signUpButton"
             android:layout_width="0dp"

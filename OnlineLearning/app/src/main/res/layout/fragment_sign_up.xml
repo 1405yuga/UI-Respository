@@ -1,146 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".entryFragments.SignUpFragment"
+    android:background="@color/entry_options_bg"
     android:orientation="vertical"
-    android:background="@color/entry_options_bg">
+    tools:context=".entryFragments.SignUpFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/on_boarding_horizontal_margin"
+        android:layout_marginTop="84dp"
         android:fontFamily="@font/poppins_bold"
         android:text="@string/sign_up"
-        android:textSize="32sp"
         android:textColor="@color/title_on_boarding"
-        android:layout_marginHorizontal="@dimen/on_boarding_horizontal_margin"
-        android:layout_marginTop="84dp"/>
+        android:textSize="32sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/on_boarding_horizontal_margin"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/poppins_light"
         android:text="Enter your details below &amp; free sign up"
-        android:textSize="12sp"
         android:textColor="#B8B8D2"
-        android:layout_marginHorizontal="@dimen/on_boarding_horizontal_margin"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="12sp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="vertical"
         android:background="@drawable/entry_fragment_half_card"
+        android:orientation="vertical"
         android:paddingHorizontal="@dimen/on_boarding_horizontal_margin">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:fontFamily="@font/poppins_light"
             android:text="Your  Email"
-            android:textSize="14sp"
             android:textColor="#858597"
-            android:layout_marginTop="32dp"/>
+            android:textSize="14sp" />
+
         <EditText
             android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your email"
-            android:fontFamily="@font/poppins_light"
-            android:textSize="14sp"
+            android:layout_marginBottom="@dimen/signUp_bottom_margin"
             android:background="@drawable/edit_text_card"
-            android:padding="16dp"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Enter your email"
             android:inputType="textWebEmailAddress"
             android:maxLength="30"
+            android:padding="16dp"
             android:textColor="@color/title_on_boarding"
-            android:layout_marginBottom="@dimen/signUp_bottom_margin"/>
+            android:textSize="14sp" />
+
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins_light"
             android:text="Password"
-            android:textSize="14sp"
-            android:textColor="#858597"/>
-        <EditText
-            android:id="@+id/passwordEditText"
+            android:textColor="#858597"
+            android:textSize="14sp" />
+
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Enter your email"
-            android:fontFamily="@font/poppins_light"
-            android:textSize="14sp"
-            android:background="@drawable/edit_text_card"
-            android:padding="16dp"
-            android:inputType="textPassword"
-            android:maxLength="30"
-            android:textColor="@color/title_on_boarding"
-            android:layout_marginBottom="@dimen/signUp_bottom_margin"/>
+            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/signUp_bottom_margin">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_card"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Enter your email"
+                android:inputType="textPassword"
+                android:maxLength="30"
+                android:padding="16dp"
+                android:textColor="@color/title_on_boarding"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginHorizontal="20dp"
+                android:src="@drawable/preview_close_one" />
+        </FrameLayout>
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/createAccountButton"
             android:layout_width="match_parent"
             android:layout_height="@dimen/clickable_size_min"
-            app:cardCornerRadius="8dp"
-            app:strokeWidth="0dp"
-            app:cardBackgroundColor="@color/sign_up_button_bg"
+            android:layout_marginBottom="16dp"
             android:clickable="true"
-            android:layout_marginBottom="16dp">
+            app:cardBackgroundColor="@color/sign_up_button_bg"
+            app:cardCornerRadius="8dp"
+            app:strokeWidth="0dp">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Create account"
-                android:fontFamily="@font/poppins_medium"
                 android:layout_gravity="center"
-                android:textColor="@color/white"/>
+                android:fontFamily="@font/poppins_medium"
+                android:text="Create account"
+                android:textColor="@color/white" />
         </com.google.android.material.card.MaterialCardView>
+
         <LinearLayout
             android:id="@+id/termsCheckLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:clickable="true"
             android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:orientation="horizontal"
             android:paddingVertical="4dp">
+
             <ImageView
                 android:id="@+id/termsCheckBox"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/off_checkbox"
-                android:scaleType="center"
-                android:contentDescription="agree terms and conditions"
+                android:layout_marginTop="3dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginTop="3dp"/>
+                android:contentDescription="agree terms and conditions"
+                android:scaleType="center"
+                android:src="@drawable/off_checkbox" />
+
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_light"
                 android:text="By creating an account you have to agree with our terms and conditions."
-                android:textColor="@color/skip_on_boarding"
-                android:fontFamily="@font/poppins_light"/>
+                android:textColor="@color/skip_on_boarding" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Already have an account？"
-                android:fontFamily="@font/poppins_light"
                 android:layout_gravity="center"
-                android:textColor="@color/skip_on_boarding"/>
+                android:fontFamily="@font/poppins_light"
+                android:text="Already have an account？"
+                android:textColor="@color/skip_on_boarding" />
+
             <TextView
                 android:id="@+id/logInButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/log_in_ul"
-                android:fontFamily="@font/poppins_bold"
                 android:layout_gravity="center"
                 android:clickable="true"
-                android:textColor="@color/sign_up_button_bg"
+                android:fontFamily="@font/poppins_bold"
                 android:paddingHorizontal="4dp"
-                android:paddingVertical="12dp"/>
+                android:paddingVertical="12dp"
+                android:text="@string/log_in_ul"
+                android:textColor="@color/sign_up_button_bg" />
         </LinearLayout>
 
     </LinearLayout>

@@ -15,4 +15,9 @@
         android:name="com.example.onlinelearning.entryFragments.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up"/>
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.onlinelearning.entryFragments.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" />
 </navigation>

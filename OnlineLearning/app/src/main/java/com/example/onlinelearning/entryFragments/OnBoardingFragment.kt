@@ -39,6 +39,10 @@ class OnBoardingFragment : Fragment() {
             loadFragment(R.id.signUpFragment)
         }
 
+        binding.loginButton.setOnClickListener {
+            loadFragment(R.id.logInFragment)
+        }
+
         return binding.root
     }
 

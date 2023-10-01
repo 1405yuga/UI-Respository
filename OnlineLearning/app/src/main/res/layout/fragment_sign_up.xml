@@ -61,8 +61,7 @@
             android:fontFamily="@font/poppins_light"
             android:text="Password"
             android:textSize="14sp"
-            android:textColor="#858597"
-            android:layout_marginTop="32dp"/>
+            android:textColor="#858597"/>
         <EditText
             android:id="@+id/passwordEditText"
             android:layout_width="match_parent"
@@ -76,6 +75,7 @@
             android:maxLength="30"
             android:textColor="@color/title_on_boarding"
             android:layout_marginBottom="@dimen/signUp_bottom_margin"/>
+
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/createAccountButton"
             android:layout_width="match_parent"
@@ -83,7 +83,8 @@
             app:cardCornerRadius="8dp"
             app:strokeWidth="0dp"
             app:cardBackgroundColor="@color/sign_up_button_bg"
-            android:clickable="true">
+            android:clickable="true"
+            android:layout_marginBottom="16dp">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -92,6 +93,53 @@
                 android:layout_gravity="center"
                 android:textColor="@color/white"/>
         </com.google.android.material.card.MaterialCardView>
+        <LinearLayout
+            android:id="@+id/termsCheckLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:layout_marginBottom="20dp"
+            android:paddingVertical="4dp">
+            <ImageView
+                android:id="@+id/termsCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/off_checkbox"
+                android:scaleType="center"
+                android:contentDescription="agree terms and conditions"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="3dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="By creating an account you have to agree with our terms and conditions."
+                android:fontFamily="@font/poppins_light"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account？"
+                android:fontFamily="@font/poppins_light"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/logInButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_in_ul"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:textColor="@color/sign_up_button_bg"
+                android:paddingHorizontal="4dp"
+                android:paddingVertical="12dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 

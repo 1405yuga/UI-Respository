@@ -4,4 +4,5 @@
     <dimen name="on_boarding_horizontal_margin">24dp</dimen>
 
     <dimen name="clickable_size_min">48dp</dimen>
+    <dimen name="signUp_bottom_margin">20dp</dimen>
 </resources>

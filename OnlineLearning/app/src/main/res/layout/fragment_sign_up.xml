@@ -43,17 +43,55 @@
             android:textColor="#858597"
             android:layout_marginTop="32dp"/>
         <EditText
+            android:id="@+id/emailEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Enter your email"
             android:fontFamily="@font/poppins_light"
             android:textSize="14sp"
             android:background="@drawable/edit_text_card"
-            android:paddingHorizontal="24dp"
-            android:paddingVertical="13dp"
+            android:padding="16dp"
             android:inputType="textWebEmailAddress"
             android:maxLength="30"
-            android:textColor="@color/title_on_boarding"/>
+            android:textColor="@color/title_on_boarding"
+            android:layout_marginBottom="@dimen/signUp_bottom_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="Password"
+            android:textSize="14sp"
+            android:textColor="#858597"
+            android:layout_marginTop="32dp"/>
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="14sp"
+            android:background="@drawable/edit_text_card"
+            android:padding="16dp"
+            android:inputType="textPassword"
+            android:maxLength="30"
+            android:textColor="@color/title_on_boarding"
+            android:layout_marginBottom="@dimen/signUp_bottom_margin"/>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/createAccountButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/clickable_size_min"
+            app:cardCornerRadius="8dp"
+            app:strokeWidth="0dp"
+            app:cardBackgroundColor="@color/sign_up_button_bg"
+            android:clickable="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create account"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 

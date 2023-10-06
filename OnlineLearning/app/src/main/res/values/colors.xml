@@ -24,4 +24,5 @@
 
 
     <color name="bottom_navigation_unselected_menu_text">#B8B8D2</color>
+    <color name="bottom_navigation_unselected_menu_icon">#F4F3FD</color>
 </resources>

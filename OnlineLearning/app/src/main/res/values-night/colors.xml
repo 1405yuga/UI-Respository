@@ -20,5 +20,6 @@
     <color name="edit_text_stroke">#3E3E55</color>
 
     <color name="loginWith_side_stroke">#858597</color>
+    <color name="bottom_navigation_unselected_menu_icon">#B8B8D2</color>
 
 </resources>

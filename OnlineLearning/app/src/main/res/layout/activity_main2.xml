@@ -67,7 +67,7 @@
                     android:id="@+id/courseIcon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home"
+                    android:src="@drawable/course"
                     android:layout_marginBottom="12dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -123,7 +123,7 @@
                     android:id="@+id/messageIcon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home"
+                    android:src="@drawable/message"
                     android:layout_marginBottom="12dp"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -153,7 +153,7 @@
                     android:id="@+id/accountIcon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home"
+                    android:src="@drawable/account"
                     android:layout_marginBottom="12dp"/>
                 <TextView
                     android:layout_width="wrap_content"

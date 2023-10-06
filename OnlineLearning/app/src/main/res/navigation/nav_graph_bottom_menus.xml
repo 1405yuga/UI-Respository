@@ -14,8 +14,7 @@
         android:id="@+id/courseFragment"
         android:name="com.example.onlinelearning.bottom_menu_fragments.CourseFragment"
         android:label="fragment_course"
-        tools:layout="@layout/fragment_course"
-        />
+        tools:layout="@layout/fragment_course" />
     <fragment
         android:id="@+id/messageFragment"
         android:name="com.example.onlinelearning.bottom_menu_fragments.MessageFragment"

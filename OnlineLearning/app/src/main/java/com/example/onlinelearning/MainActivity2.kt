@@ -27,7 +27,7 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navHost = supportFragmentManager.findFragmentById(R.id.navHostFragmentConatiner) as NavHostFragment
+        val navHost = supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
         navController = navHost.navController
 
         setMenuSelected(ProjectConstants.HOME_MENU)
@@ -49,9 +49,6 @@ class MainActivity2 : AppCompatActivity() {
         }
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        return navController.navigateUp() || super.onSupportNavigateUp()
-    }
     private fun setMenuSelected(menu: String) {
         if (menu != currMenuSelected) {
             prevMenuSelected = currMenuSelected
@@ -151,6 +148,7 @@ class MainActivity2 : AppCompatActivity() {
                 R.color.bottom_navigation_unselected_menu_text
             )
         )
+        navController.popBackStack(fragmentId,true)
     }
 
 
@@ -164,5 +162,6 @@ class MainActivity2 : AppCompatActivity() {
         val menuColor = ContextCompat.getColor(this, R.color.sign_up_button_bg)
         icon.setColorFilter(menuColor, PorterDuff.Mode.SRC_IN)
         textView.setTextColor(menuColor)
+        navController.navigate(fragmentId)
     }
 }

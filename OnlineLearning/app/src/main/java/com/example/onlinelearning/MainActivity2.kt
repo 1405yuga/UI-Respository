@@ -25,6 +25,11 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(binding.root)
 
         setMenuSelected(ProjectConstants.HOME_MENU)
+        setColorForSelectedMenu(
+            binding.homeBar,
+            binding.homeIcon,
+            binding.homeText
+        )
 
         binding.apply {
             homeLayout.setOnClickListener {
@@ -50,11 +55,13 @@ class MainActivity2 : AppCompatActivity() {
     private fun currMenuSelected(menuSelected: String) {
         when (menuSelected) {
 
-            ProjectConstants.HOME_MENU -> setColorForSelectedMenu(
-                binding.homeBar,
-                binding.homeIcon,
-                binding.homeText
-            )
+            ProjectConstants.HOME_MENU -> {
+                setColorForSelectedMenu(
+                    binding.homeBar,
+                    binding.homeIcon,
+                    binding.homeText
+                )
+            }
 
             ProjectConstants.COURSE_MENU -> { setColorForSelectedMenu(
                     binding.courseBar,

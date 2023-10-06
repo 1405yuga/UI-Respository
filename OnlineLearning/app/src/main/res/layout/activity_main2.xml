@@ -40,6 +40,7 @@
                     android:src="@drawable/home"
                     android:layout_marginBottom="12dp"/>
                 <TextView
+                    android:id="@+id/homeText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Home"
@@ -70,6 +71,7 @@
                     android:src="@drawable/course"
                     android:layout_marginBottom="12dp"/>
                 <TextView
+                    android:id="@+id/courseText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Course"
@@ -126,6 +128,7 @@
                     android:src="@drawable/message"
                     android:layout_marginBottom="12dp"/>
                 <TextView
+                    android:id="@+id/messageText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Message"
@@ -156,6 +159,7 @@
                     android:src="@drawable/account"
                     android:layout_marginBottom="12dp"/>
                 <TextView
+                    android:id="@+id/accountText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Account"

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.navOptions
 import com.example.onlinelearning.R
 import com.example.onlinelearning.databinding.FragmentLogInBinding
 
@@ -19,7 +20,10 @@ class LogInFragment : Fragment() {
         binding = FragmentLogInBinding.inflate(inflater,container,false)
 
         binding.signUpButton.setOnClickListener {
-            findNavController().navigate(R.id.signUpFragment)
+            findNavController().apply {
+                popBackStack(R.id.logInFragment,true)
+                navigate(R.id.signUpFragment)
+            }
         }
 
         return binding.root

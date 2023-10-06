@@ -12,6 +12,7 @@ import com.example.onlinelearning.constants.ProjectConstants
 import com.example.onlinelearning.databinding.ActivityMain2Binding
 
 private const val TAG = "MainActivity2 tag"
+
 class MainActivity2 : AppCompatActivity() {
 
     private lateinit var binding: ActivityMain2Binding
@@ -23,8 +24,10 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        setMenuSelected(ProjectConstants.HOME_MENU)
+
         binding.apply {
-            homeLayout.setOnClickListener { 
+            homeLayout.setOnClickListener {
                 setMenuSelected(ProjectConstants.HOME_MENU)
             }
 
@@ -43,10 +46,17 @@ class MainActivity2 : AppCompatActivity() {
             currMenuSelected(currMenuSelected)
         }
     }
+
     private fun currMenuSelected(menuSelected: String) {
         when (menuSelected) {
-            ProjectConstants.COURSE_MENU -> {
-                setColorForSelectedMenu(
+
+            ProjectConstants.HOME_MENU -> setColorForSelectedMenu(
+                binding.homeBar,
+                binding.homeIcon,
+                binding.homeText
+            )
+
+            ProjectConstants.COURSE_MENU -> { setColorForSelectedMenu(
                     binding.courseBar,
                     binding.courseIcon,
                     binding.courseText
@@ -54,31 +64,75 @@ class MainActivity2 : AppCompatActivity() {
                 // TODO: load fragment
             }
 
+            ProjectConstants.COURSE_MENU -> setColorForSelectedMenu(
+                binding.courseBar,
+                binding.courseIcon,
+                binding.courseText
+            )
+
+            ProjectConstants.ACCOUNT_MENU -> setColorForSelectedMenu(
+                binding.accountBar,
+                binding.accountIcon,
+                binding.accountText
+            )
+
+            ProjectConstants.MESSAGE_MENU -> setColorForSelectedMenu(
+                binding.messageBar,
+                binding.messageIcon,
+                binding.messageText
+            )
+
         }
     }
 
     private fun setColorForSelectedMenu(bar: ImageView, icon: ImageView, textView: TextView) {
         bar.visibility = View.VISIBLE
-        val menuColor = ContextCompat.getColor(this,R.color.sign_up_button_bg)
-        icon.setColorFilter(menuColor,PorterDuff.Mode.SRC_IN)
+        val menuColor = ContextCompat.getColor(this, R.color.sign_up_button_bg)
+        icon.setColorFilter(menuColor, PorterDuff.Mode.SRC_IN)
         textView.setTextColor(menuColor)
     }
 
     private fun setPrevMenuUnselected(menuUnselect: String) {
         when (menuUnselect) {
+            ProjectConstants.HOME_MENU -> setColorForUnselectedMenu(
+                binding.homeBar,
+                binding.homeIcon,
+                binding.homeText
+            )
+
             ProjectConstants.COURSE_MENU -> setColorForUnselectedMenu(
                 binding.courseBar,
                 binding.courseIcon,
                 binding.courseText
             )
 
+            ProjectConstants.ACCOUNT_MENU -> setColorForUnselectedMenu(
+                binding.accountBar,
+                binding.accountIcon,
+                binding.accountText
+            )
 
+            ProjectConstants.MESSAGE_MENU -> setColorForUnselectedMenu(
+                binding.messageBar,
+                binding.messageIcon,
+                binding.messageText
+            )
         }
     }
 
     private fun setColorForUnselectedMenu(bar: ImageView, icon: ImageView, textView: TextView) {
         bar.visibility = View.INVISIBLE
-        icon.setColorFilter( ContextCompat.getColor(this,R.color.bottom_navigation_unselected_menu_icon),PorterDuff.Mode.SRC_IN)
-        textView.setTextColor( ContextCompat.getColor(this,R.color.bottom_navigation_unselected_menu_text))
+        icon.setColorFilter(
+            ContextCompat.getColor(
+                this,
+                R.color.bottom_navigation_unselected_menu_icon
+            ), PorterDuff.Mode.SRC_IN
+        )
+        textView.setTextColor(
+            ContextCompat.getColor(
+                this,
+                R.color.bottom_navigation_unselected_menu_text
+            )
+        )
     }
 }

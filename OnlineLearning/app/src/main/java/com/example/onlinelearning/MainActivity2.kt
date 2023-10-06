@@ -68,7 +68,6 @@ class MainActivity2 : AppCompatActivity() {
                     binding.courseIcon,
                     binding.courseText
                 )
-                // TODO: load fragment
             }
 
             ProjectConstants.COURSE_MENU -> setColorForSelectedMenu(

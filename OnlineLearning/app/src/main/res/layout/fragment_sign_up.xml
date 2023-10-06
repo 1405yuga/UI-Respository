@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:background="@drawable/edit_text_card"
                 android:fontFamily="@font/poppins_light"
-                android:hint="Enter your email"
+                android:hint="Enter your password"
                 android:inputType="textPassword"
                 android:maxLength="30"
                 android:padding="16dp"

@@ -31,24 +31,19 @@ class OnBoardingFragment : Fragment() {
                     binding.SignUpOptions.visibility = View.VISIBLE
                     setNewOnBoarding(R.drawable.illustration_03,"Create your own \nstudy plan","Study according to the \nstudy plan, make study \nmore motivated",R.drawable.pavigation3)
                 }
-                else -> loadFragment(R.id.signUpFragment)
+                else -> findNavController().navigate(R.id.signUpFragment)
             }
         }
 
         binding.signUpButton.setOnClickListener {
-            loadFragment(R.id.signUpFragment)
+            findNavController().navigate(R.id.signUpFragment)
         }
 
         binding.loginButton.setOnClickListener {
-            loadFragment(R.id.logInFragment)
+            findNavController().navigate(R.id.logInFragment)
         }
 
         return binding.root
-    }
-
-    private fun loadFragment(fragmentId: Int) {
-        findNavController().navigate(fragmentId)
-        findNavController().popBackStack(R.id.onBoardingFragmentFragment,true)
     }
 
     private fun setNewOnBoarding(image: Int, title: String, subtitle: String, nextButton: Int) {

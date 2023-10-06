@@ -96,7 +96,7 @@
             android:textSize="14sp" />
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/createAccountButton"
+            android:id="@+id/logInButton"
             android:layout_width="match_parent"
             android:layout_height="@dimen/clickable_size_min"
             android:layout_marginBottom="16dp"
@@ -130,7 +130,7 @@
                 android:textColor="@color/skip_on_boarding" />
 
             <TextView
-                android:id="@+id/logInButton"
+                android:id="@+id/signUpButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

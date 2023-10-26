@@ -265,36 +265,36 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"
+            android:layout_marginBottom="4dp"
             android:fontFamily="@font/poppins_medium"
             android:text="Learning Plan"
             android:textColor="@color/subTitle_text"
-            android:textSize="16sp"
-            android:layout_marginBottom="4dp"/>
+            android:textSize="16sp" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"
+            android:layout_marginBottom="16dp"
             android:paddingHorizontal="16dp"
             android:paddingVertical="24dp"
             app:cardBackgroundColor="@color/card_bg"
             app:cardCornerRadius="8dp"
-            app:strokeWidth="0dp"
             app:cardElevation="4dp"
-            android:layout_marginBottom="16dp">
+            app:strokeWidth="0dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginBottom="12dp">
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -364,16 +364,48 @@
                         android:textColor="#B8B8D2"
                         android:textSize="14sp" />
                 </LinearLayout>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="more"
-                    android:fontFamily="@font/poppins_light"
-                    android:textSize="14sp"
-                    android:textColor="@color/sign_up_button_bg"
                     android:clickable="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="bottom|center_horizontal"
                     android:paddingVertical="16dp"
-                    android:gravity="bottom|center_horizontal"/>
+                    android:text="more"
+                    android:textColor="@color/sign_up_button_bg"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"
+            app:cardBackgroundColor="#EFE0FF"
+            app:cardCornerRadius="8dp"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Meetup"
+                    android:textSize="24sp"
+                    android:textColor="#440687"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Off-line exchange of learning experiences"
+                    android:textSize="12sp"
+                    android:textColor="#440687"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
     </LinearLayout>

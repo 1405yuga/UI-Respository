@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:paddingHorizontal="@dimen/fragment_horizontal_margin"
-    tools:context=".bottom_menu_fragments.CourseFragment"
-    android:paddingVertical="28dp">
+    android:paddingVertical="28dp"
+    tools:context=".bottom_menu_fragments.CourseFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,57 +17,139 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginBottom="4dp"
             android:gravity="center"
-            android:layout_marginBottom="4dp">
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:fontFamily="@font/poppins_bold"
                 android:text="Course"
                 android:textColor="@color/subTitle_text"
                 android:textSize="24sp" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/avatar"
-                android:scaleType="center"/>
+                android:scaleType="center"
+                android:src="@drawable/avatar" />
         </LinearLayout>
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/search_course"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="8dp"
-            app:strokeWidth="0dp"
+            android:clickable="true"
             app:cardBackgroundColor="@color/search_card_bg"
-            android:clickable="true">
+            app:cardCornerRadius="8dp"
+            app:strokeWidth="0dp">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:padding="16dp">
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/search_1"
-                    android:layout_marginEnd="8dp"/>
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/search_1" />
+
                 <TextView
                     android:layout_width="0dp"
-                    android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Find Cousre"
+                    android:layout_weight="1"
                     android:fontFamily="@font/poppins_light"
-                    android:textSize="12sp"
-                    android:textColor="#B8B8D2"/>
+                    android:text="Find Cousre"
+                    android:textColor="#B8B8D2"
+                    android:textSize="16sp" />
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/filter"/>
+                    android:src="@drawable/filter" />
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="180dp"
+                        android:layout_height="78dp"
+                        app:cardBackgroundColor="#CEECFE"
+                        app:cardCornerRadius="8dp"
+                        app:strokeWidth="0dp"
+                        android:layout_gravity="bottom"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/half_rounded_card"
+                            android:fontFamily="@font/poppins_light"
+                            android:padding="4dp"
+                            android:text="Language"
+                            android:textColor="#3D5CFF"
+                            android:textSize="14sp"/>
+                    </com.google.android.material.card.MaterialCardView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/illustration"
+                        android:scaleType="fitCenter"/>
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="180dp"
+                        android:layout_height="78dp"
+                        app:cardBackgroundColor="#EFE0FF"
+                        app:cardCornerRadius="8dp"
+                        app:strokeWidth="0dp"
+                        android:layout_gravity="bottom"
+                        android:clickable="true">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/half_rounded_card"
+                            android:backgroundTint="#F8F2FF"
+                            android:fontFamily="@font/poppins_light"
+                            android:padding="4dp"
+                            android:text="Painting"
+                            android:textColor="#9065BE"
+                            android:textSize="14sp"/>
+                    </com.google.android.material.card.MaterialCardView>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/illustration__1_"
+                        android:scaleType="fitCenter"/>
+                </FrameLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
     </LinearLayout>
 
 </LinearLayout>

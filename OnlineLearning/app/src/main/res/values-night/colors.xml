@@ -27,5 +27,6 @@
     <color name="card_bg">#2F2F42</color>
     <color name="progress_bar_bg">#EAEAFF</color>
     <color name="subTitle_text">#FFFFFF</color>
+    <color name="search_card_bg">#3E3E55</color>
 
 </resources>

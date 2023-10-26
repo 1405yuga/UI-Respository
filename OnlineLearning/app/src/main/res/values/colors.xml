@@ -26,8 +26,12 @@
     <color name="bottom_navigation_unselected_menu_text">#B8B8D2</color>
     <color name="bottom_navigation_unselected_menu_icon">#F4F3FD</color>
 
+    <!--- home fragment -->
     <color name="search_icon">#3D5CFF</color>
     <color name="card_bg">#FFFFFF</color>
     <color name="progress_bar_bg">#F4F3FD</color>
     <color name="subTitle_text">#1F1F39</color>
+
+    <!-- course fragment -->
+    <color name="search_card_bg">#F4F3FD</color>
 </resources>

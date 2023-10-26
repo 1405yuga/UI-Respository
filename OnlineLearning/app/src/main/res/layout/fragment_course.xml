@@ -50,7 +50,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="16dp">
+                android:padding="16dp"
+                android:gravity="center">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -76,7 +77,8 @@
 
         <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -150,6 +152,62 @@
                 </FrameLayout>
             </LinearLayout>
         </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your course"
+            android:textColor="@color/subTitle_text"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/allCourseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All"
+                android:paddingVertical="13dp"
+                android:paddingHorizontal="28dp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:fontFamily="@font/poppins_light"
+                android:background="@drawable/course_type_bg"
+                android:layout_marginEnd="16dp"
+                />
+            <TextView
+                android:id="@+id/popularCourseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Popular"
+                android:paddingVertical="13dp"
+                android:paddingHorizontal="28dp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:fontFamily="@font/poppins_light"
+                android:background="@drawable/course_type_bg"
+                android:layout_marginEnd="16dp"
+                />
+            <TextView
+                android:id="@+id/newCourseType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New"
+                android:paddingVertical="13dp"
+                android:paddingHorizontal="28dp"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:fontFamily="@font/poppins_light"
+                android:background="@drawable/course_type_bg"
+                android:layout_marginEnd="16dp"
+                />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

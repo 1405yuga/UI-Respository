@@ -34,4 +34,7 @@
 
     <!-- course fragment -->
     <color name="search_card_bg">#F4F3FD</color>
+    <color name="course_type_unselected_bg">#FFFFFF</color>
+    <color name="course_type_unselected_text">#858597</color>
+
 </resources>

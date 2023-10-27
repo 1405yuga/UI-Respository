@@ -40,5 +40,6 @@
     <!-- message fragment -->
     <color name="message_unselected_text">#1F1F39</color>
     <color name="message_selected_text">#1F1F39</color>
+    <color name="message_online_text">#858597</color>
 
 </resources>

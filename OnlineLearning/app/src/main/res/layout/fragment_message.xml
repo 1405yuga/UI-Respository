@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".bottom_menu_fragments.MessageFragment"
-    android:paddingHorizontal="@dimen/fragment_horizontal_margin"
     android:paddingTop="28dp"
     android:orientation="vertical">
 
@@ -16,12 +15,15 @@
         android:fontFamily="@font/poppins_bold"
         android:text="Notifications"
         android:textColor="@color/subTitle_text"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:paddingHorizontal="@dimen/fragment_horizontal_margin"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/fragment_horizontal_margin"
+        android:layout_marginBottom="12dp">
         <LinearLayout
             android:id="@+id/messageLayout"
             android:layout_width="0dp"
@@ -77,6 +79,6 @@
         android:layout_weight="1"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph_message_menu" />
+        app:navGraph="@navigation/nav_graph_message_menu"/>
 
 </LinearLayout>

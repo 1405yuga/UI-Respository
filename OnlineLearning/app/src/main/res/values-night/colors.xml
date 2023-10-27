@@ -32,5 +32,6 @@
     <color name="course_type_unselected_text">#FFFFFF</color>
     <color name="message_unselected_text">#B8B8D2</color>
     <color name="message_selected_text">#FFFFFF</color>
+    <color name="message_online_text">#B8B8D2</color>
 
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_message_menu"
+    app:startDestination="@id/messageMessageFragment">
+
+    <fragment
+        android:id="@+id/messageMessageFragment"
+        android:name="com.example.onlinelearning.message_fragments.MessageMessageFragment"
+        android:label="fragment_message_message"
+        tools:layout="@layout/fragment_message_message" />
+    <fragment
+        android:id="@+id/messageNotificationFragment"
+        android:name="com.example.onlinelearning.message_fragments.MessageNotificationFragment"
+        android:label="fragment_message_notification"
+        tools:layout="@layout/fragment_message_notification" />
+</navigation>

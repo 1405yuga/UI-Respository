@@ -49,9 +49,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:orientation="horizontal"
-                android:padding="16dp"
-                android:gravity="center">
+                android:padding="16dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -93,11 +93,11 @@
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="180dp"
                         android:layout_height="78dp"
+                        android:layout_gravity="bottom"
+                        android:clickable="true"
                         app:cardBackgroundColor="#CEECFE"
                         app:cardCornerRadius="8dp"
-                        app:strokeWidth="0dp"
-                        android:layout_gravity="bottom"
-                        android:clickable="true">
+                        app:strokeWidth="0dp">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -109,14 +109,16 @@
                             android:padding="4dp"
                             android:text="Language"
                             android:textColor="#3D5CFF"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
                     </com.google.android.material.card.MaterialCardView>
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/illustration"
-                        android:scaleType="fitCenter"/>
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/illustration" />
                 </FrameLayout>
+
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -125,11 +127,11 @@
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="180dp"
                         android:layout_height="78dp"
+                        android:layout_gravity="bottom"
+                        android:clickable="true"
                         app:cardBackgroundColor="#EFE0FF"
                         app:cardCornerRadius="8dp"
-                        app:strokeWidth="0dp"
-                        android:layout_gravity="bottom"
-                        android:clickable="true">
+                        app:strokeWidth="0dp">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -142,13 +144,14 @@
                             android:padding="4dp"
                             android:text="Painting"
                             android:textColor="#9065BE"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
                     </com.google.android.material.card.MaterialCardView>
+
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/illustration__1_"
-                        android:scaleType="fitCenter"/>
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/illustration__1_" />
                 </FrameLayout>
             </LinearLayout>
         </HorizontalScrollView>
@@ -156,58 +159,163 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/poppins_medium"
             android:text="Choose your course"
             android:textColor="@color/subTitle_text"
-            android:fontFamily="@font/poppins_medium"
-            android:textSize="18sp"
-            android:layout_marginBottom="12dp"/>
+            android:textSize="18sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginBottom="4dp">
+
             <TextView
                 android:id="@+id/allCourseType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="All"
-                android:paddingVertical="13dp"
-                android:paddingHorizontal="28dp"
-                android:textSize="14sp"
-                android:textAlignment="center"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/course_type_bg"
                 android:clickable="true"
                 android:fontFamily="@font/poppins_light"
-                android:background="@drawable/course_type_bg"
-                android:layout_marginEnd="16dp"
-                />
+                android:paddingHorizontal="28dp"
+                android:paddingVertical="13dp"
+                android:text="All"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/popularCourseType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Popular"
-                android:paddingVertical="13dp"
-                android:paddingHorizontal="28dp"
-                android:textSize="14sp"
-                android:textAlignment="center"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/course_type_bg"
                 android:clickable="true"
                 android:fontFamily="@font/poppins_light"
-                android:background="@drawable/course_type_bg"
-                android:layout_marginEnd="16dp"
-                />
+                android:paddingHorizontal="28dp"
+                android:paddingVertical="13dp"
+                android:text="Popular"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
             <TextView
                 android:id="@+id/newCourseType"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New"
-                android:paddingVertical="13dp"
-                android:paddingHorizontal="28dp"
-                android:textSize="14sp"
-                android:textAlignment="center"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/course_type_bg"
                 android:clickable="true"
                 android:fontFamily="@font/poppins_light"
-                android:background="@drawable/course_type_bg"
-                android:layout_marginEnd="16dp"
-                />
+                android:paddingHorizontal="28dp"
+                android:paddingVertical="13dp"
+                android:text="New"
+                android:textAlignment="center"
+                android:textSize="14sp" />
         </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    app:cardCornerRadius="8dp"
+                    app:strokeWidth="0dp"
+                    android:backgroundTint="@color/card_bg"
+                    app:cardElevation="2dp"
+                    android:layout_marginBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="32dp"
+                            android:src="@drawable/image" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="Product Design v1.0"
+                                android:textColor="@color/subTitle_text"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="4dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/people" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/poppins_light"
+                                    android:text="Robertson Connie"
+                                    android:textColor="#B8B8D2"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:fontFamily="@font/poppins_bold"
+                                    android:text="$190"
+                                    android:textColor="#3D5CFF"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/course_type_bg"
+                                    android:backgroundTint="#FFEBF0"
+                                    android:fontFamily="@font/poppins_light"
+                                    android:paddingHorizontal="8dp"
+                                    android:paddingVertical="2dp"
+                                    android:text="16 hours"
+                                    android:textColor="#FF6905"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 </LinearLayout>

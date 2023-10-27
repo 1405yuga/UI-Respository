@@ -30,5 +30,7 @@
     <color name="search_card_bg">#3E3E55</color>
     <color name="course_type_unselected_bg">#858597</color>
     <color name="course_type_unselected_text">#FFFFFF</color>
+    <color name="message_unselected_text">#B8B8D2</color>
+    <color name="message_selected_text">#FFFFFF</color>
 
 </resources>

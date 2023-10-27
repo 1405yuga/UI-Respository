@@ -37,4 +37,8 @@
     <color name="course_type_unselected_bg">#FFFFFF</color>
     <color name="course_type_unselected_text">#858597</color>
 
+    <!-- message fragment -->
+    <color name="message_unselected_text">#1F1F39</color>
+    <color name="message_selected_text">#1F1F39</color>
+
 </resources>

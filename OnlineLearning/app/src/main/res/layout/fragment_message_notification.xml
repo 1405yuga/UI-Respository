@@ -24,8 +24,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"
                 android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/fragment_horizontal_margin"
                 android:paddingVertical="16dp">
 
                 <ImageView
@@ -38,34 +38,36 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginEnd="4dp"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical">
+                    android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
                         android:fontFamily="@font/poppins_light"
                         android:text="Successful purchase!"
                         android:textColor="@color/subTitle_text"
-                        android:textSize="12sp"
-                        android:layout_marginBottom="4dp"/>
+                        android:textSize="12sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical">
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/time"
-                            android:layout_marginEnd="4dp"/>
+                            android:layout_marginEnd="4dp"
+                            android:src="@drawable/time" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:fontFamily="@font/poppins_light"
                             android:text="Just now"
                             android:textColor="@color/message_online_text"
@@ -76,6 +78,7 @@
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -89,8 +92,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"
                 android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/fragment_horizontal_margin"
                 android:paddingVertical="16dp">
 
                 <ImageView
@@ -103,34 +106,36 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginEnd="4dp"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical">
+                    android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
                         android:fontFamily="@font/poppins_light"
                         android:text="Congratulations on completing the  ..."
                         android:textColor="@color/subTitle_text"
-                        android:textSize="12sp"
-                        android:layout_marginBottom="4dp"/>
+                        android:textSize="12sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical">
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/time"
-                            android:layout_marginEnd="4dp"/>
+                            android:layout_marginEnd="4dp"
+                            android:src="@drawable/time" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:fontFamily="@font/poppins_light"
                             android:text="Just now"
                             android:textColor="@color/message_online_text"
@@ -141,6 +146,7 @@
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -154,8 +160,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"
                 android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/fragment_horizontal_margin"
                 android:paddingVertical="16dp">
 
                 <ImageView
@@ -168,34 +174,36 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginEnd="4dp"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical">
+                    android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
                         android:fontFamily="@font/poppins_light"
                         android:text="Your course has been updated, you  ..."
                         android:textColor="@color/subTitle_text"
-                        android:textSize="12sp"
-                        android:layout_marginBottom="4dp"/>
+                        android:textSize="12sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical">
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/time"
-                            android:layout_marginEnd="4dp"/>
+                            android:layout_marginEnd="4dp"
+                            android:src="@drawable/time" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:fontFamily="@font/poppins_light"
                             android:text="Just now"
                             android:textColor="@color/message_online_text"
@@ -206,6 +214,7 @@
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
+
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -219,8 +228,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"
                 android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/fragment_horizontal_margin"
                 android:paddingVertical="16dp">
 
                 <ImageView
@@ -233,34 +242,36 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:layout_marginEnd="4dp"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:layout_gravity="center_vertical">
+                    android:orientation="vertical">
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
                         android:fontFamily="@font/poppins_light"
                         android:text="Congratulations, you have ..."
                         android:textColor="@color/subTitle_text"
-                        android:textSize="12sp"
-                        android:layout_marginBottom="4dp"/>
+                        android:textSize="12sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:gravity="center_vertical">
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/time"
-                            android:layout_marginEnd="4dp"/>
+                            android:layout_marginEnd="4dp"
+                            android:src="@drawable/time" />
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="1"
                             android:fontFamily="@font/poppins_light"
                             android:text="Just now"
                             android:textColor="@color/message_online_text"

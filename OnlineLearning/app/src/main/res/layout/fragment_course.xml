@@ -182,8 +182,7 @@
                 android:paddingHorizontal="28dp"
                 android:text="All"
                 android:textAlignment="center"
-                android:textSize="14sp"
-                android:focusable="true" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/popularCourseType"
@@ -197,8 +196,7 @@
                 android:paddingHorizontal="28dp"
                 android:text="Popular"
                 android:textAlignment="center"
-                android:textSize="14sp"
-                android:focusable="true" />
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/newCourseType"
@@ -212,8 +210,7 @@
                 android:paddingHorizontal="28dp"
                 android:text="New"
                 android:textAlignment="center"
-                android:textSize="14sp"
-                android:focusable="true" />
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -319,10 +316,10 @@
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/card_bg"
                 android:clickable="true"
+                android:focusable="true"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="2dp"
-                app:strokeWidth="0dp"
-                android:focusable="true">
+                app:strokeWidth="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -411,10 +408,10 @@
                 android:layout_marginBottom="16dp"
                 android:backgroundTint="@color/card_bg"
                 android:clickable="true"
+                android:focusable="true"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="2dp"
-                app:strokeWidth="0dp"
-                android:focusable="true">
+                app:strokeWidth="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -502,10 +499,10 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/card_bg"
                 android:clickable="true"
+                android:focusable="true"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="2dp"
-                app:strokeWidth="0dp"
-                android:focusable="true">
+                app:strokeWidth="0dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"

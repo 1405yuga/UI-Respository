@@ -2,24 +2,17 @@ package com.example.onlinelearning
 
 import android.graphics.PorterDuff
 import android.os.Bundle
-import android.util.Log
 import android.view.View
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.MutableLiveData
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
-import com.example.onlinelearning.constants.ProjectConstants
 import com.example.onlinelearning.databinding.ActivityMain2Binding
-
-private const val TAG = "MainActivity2 tag"
 
 class MainActivity2 : AppCompatActivity() {
 
     private lateinit var binding: ActivityMain2Binding
-    private var currMenuSelected = ProjectConstants.HOME_MENU
-    private var prevMenuSelected = ProjectConstants.HOME_MENU
     private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,141 +20,70 @@ class MainActivity2 : AppCompatActivity() {
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val navHost = supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
+        val navHost =
+            supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
         navController = navHost.navController
+        val selectedMenuColor = ContextCompat.getColor(this, R.color.sign_up_button_bg)
+        val unselectedMenuColor =
+            ContextCompat.getColor(this, R.color.bottom_navigation_unselected_menu_text)
 
-        setMenuSelected(ProjectConstants.HOME_MENU)
-        setColorForSelectedMenu(
-            binding.homeBar,
-            binding.homeIcon,
-            binding.homeText,
-            R.id.homeFragment
-        )
+        val selectedMenuIcon = ContextCompat.getColor(this, R.color.sign_up_button_bg)
+        val unselectedMenuIcon =
+            ContextCompat.getColor(this, R.color.bottom_navigation_unselected_menu_icon)
+
+        val choice = MutableLiveData(Menus.HOME)
 
         binding.apply {
-            homeLayout.setOnClickListener {
-                setMenuSelected(ProjectConstants.HOME_MENU)
-            }
-
-            courseLayout.setOnClickListener { setMenuSelected(ProjectConstants.COURSE_MENU) }
-            messageLayout.setOnClickListener { setMenuSelected(ProjectConstants.MESSAGE_MENU) }
-            accountLayout.setOnClickListener { setMenuSelected(ProjectConstants.ACCOUNT_MENU) }
+            homeLayout.setOnClickListener { choice.value = Menus.HOME }
+            courseLayout.setOnClickListener { choice.value = Menus.COURSE }
+            messageLayout.setOnClickListener { choice.value = Menus.MESSAGE }
+            accountLayout.setOnClickListener { choice.value = Menus.ACCOUNT }
         }
-    }
 
-    private fun setMenuSelected(menu: String) {
-        if (menu != currMenuSelected) {
-            prevMenuSelected = currMenuSelected
-            currMenuSelected = menu
-            Log.d(TAG, "CurrentMenu: $currMenuSelected PrevMenu :$prevMenuSelected")
-            setPrevMenuUnselected(prevMenuSelected)
-            currMenuSelected(currMenuSelected)
-        }
-    }
+        choice.observe(this) {
+            binding.apply {
+                homeText.setTextColor(if (it == Menus.HOME) selectedMenuColor else unselectedMenuColor)
+                courseText.setTextColor(if (it == Menus.COURSE) selectedMenuColor else unselectedMenuColor)
+                messageText.setTextColor(if (it == Menus.MESSAGE) selectedMenuColor else unselectedMenuColor)
+                accountText.setTextColor(if (it == Menus.ACCOUNT) selectedMenuColor else unselectedMenuColor)
 
-    private fun setPrevMenuUnselected(menuUnselect: String) {
-        when (menuUnselect) {
-            ProjectConstants.HOME_MENU -> setColorForUnselectedMenu(
-                binding.homeBar,
-                binding.homeIcon,
-                binding.homeText,
-                R.id.homeFragment
-            )
-
-            ProjectConstants.COURSE_MENU -> setColorForUnselectedMenu(
-                binding.courseBar,
-                binding.courseIcon,
-                binding.courseText,
-                R.id.courseFragment
-            )
-
-            ProjectConstants.ACCOUNT_MENU -> setColorForUnselectedMenu(
-                binding.accountBar,
-                binding.accountIcon,
-                binding.accountText,
-                R.id.accountFragment
-            )
-
-            ProjectConstants.MESSAGE_MENU -> setColorForUnselectedMenu(
-                binding.messageBar,
-                binding.messageIcon,
-                binding.messageText,
-                R.id.messageFragment
-            )
-        }
-    }
-
-
-    private fun currMenuSelected(menuSelected: String) {
-        when (menuSelected) {
-
-            ProjectConstants.HOME_MENU -> {
-                setColorForSelectedMenu(
-                    binding.homeBar,
-                    binding.homeIcon,
-                    binding.homeText,
-                    R.id.homeFragment
+                homeIcon.setColorFilter(
+                    if (it == Menus.HOME) selectedMenuIcon else unselectedMenuIcon,
+                    PorterDuff.Mode.SRC_IN
                 )
+                courseIcon.setColorFilter(
+                    if (it == Menus.COURSE) selectedMenuIcon else unselectedMenuIcon,
+                    PorterDuff.Mode.SRC_IN
+                )
+                messageIcon.setColorFilter(
+                    if (it == Menus.MESSAGE) selectedMenuIcon else unselectedMenuIcon,
+                    PorterDuff.Mode.SRC_IN
+                )
+                accountIcon.setColorFilter(
+                    if (it == Menus.ACCOUNT) selectedMenuIcon else unselectedMenuIcon,
+                    PorterDuff.Mode.SRC_IN
+                )
+
+                homeBar.visibility = (if (it == Menus.HOME) View.VISIBLE else View.INVISIBLE)
+                courseBar.visibility = (if (it == Menus.COURSE) View.VISIBLE else View.INVISIBLE)
+                messageBar.visibility = (if (it == Menus.MESSAGE) View.VISIBLE else View.INVISIBLE)
+                accountBar.visibility = (if (it == Menus.ACCOUNT) View.VISIBLE else View.INVISIBLE)
+
+                navController.navigate(
+                    when (it) {
+                        Menus.HOME -> R.id.homeFragment
+                        Menus.COURSE -> R.id.courseFragment
+                        Menus.MESSAGE -> R.id.messageFragment
+                        else -> R.id.accountFragment
+                    }
+                )
+
             }
-
-            ProjectConstants.COURSE_MENU -> { setColorForSelectedMenu(
-                binding.courseBar,
-                binding.courseIcon,
-                binding.courseText,
-                R.id.courseFragment
-            )
-            }
-
-            ProjectConstants.ACCOUNT_MENU -> setColorForSelectedMenu(
-                binding.accountBar,
-                binding.accountIcon,
-                binding.accountText,
-                R.id.accountFragment
-            )
-
-            ProjectConstants.MESSAGE_MENU -> setColorForSelectedMenu(
-                binding.messageBar,
-                binding.messageIcon,
-                binding.messageText,
-                R.id.messageFragment
-            )
-
         }
-    }
 
-    private fun setColorForUnselectedMenu(
-        bar: ImageView,
-        icon: ImageView,
-        textView: TextView,
-        fragmentId: Int
-    ) {
-        bar.visibility = View.INVISIBLE
-        icon.setColorFilter(
-            ContextCompat.getColor(
-                this,
-                R.color.bottom_navigation_unselected_menu_icon
-            ), PorterDuff.Mode.SRC_IN
-        )
-        textView.setTextColor(
-            ContextCompat.getColor(
-                this,
-                R.color.bottom_navigation_unselected_menu_text
-            )
-        )
-        navController.popBackStack(fragmentId,true)
     }
+}
 
-
-    private fun setColorForSelectedMenu(
-        bar: ImageView,
-        icon: ImageView,
-        textView: TextView,
-        fragmentId: Int
-    ) {
-        bar.visibility = View.VISIBLE
-        val menuColor = ContextCompat.getColor(this, R.color.sign_up_button_bg)
-        icon.setColorFilter(menuColor, PorterDuff.Mode.SRC_IN)
-        textView.setTextColor(menuColor)
-        navController.navigate(fragmentId)
-    }
+private enum class Menus {
+    HOME, COURSE, MESSAGE, ACCOUNT
 }

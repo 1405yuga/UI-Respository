@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
@@ -18,7 +17,7 @@ class CourseFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentCourseBinding.inflate(inflater, container, false)
         val selectedMenuText = ContextCompat.getColor(requireContext(), R.color.white)
         val unselectedMenuText =
@@ -38,12 +37,12 @@ class CourseFragment : Fragment() {
 
                 popularCourseType.apply {
                     setTextColor(if (it == CourseTypes.POPULAR) selectedMenuText else unselectedMenuText)
-                    background.setTint(if(it == CourseTypes.POPULAR) selectedMenuTint else unselectedMenuTint)
+                    background.setTint(if (it == CourseTypes.POPULAR) selectedMenuTint else unselectedMenuTint)
                 }
 
                 newCourseType.apply {
                     setTextColor(if (it == CourseTypes.NEW) selectedMenuText else unselectedMenuText)
-                    background.setTint(if(it == CourseTypes.NEW) selectedMenuTint else unselectedMenuTint)
+                    background.setTint(if (it == CourseTypes.NEW) selectedMenuTint else unselectedMenuTint)
                 }
 
             }

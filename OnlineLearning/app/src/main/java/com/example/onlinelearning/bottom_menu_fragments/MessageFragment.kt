@@ -20,7 +20,7 @@ class MessageFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         binding = FragmentMessageBinding.inflate(inflater, container, false)
         val selectedMenuText =
@@ -37,12 +37,14 @@ class MessageFragment : Fragment() {
         choice.observe(viewLifecycleOwner) {
             binding.apply {
                 messageTextView.setTextColor(if (it == MessageChoices.MESSAGE) selectedMenuText else unselectedMenuText)
-                messageBar.visibility = (if (it == MessageChoices.MESSAGE) View.VISIBLE else View.INVISIBLE)
+                messageBar.visibility =
+                    (if (it == MessageChoices.MESSAGE) View.VISIBLE else View.INVISIBLE)
 
                 notificationTextView.setTextColor(if (it == MessageChoices.NOTIFICATION) selectedMenuText else unselectedMenuText)
-                notificationBar.visibility = (if(it==MessageChoices.NOTIFICATION) View.VISIBLE else View.INVISIBLE)
+                notificationBar.visibility =
+                    (if (it == MessageChoices.NOTIFICATION) View.VISIBLE else View.INVISIBLE)
 
-                navController.navigate(if(it==MessageChoices.MESSAGE) R.id.messageMessageFragment else R.id.messageNotificationFragment)
+                navController.navigate(if (it == MessageChoices.MESSAGE) R.id.messageMessageFragment else R.id.messageNotificationFragment)
             }
         }
 

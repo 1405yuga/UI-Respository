@@ -17,7 +17,7 @@ class LogInFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentLogInBinding.inflate(inflater, container, false)
 
         binding.apply {
@@ -29,7 +29,7 @@ class LogInFragment : Fragment() {
             }
 
             logInButton.setOnClickListener {
-                startActivity(Intent(requireActivity(),MainActivity2::class.java))
+                startActivity(Intent(requireActivity(), MainActivity2::class.java))
                 requireActivity().finish()
             }
         }

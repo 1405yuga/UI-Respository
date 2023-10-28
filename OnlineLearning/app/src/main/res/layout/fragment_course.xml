@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="@dimen/fragment_horizontal_margin"
-    android:paddingVertical="28dp"
+    android:paddingTop="28dp"
     tools:context=".bottom_menu_fragments.CourseFragment">
 
     <LinearLayout

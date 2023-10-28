@@ -16,13 +16,13 @@
         android:text="Notifications"
         android:textColor="@color/subTitle_text"
         android:textSize="24sp"
-        android:paddingHorizontal="@dimen/fragment_horizontal_margin"/>
+        android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingHorizontal="@dimen/fragment_horizontal_margin"
+        android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"
         android:layout_marginBottom="12dp">
         <LinearLayout
             android:id="@+id/messageLayout"
@@ -32,7 +32,8 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:paddingTop="20dp">
+            android:paddingTop="20dp"
+            android:focusable="true">
             <TextView
                 android:id="@+id/messageTextView"
                 android:layout_width="wrap_content"
@@ -55,7 +56,8 @@
             android:orientation="vertical"
             android:gravity="center"
             android:clickable="true"
-            android:paddingTop="20dp">
+            android:paddingTop="20dp"
+            android:focusable="true">
             <TextView
                 android:id="@+id/notificationTextView"
                 android:layout_width="wrap_content"

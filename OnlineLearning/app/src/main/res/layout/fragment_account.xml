@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="@dimen/fragment_horizontal_margin"
     android:orientation="vertical"
     android:paddingVertical="28dp"
     tools:context=".bottom_menu_fragments.AccountFragment">
@@ -13,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:fontFamily="@font/poppins_bold"
+        android:paddingHorizontal="@dimen/fragment_horizontal_margin"
         android:text="Account"
         android:textColor="@color/subTitle_text"
         android:textSize="24sp" />
@@ -22,18 +22,22 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:clickable="true"
-        android:contentDescription="editAvatar"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
         android:scaleType="center"
-        android:src="@drawable/avatar__2_" />
+        android:src="@drawable/avatar__2_"
+        android:layout_marginBottom="12dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_height="@dimen/clickable_size_min"
         android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingVertical="11dp">
+        android:paddingHorizontal="@dimen/fragment_horizontal_margin"
+        android:layout_marginBottom="12dp">
 
         <TextView
             android:layout_width="0dp"
@@ -52,12 +56,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_height="@dimen/clickable_size_min"
         android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingVertical="11dp">
+        android:paddingHorizontal="@dimen/fragment_horizontal_margin"
+        android:layout_marginBottom="12dp">
 
         <TextView
             android:layout_width="0dp"
@@ -76,12 +82,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_height="@dimen/clickable_size_min"
         android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingVertical="11dp">
+        android:paddingHorizontal="@dimen/fragment_horizontal_margin"
+        android:layout_marginBottom="12dp">
 
         <TextView
             android:layout_width="0dp"
@@ -100,12 +108,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
+        android:layout_height="@dimen/clickable_size_min"
         android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingVertical="11dp">
+        android:paddingHorizontal="@dimen/fragment_horizontal_margin"
+        android:layout_marginBottom="12dp">
 
         <TextView
             android:layout_width="0dp"
@@ -121,5 +131,6 @@
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_arrow_forward_ios_24" />
     </LinearLayout>
+
 
 </LinearLayout>

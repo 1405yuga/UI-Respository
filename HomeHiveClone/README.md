@@ -1,6 +1,3 @@
-# UI-Respository
- The UI-Repository is a comprehensive Android front-end repository designed to enhance and update UI skills. This resource provides a wealth of materials, tools, and code samples to improve  user interface design and development capabilities in the Android ecosystem.
-
 ## HomeHiveClone :
 HomeHiveClone is the android application which is developed to showcase front-end skills in android. `Reference of Figma ` project is considered to develop this UI project. No backend server is connected, purely developed to showcase UI/UX skills in android.HomeHiveClone is the application where you can find property listings and real estate information for buying, selling, renting, and leasing properties. 
 
